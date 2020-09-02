@@ -1,0 +1,725 @@
+@import url("./../font/Montserrat/stylesheet.css");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.header {
+  padding: 40px 40px 70px;
+  background-color: #DEE1E9;
+  width: 100%;
+}
+
+.header .logo {
+  max-width: 140px;
+}
+
+.header .logo img {
+  max-width: 100%;
+}
+
+.header .header-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header-content .text-col {
+  width: 65%;
+}
+
+.header .header-content .text-col h2 {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #4D4D4D;
+  padding-bottom: 20px;
+}
+
+.header .header-content .text-col p {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 33px;
+  color: #5722DE;
+}
+
+.header .header-content .text-col .small-text {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #5722DE;
+  padding-bottom: 30px;
+}
+
+.header .header-content .text-col .big-text {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 73px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header .header-content .pic-col {
+  width: 35%;
+}
+
+.header .header-content .pic-col img {
+  max-width: 100%;
+}
+
+.container {
+  padding: 20px 60px;
+}
+
+.container .question-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.container .question-wrapper .question {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+  color: #4D4D4D;
+}
+
+.container .question-wrapper .radio-wrapper {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont {
+  max-width: 20%;
+  padding: 5px;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont input[type=radio] {
+  display: none;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont label .number {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  padding: 5px;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont label .text {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #4D4D4D;
+  padding-top: 10px;
+  max-width: 220px;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont:nth-child(1) input[type=radio]:checked + label .number {
+  border-color: #BA1417;
+  color: #ffffff;
+  background-color: #BA1417;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont:nth-child(1) label .number {
+  border-color: #BA1417;
+  color: #BA1417;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont:nth-child(2) input[type=radio]:checked + label .number {
+  border-color: #F63030;
+  color: #ffffff;
+  background-color: #F63030;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont:nth-child(2) label .number {
+  border-color: #F63030;
+  color: #F63030;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont:nth-child(3) input[type=radio]:checked + label .number {
+  border-color: #FFA400;
+  color: #ffffff;
+  background-color: #FFA400;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont:nth-child(3) label .number {
+  border-color: #FFA400;
+  color: #FFA400;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont:nth-child(4) input[type=radio]:checked + label .number {
+  border-color: #00E355;
+  color: #ffffff;
+  background-color: #00E355;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont:nth-child(4) label .number {
+  border-color: #00E355;
+  color: #00E355;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont:nth-child(5) input[type=radio]:checked + label .number {
+  border-color: #008811;
+  color: #ffffff;
+  background-color: #008811;
+}
+
+.container .question-wrapper .radio-wrapper .radio-cont:nth-child(5) label .number {
+  border-color: #008811;
+  color: #008811;
+}
+
+.container .question-wrapper .hidden-answer > div {
+  display: none;
+}
+
+.container .question-wrapper .hidden-answer .detail {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 60px;
+}
+
+.container .question-wrapper .hidden-answer .detail label {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #4D4D4D;
+  width: 50%;
+  display: block;
+}
+
+.container .question-wrapper .hidden-answer .detail input {
+  display: block;
+  width: 50%;
+  border-bottom: 1px solid #000000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px 15px;
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #4D4D4D;
+  outline: none;
+}
+
+.container .question-wrapper .hidden-answer .detail input::-webkit-input-placeholder {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .hidden-answer .detail input::-moz-placeholder {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .hidden-answer .detail input:-ms-input-placeholder {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .hidden-answer .detail input::-ms-input-placeholder {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .hidden-answer .detail input::placeholder {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .submit-container {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.container .submit-container .btn-submit {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 15px 70px;
+  background: #FF4E00;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.container.container-contact {
+  background: #DEE1E9;
+  padding-top: 60px;
+  padding-bottom: 35px;
+}
+
+.container.container-contact .contact-form .question-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #FFFFFF;
+  border: 0.5px solid #FDD030;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 30px 30px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 30px 30px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.container.container-contact .contact-form .question-block .question {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  width: 40%;
+}
+
+.container.container-contact .contact-form .question-block .answer {
+  width: 60%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 100px;
+}
+
+.container.container-contact .contact-form .question-block .answer.answer-2 label {
+  width: 50%;
+}
+
+.container.container-contact .contact-form .question-block .answer label {
+  width: 33.3%;
+  padding: 10px;
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333042;
+}
+
+.container.container-contact .contact-form .question-block .answer label input[type=radio] {
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.thankyou {
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: #FCD9AF;
+}
+
+.thankyou .thankyou-text {
+  padding-top: 120px;
+  max-width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.thankyou .thankyou-text .small-text {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #5722DE;
+  padding-bottom: 30px;
+}
+
+.thankyou .thankyou-text .big-text {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 73px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.thankyou .picture {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url(./../img/thanks.jpg);
+  background-position-y: bottom;
+  background-position-x: right;
+  -webkit-background-size: 50% 50%;
+          background-size: 50%;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
+@media screen and (min-width: 1500px) {
+  .contact-form,
+  .header-content,
+  .form-wrapper {
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .header .header-content .text-col {
+    padding-top: 15px;
+  }
+  .header {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .container .question-wrapper .radio-wrapper .radio-cont label .text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .thankyou .thankyou-text .big-text {
+    font-size: 46px;
+    line-height: 52px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .header {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .container .question-wrapper .radio-wrapper .radio-cont label .text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .container.container-contact .contact-form .question-block .answer label {
+    width: 50%;
+  }
+  .container.container-contact .contact-form .question-block .answer {
+    max-height: 140px;
+  }
+  .thankyou .thankyou-text .big-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .thankyou .thankyou-text .small-text {
+    font-size: 18px;
+    padding-bottom: 15px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .thankyou .thankyou-text .big-text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .thankyou .thankyou-text .small-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .thankyou .picture {
+    -webkit-background-size: 90% 90%;
+            background-size: 90%;
+    opacity: 0.7;
+  }
+  .header .header-content .text-col h2,
+  .header .header-content .text-col .big-text {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .header .header-content .text-col p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .container .question-wrapper .question,
+  .header .header-content .text-col .small-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .container .question-wrapper .hidden-answer .detail label,
+  .container.container-contact .contact-form .question-block .question {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .container .question-wrapper .radio-wrapper .radio-cont label .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .container.container-contact .contact-form .question-block .answer label {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .container .question-wrapper .hidden-answer .detail {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .container .question-wrapper .hidden-answer .detail label,
+  .container .question-wrapper .hidden-answer .detail input {
+    width: 100%;
+  }
+  .container.container-contact .contact-form .question-block {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .container .question-wrapper .radio-wrapper .radio-cont label .text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .header .header-content {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .header .header-content .text-col {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .header .header-content .pic-col {
+    width: 100%;
+  }
+  .header {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container .question-wrapper .radio-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .question-wrapper .radio-wrapper .radio-cont {
+    width: 33.3%;
+    max-width: 33.3%;
+  }
+  .container.container-contact .contact-form .question-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container.container-contact .contact-form .question-block .question,
+  .container.container-contact .contact-form .question-block .answer {
+    width: 100%;
+  }
+  .container.container-contact .contact-form .question-block .answer label {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .container.container-contact .contact-form .question-block {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container .question-wrapper .radio-wrapper .radio-cont {
+    width: 50%;
+    max-width: 50%;
+  }
+}
