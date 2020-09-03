@@ -4,34 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тестирование текстовой составляющей </title>
-    <link rel="stylesheet" href="./../style/style.css">
+    <title>ТЕСТИРОВАНИЕ аудиовизуальных произведений </title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
     <div class="header">
         <div class="logo">
-            <img src="./../img/logo.svg" alt="ПСБ">
+            <img src="./img/logo.svg" alt="ПСБ">
         </div>
         <div class="header-content">
             <div class="text-col">
                 <h2>
-                    Тестирование текстовой составляющей
+                    ТЕСТИРОВАНИЕ аудиовизуальных произведений 
                 </h2>
-                <p>коротких рекламных сообщений товаров и услуг, слоганов, призывающих к оформлению того или иного
-                    банковского продукта или услуги</p>
+                <p>рекламных или информационных видеороликов длительностью до двух минут</p>
+                <p class="bottom-text">
+                    Пожалуйста, посмотрите внимательно это видео. 
+                </p>
             </div>
             <div class="pic-col">
-                <img src="./../img/hedaer-pic.png" alt="">
+                <div class="vide-wrapper">
+                    <video class="video" width="460" height="300" controls>
+                        <source src="./img/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play"></div>
+                </div>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="form-wrapper">
-            <form action="./contact.html" method="post">
+            <form action="./contact.html" class="form-valid">
                 <div class="question-wrapper">
                     <div class="question">
-                        1. Насколько это сообщение вызвало у Вас интерес?
+                        1. Насколько идея видео вызвала у Вас интерес? 
                     </div>
                     <div class="radio-wrapper">
                         <div class="radio-cont">
@@ -39,7 +47,7 @@
                             <label for="q-1-1">
                                 <div class="number">1</div>
                                 <div class="text">
-                                    Совершенно НЕ вызвало интерес
+                                    Совершенно НЕ вызвала интерес
                                 </div>
                             </label>
                         </div>
@@ -48,7 +56,7 @@
                             <label for="q-1-2">
                                 <div class="number">2</div>
                                 <div class="text">
-                                    Скорее НЕ вызвало интерес
+                                    Скорее НЕ вызвала интерес
                                 </div>
                             </label>
                         </div>
@@ -57,7 +65,7 @@
                             <label for="q-1-3">
                                 <div class="number">3</div>
                                 <div class="text">
-                                    Не могу определиться, вызвало интерес или нет
+                                    Не могу определиться, вызвала интерес или нет
                                 </div>
                             </label>
                         </div>
@@ -66,7 +74,7 @@
                             <label for="q-1-4">
                                 <div class="number">4</div>
                                 <div class="text">
-                                    Скорее вызвало интерес
+                                    Скорее вызвала интерес
                                 </div>
                             </label>
                         </div>
@@ -75,7 +83,7 @@
                             <label for="q-1-5">
                                 <div class="number">5</div>
                                 <div class="text">
-                                    Точно вызвало интерес
+                                    Точно вызвала интерес
                                 </div>
                             </label>
                         </div>
@@ -83,7 +91,7 @@
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
-                        2. Насколько понятно это сообщение?
+                        2. Насколько Вам понятна идея видео?  
                     </div>
                     <div class="radio-wrapper">
                         <div class="radio-cont">
@@ -91,7 +99,7 @@
                             <label for="q-2-1">
                                 <div class="number">1</div>
                                 <div class="text">
-                                    Совершенно НЕ понятно
+                                    Совершенно НЕ понятна
                                 </div>
                             </label>
                         </div>
@@ -100,7 +108,7 @@
                             <label for="q-2-2">
                                 <div class="number">2</div>
                                 <div class="text">
-                                    Скорее НЕ понятно
+                                    Скорее НЕ понятна
                                 </div>
                             </label>
                         </div>
@@ -109,7 +117,7 @@
                             <label for="q-2-3">
                                 <div class="number">3</div>
                                 <div class="text">
-                                    Не могу определиться, понятно или нет
+                                    Не могу определиться, понятна или нет
                                 </div>
                             </label>
                         </div>
@@ -118,7 +126,7 @@
                             <label for="q-2-4">
                                 <div class="number">4</div>
                                 <div class="text">
-                                    Скорее понятно
+                                    Скорее понятна
                                 </div>
                             </label>
                         </div>
@@ -127,7 +135,7 @@
                             <label for="q-2-5">
                                 <div class="number">5</div>
                                 <div class="text">
-                                    Полностью понятно
+                                    Полностью понятна
                                 </div>
                             </label>
                         </div>
@@ -135,7 +143,7 @@
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
-                        3. Насколько Вам, в целом, нравится данный слоган?
+                        3. Насколько Вам, в целом, нравится идея видео? 
                     </div>
                     <div class="radio-wrapper show-detail-answer">
                         <div class="radio-cont">
@@ -179,7 +187,7 @@
                             <label for="q-3-5">
                                 <div class="number">5</div>
                                 <div class="text">
-                                    Очень нравится
+                                    Точно нравится
                                 </div>
                             </label>
                         </div>
@@ -187,13 +195,13 @@
                     <div class="hidden-answer">
                         <div class="answer13">
                             <div class="detail">
-                                <label for="q-3-6">Что Вам  не нравится в данном сообщении? </label>
+                                <label for="q-3-6">Что Вам не нравится в идее этого видео? </label>
                                 <input type="text" name="q-3-6" id="q-3-6" placeholder="Ваш комментарий">
                             </div>
                         </div>
                         <div class="answer45">
                             <div class="detail">
-                                <label for="q-3-7">Что Вам нравится в данном сообщении? </label>
+                                <label for="q-3-7">Что Вам нравится в идее этого видео? </label>
                                 <input type="text" name="q-3-7" id="q-3-7" placeholder="Ваш комментарий">
                             </div>
                         </div>
@@ -201,7 +209,7 @@
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
-                        4. Насколько это сообщение уникально?
+                        4. Насколько идея этого ролика уникальна?
                     </div>
                     <div class="radio-wrapper">
                         <div class="radio-cont">
@@ -209,7 +217,7 @@
                             <label for="q-4-1">
                                 <div class="number">1</div>
                                 <div class="text">
-                                    Совершенно НЕ уникально
+                                    Совершенно НЕ уникальна
                                 </div>
                             </label>
                         </div>
@@ -218,7 +226,7 @@
                             <label for="q-4-2">
                                 <div class="number">2</div>
                                 <div class="text">
-                                    Скорее НЕ уникально
+                                    Скорее НЕ уникальна
                                 </div>
                             </label>
                         </div>
@@ -227,7 +235,7 @@
                             <label for="q-4-3">
                                 <div class="number">3</div>
                                 <div class="text">
-                                    Не могу определиться, уникально или нет
+                                    Не могу определиться, уникальна или нет
                                 </div>
                             </label>
                         </div>
@@ -236,7 +244,7 @@
                             <label for="q-4-4">
                                 <div class="number">4</div>
                                 <div class="text">
-                                    Скорее уникально
+                                    Скорее уникальна
                                 </div>
                             </label>
                         </div>
@@ -245,7 +253,7 @@
                             <label for="q-4-5">
                                 <div class="number">5</div>
                                 <div class="text">
-                                    Очень уникально
+                                    Очень уникальна
                                 </div>
                             </label>
                         </div>
@@ -253,8 +261,8 @@
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
-                        5. Насколько для Вас актуально и соответствует Вашим потребностям то, о чем говорится в
-                        сообщении?
+                        5. Насколько для Вас актуально и соответствует Вашим потребностям то, 
+                            о чем рассказывается в видео? 
                     </div>
                     <div class="radio-wrapper">
                         <div class="radio-cont">
@@ -262,7 +270,7 @@
                             <label for="q-5-1">
                                 <div class="number">1</div>
                                 <div class="text">
-                                    Совершенно НЕ уникально
+                                    Совершенно НЕ актуально
                                 </div>
                             </label>
                         </div>
@@ -271,7 +279,7 @@
                             <label for="q-5-2">
                                 <div class="number">2</div>
                                 <div class="text">
-                                    Скорее НЕ уникально
+                                    Скорее НЕ актуально
                                 </div>
                             </label>
                         </div>
@@ -280,7 +288,7 @@
                             <label for="q-5-3">
                                 <div class="number">3</div>
                                 <div class="text">
-                                    Не могу определиться, уникально или нет
+                                    Не могу определиться, актуально или нет
                                 </div>
                             </label>
                         </div>
@@ -289,7 +297,7 @@
                             <label for="q-5-4">
                                 <div class="number">4</div>
                                 <div class="text">
-                                    Скорее уникально
+                                    Скорее актуально
                                 </div>
                             </label>
                         </div>
@@ -298,7 +306,7 @@
                             <label for="q-5-5">
                                 <div class="number">5</div>
                                 <div class="text">
-                                    Очень уникально
+                                    Очень актуально
                                 </div>
                             </label>
                         </div>
@@ -306,7 +314,7 @@
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
-                        6. Насколько это сообщение вызывает у Вас доверие?
+                        6. Насколько это видео вызывает у Вас доверие
                     </div>
                     <div class="radio-wrapper">
                         <div class="radio-cont">
@@ -358,7 +366,7 @@
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
-                        7. Оцените Ваше желание узнать больше о том, о чем рассказывает сообщение?
+                        7. Оцените Ваше желание узнать больше о том, о чем рассказывает видео? 
                     </div>
                     <div class="radio-wrapper">
                         <div class="radio-cont">
@@ -410,7 +418,7 @@
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
-                        8. Оцените Ваше желание воспользоваться тем, о чем говорит это сообщение?
+                        8. Оцените Ваше желание купить или воспользоваться тем, о чем рассказывается в видео?  
                     </div>
                     <div class="radio-wrapper">
                         <div class="radio-cont">
@@ -418,7 +426,7 @@
                             <label for="q-8-1">
                                 <div class="number">1</div>
                                 <div class="text">
-                                    Совершенно НЕТ желания купить/ воспользоваться
+                                    Совершенно НЕТ желания купить/воспользоваться
                                 </div>
                             </label>
                         </div>
@@ -427,7 +435,7 @@
                             <label for="q-8-2">
                                 <div class="number">2</div>
                                 <div class="text">
-                                    Скорее НЕТ желания купить/ воспользоваться
+                                    Скорее НЕТ желания купить/воспользоваться
                                 </div>
                             </label>
                         </div>
@@ -436,7 +444,7 @@
                             <label for="q-8-3">
                                 <div class="number">3</div>
                                 <div class="text">
-                                    Не могу определиться, есть желание купить/ воспользоваться или нет
+                                    Не могу определиться, есть желание купить/воспользоваться или нет
                                 </div>
                             </label>
                         </div>
@@ -445,7 +453,7 @@
                             <label for="q-8-4">
                                 <div class="number">4</div>
                                 <div class="text">
-                                    Скорее есть желание купить/ воспользоваться
+                                    Скорее есть желание купить /воспользоваться
                                 </div>
                             </label>
                         </div>
@@ -454,7 +462,7 @@
                             <label for="q-8-5">
                                 <div class="number">5</div>
                                 <div class="text">
-                                    Точно есть желание купить/ воспользоваться
+                                    Точно есть желание купить/воспользоваться
                                 </div>
                             </label>
                         </div>
@@ -462,8 +470,7 @@
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
-                        9. Вы бы рассказали об этом своим друзьям, если бы увидели рекламу с таким сообщением в реальной
-                        жизни?
+                        9. Вы бы рассказали об этом видео своим друзьям, если бы увидели ролик в реальной жизни?   
                     </div>
                     <div class="radio-wrapper">
                         <div class="radio-cont">
@@ -513,67 +520,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="question-wrapper">
-                    <div class="question">
-                        10. Насколько это сообщение подходит для рекламы Банка ПСБ
-                    </div>
-                    <div class="radio-wrapper">
-                        <div class="radio-cont">
-                            <input type="radio" name="q-10" id="q-10-1">
-                            <label for="q-10-1">
-                                <div class="number">1</div>
-                                <div class="text">
-                                    Совершенно НЕ подходит
-                                </div>
-                            </label>
-                        </div>
-                        <div class="radio-cont">
-                            <input type="radio" name="q-10" id="q-10-2">
-                            <label for="q-10-2">
-                                <div class="number">2</div>
-                                <div class="text">
-                                    Скорее НЕ подходит
-                                </div>
-                            </label>
-                        </div>
-                        <div class="radio-cont">
-                            <input type="radio" name="q-10" id="q-10-3">
-                            <label for="q-10-3">
-                                <div class="number">3</div>
-                                <div class="text">
-                                    Не могу определиться, подходит или нет
-                                </div>
-                            </label>
-                        </div>
-                        <div class="radio-cont">
-                            <input type="radio" name="q-10" id="q-10-4">
-                            <label for="q-10-4">
-                                <div class="number">4</div>
-                                <div class="text">
-                                    Скорее подходит
-                                </div>
-                            </label>
-                        </div>
-                        <div class="radio-cont">
-                            <input type="radio" name="q-10" id="q-10-5">
-                            <label for="q-10-5">
-                                <div class="number">5</div>
-                                <div class="text">
-                                    Полностью подходит
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-                </div>
                 <div class="submit-container">
-                    <input type="submit" class="btn-submit" value="Отправить">
+                    <input type="submit" class="btn-submit valid-form-send" value="Отправить">
                 </div>
             </form>
         </div>
     </div>
-
-    <script src="./../js/jquery-3.3.1.min.js"></script>
-    <script src="./../js/script.js"></script>
+    <!-- The Modal -->
+    <div id="modal-error" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="text">
+                <p>Выберете, пожалуйста, ответ.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

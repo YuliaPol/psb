@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестирование текстовой составляющей </title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./img/logo.svg" alt="ПСБ">
+        </div>
+        <div class="header-content">
+            <div class="text-col">
+                <p class="small-text">Осталось ещё немного</p>
+                <p class="big-text">
+                    Уделите нам <br>
+                    еще пару минут
+                </p>
+            </div>
+            <div class="pic-col">
+                <img src="./img/hedaer-pic.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container container-contact">
+        <div class="contact-form">
+            <form action="./thankyou.html" class="form-valid">
+                <div class="question-block">
+                    <div class="question">
+                        Укажите Ваш пол
+                    </div>
+                    <div class="answer">
+                        <label for="q-1-1">
+                            <input type="radio" name="q-1" id="q-1-1">
+                            Мужской
+                        </label>
+                        <label for="q-1-2">
+                            <input type="radio" name="q-1" id="q-1-2">
+                            Женский
+                        </label>
+                    </div>
+                </div>
+                <div class="question-block">
+                    <div class="question">
+                        Укажите Ваш возраст 
+                    </div>
+                    <div class="answer">
+                        <label for="q-2-1">
+                            <input type="radio" name="q-2" id="q-2-1">
+                            18-25 лет
+                        </label>
+                        <label for="q-2-2">
+                            <input type="radio" name="q-2" id="q-2-2">
+                            25-35 лет
+                        </label>
+                        <label for="q-2-3">
+                            <input type="radio" name="q-2" id="q-2-3">
+                            35-45 лет
+                        </label>
+                        <label for="q-2-4">
+                            <input type="radio" name="q-2" id="q-2-4">
+                            45-60 лет
+                        </label>
+                        <label for="q-2-5">
+                            <input type="radio" name="q-2" id="q-2-5">
+                           Старше 60 лет 
+                        </label>
+                    </div>
+                </div>
+                <div class="question-block">
+                    <div class="question">
+                        Какое у Вас образование? 
+                    </div>
+                    <div class="answer answer-2">
+                        <label for="q-3-1">
+                            <input type="radio" name="q-3" id="q-3-1">
+                            Начальное
+                        </label>
+                        <label for="q-3-2">
+                            <input type="radio" name="q-3" id="q-3-2">
+                            Среднее
+                        </label>
+                        <label for="q-3-3">
+                            <input type="radio" name="q-3" id="q-3-3">
+                            Высшее
+                        </label>
+                        <label for="q-3-4">
+                            <input type="radio" name="q-3" id="q-3-4">
+                            Ученная степень
+                        </label>
+                    </div>
+                </div>
+                <div class="submit-container">
+                    <input type="submit" class="btn-submit valid-form-send" value="Отправить">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="modal-error" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="text">
+                <p>Выберете, пожалуйста, ответ.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

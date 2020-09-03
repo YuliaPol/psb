@@ -46,7 +46,7 @@ table {
 }
 
 body {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
 }
@@ -82,10 +82,11 @@ body {
 
 .header .header-content .text-col {
   width: 65%;
+  padding-left: 15px;
 }
 
 .header .header-content .text-col h2 {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -96,7 +97,7 @@ body {
 }
 
 .header .header-content .text-col p {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -104,8 +105,35 @@ body {
   color: #5722DE;
 }
 
+.header .header-content .text-col .grey {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 33px;
+  color: #4C4C4C;
+}
+
+.header .header-content .text-col .bottom-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000000;
+  padding-top: 60px;
+}
+
+.header .header-content .text-col .bottom-text.blue {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 33px;
+  color: #5722DE;
+}
+
 .header .header-content .text-col .small-text {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
@@ -115,7 +143,7 @@ body {
 }
 
 .header .header-content .text-col .big-text {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -124,12 +152,91 @@ body {
   color: #FFFFFF;
 }
 
+.header .header-content .audio-wrapper {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 270px;
+  background: #DEE1E9;
+  -webkit-box-shadow: inset 0px 0px 10px 2px rgba(144, 141, 150, 0.2);
+          box-shadow: inset 0px 0px 10px 2px rgba(144, 141, 150, 0.2);
+  border-radius: 30px;
+}
+
+.header .header-content .audio-wrapper .playaudio {
+  width: 53px;
+  height: 53px;
+  background-image: url(./../img/play.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.header .header-content .audio-wrapper .playaudio:hover {
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(34, 13, 87, 0.3);
+          box-shadow: 0px 0px 2px 2px rgba(34, 13, 87, 0.3);
+}
+
+.header .header-content .audio-wrapper .audio {
+  width: calc(100% - 53px);
+}
+
 .header .header-content .pic-col {
   width: 35%;
 }
 
 .header .header-content .pic-col img {
   max-width: 100%;
+}
+
+.header .header-content .pic-col .vide-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.header .header-content .pic-col .vide-wrapper video {
+  width: 100%;
+  height: auto;
+}
+
+.header .header-content .pic-col .vide-wrapper .play {
+  background-image: url(./../img/play.png);
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  -o-transition: -o-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in, -o-transform 0.3s ease-in;
+}
+
+.header .header-content .pic-col .vide-wrapper .play:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .container {
@@ -142,8 +249,12 @@ body {
   border-bottom: 1px solid #EBEBEB;
 }
 
+.container .question-wrapper.has-error .question {
+  color: #F63030;
+}
+
 .container .question-wrapper .question {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -169,6 +280,7 @@ body {
 
 .container .question-wrapper .radio-wrapper .radio-cont {
   max-width: 20%;
+  width: 20%;
   padding: 5px;
 }
 
@@ -197,7 +309,7 @@ body {
 }
 
 .container .question-wrapper .radio-wrapper .radio-cont label .number {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -224,7 +336,7 @@ body {
 }
 
 .container .question-wrapper .radio-wrapper .radio-cont label .text {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -312,7 +424,7 @@ body {
 }
 
 .container .question-wrapper .hidden-answer .detail label {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -330,7 +442,7 @@ body {
   border-left: none;
   border-right: none;
   padding: 5px 15px;
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -340,7 +452,7 @@ body {
 }
 
 .container .question-wrapper .hidden-answer .detail input::-webkit-input-placeholder {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -349,7 +461,7 @@ body {
 }
 
 .container .question-wrapper .hidden-answer .detail input::-moz-placeholder {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -358,7 +470,7 @@ body {
 }
 
 .container .question-wrapper .hidden-answer .detail input:-ms-input-placeholder {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -367,7 +479,7 @@ body {
 }
 
 .container .question-wrapper .hidden-answer .detail input::-ms-input-placeholder {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -376,7 +488,7 @@ body {
 }
 
 .container .question-wrapper .hidden-answer .detail input::placeholder {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -390,7 +502,7 @@ body {
 }
 
 .container .submit-container .btn-submit {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -435,7 +547,7 @@ body {
 }
 
 .container.container-contact .contact-form .question-block .question {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
@@ -476,7 +588,7 @@ body {
 .container.container-contact .contact-form .question-block .answer label {
   width: 33.3%;
   padding: 10px;
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -503,7 +615,7 @@ body {
 }
 
 .thankyou .thankyou-text .small-text {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
@@ -513,7 +625,7 @@ body {
 }
 
 .thankyou .thankyou-text .big-text {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -535,6 +647,66 @@ body {
           background-size: 50%;
   background-repeat: no-repeat;
   z-index: 5;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1000;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  border-radius: 10px;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+  max-width: 600px;
+  padding: 15px;
+}
+
+.modal-content .text {
+  padding: 40px 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 45px;
+  text-align: center;
+  color: #000000;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1500px) {
@@ -599,6 +771,17 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    padding-top: 20px;
+  }
+  .header .header-content .text-col .bottom-text {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 20px;
+  }
+  .header .logo {
+    max-width: 100px;
+  }
   .thankyou .thankyou-text .big-text {
     font-size: 24px;
     line-height: 28px;
