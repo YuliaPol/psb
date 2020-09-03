@@ -27,7 +27,7 @@
     </div>
     <div class="container">
         <div class="form-wrapper">
-            <form action="./contact.html">
+            <form action="./contact.html" class="form-valid">
                 <div class="question-wrapper">
                     <div class="question">
                         1. Насколько Вам понятна эта идея?
@@ -459,12 +459,21 @@
                     </div>
                 </div>
                 <div class="submit-container">
-                    <input type="submit" class="btn-submit" value="Отправить">
+                    <input type="submit" class="btn-submit valid-form-send" value="Отправить">
                 </div>
             </form>
         </div>
     </div>
-
+    <!-- The Modal -->
+    <div id="modal-error" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="text">
+                <p>Выберете, пожалуйста, ответ.</p>
+            </div>
+        </div>
+    </div>
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
