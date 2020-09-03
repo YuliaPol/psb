@@ -25,8 +25,8 @@
                 </p>
                 <div class="audio-wrapper">
                     <div class="playaudio"></div>
-                    <div class="audio" id="audiowave">
-                    </div>
+                    <div class="audio" id="audiowave"> </div>
+                    <audio src="./img/audio.mp3"></audio>
                 </div>
             </div>
             <div class="pic-col">
@@ -600,7 +600,7 @@
             hideScrollbar: true,
             progressColor: "#5722DE"
         });
-        wavesurfer.load('/img/audio.mp3');
+        wavesurfer.load('./img/audio.mp3');
         $('.playaudio').click(function(e){
             wavesurfer.playPause();
         });
