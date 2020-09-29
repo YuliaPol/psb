@@ -262,6 +262,757 @@ body {
   color: #4D4D4D;
 }
 
+.container .question-wrapper .ranging-wrapper {
+  padding-top: 40px;
+}
+
+.container .question-wrapper .ranging-wrapper .ranging-list {
+  margin-top: 15px;
+}
+
+.container .question-wrapper .ranging-wrapper .ranging-list .rangint-item {
+  margin-bottom: 10px;
+  border: 1px solid #EEEFF3;
+  border-radius: 3px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 15px;
+}
+
+.container .question-wrapper .ranging-wrapper .ranging-list .rangint-item .arrows {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 25px;
+}
+
+.container .question-wrapper .ranging-wrapper .ranging-list .rangint-item .arrows .item-up {
+  width: 20px;
+  height: 10px;
+  padding: 5px;
+  background: url(./../img/arrow-dropdown.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.container .question-wrapper .ranging-wrapper .ranging-list .rangint-item .arrows .item-down {
+  width: 20px;
+  height: 10px;
+  padding: 5px;
+  background: url(./../img/arrow-dropdown.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  cursor: pointer;
+}
+
+.container .question-wrapper .ranging-wrapper .ranging-list .rangint-item .text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #37353F;
+  padding-left: 10px;
+}
+
+.container .question-wrapper .matrix-wrapper {
+  padding-top: 40px;
+}
+
+.container .question-wrapper .matrix-wrapper .matrix-table .first-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.container .question-wrapper .matrix-wrapper .matrix-table .first-row .col {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container .question-wrapper .matrix-wrapper .matrix-table .first-row .col:first-child {
+  overflow: hidden;
+  min-width: 100px;
+}
+
+.container .question-wrapper .matrix-wrapper .matrix-table .first-row .col .value {
+  width: calc(100% - 10px);
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  border: 1px solid #EEEFF3;
+  border-radius: 3px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #37353F;
+  min-height: 28px;
+}
+
+.container .question-wrapper .matrix-wrapper .matrix-table .matrix-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.container .question-wrapper .matrix-wrapper .matrix-table .matrix-row .first-col {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden;
+  min-width: 100px;
+}
+
+.container .question-wrapper .matrix-wrapper .matrix-table .matrix-row .first-col .value {
+  width: calc(100% - 10px);
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  border: 1px solid #EEEFF3;
+  border-radius: 3px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #37353F;
+  min-height: 28px;
+  overflow: hidden;
+}
+
+.container .question-wrapper .matrix-wrapper .matrix-table .matrix-row .col {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden;
+}
+
+.container .question-wrapper .matrix-wrapper .matrix-table .matrix-row .col input {
+  display: none;
+}
+
+.container .question-wrapper .matrix-wrapper .matrix-table .matrix-row .col input + label {
+  width: calc(100% - 10px);
+  background: rgba(255, 164, 0, 0.05);
+  border: 0.5px solid #FFA400;
+  border-radius: 3px;
+  min-height: 28px;
+  display: block;
+  margin: auto;
+}
+
+.container .question-wrapper .matrix-wrapper .matrix-table .matrix-row .col input:checked + label {
+  background: rgba(86, 59, 194, 0.05);
+  border: 0.5px solid #563BC2;
+}
+
+.container .question-wrapper .free-wrapper {
+  padding-top: 40px;
+}
+
+.container .question-wrapper .free-wrapper input {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  border-bottom: 1px solid #000000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #4D4D4D;
+  outline: none;
+}
+
+.container .question-wrapper .free-wrapper input::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .free-wrapper input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .free-wrapper input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .free-wrapper input::-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .free-wrapper input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .date-wrapper {
+  padding-top: 40px;
+}
+
+.container .question-wrapper .date-wrapper .col-date {
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+}
+
+.container .question-wrapper .date-wrapper .col-date .icon-date {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(./../img/calendar.svg);
+  background-position: center;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 10px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.container .question-wrapper .date-wrapper .col-date input {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  border-bottom: 1px solid #000000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #4D4D4D;
+  outline: none;
+}
+
+.container .question-wrapper .date-wrapper .col-date input::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .date-wrapper .col-date input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .date-wrapper .col-date input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .date-wrapper .col-date input::-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .date-wrapper .col-date input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .name-wrapper {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .question-wrapper .name-wrapper .col-name {
+  width: calc(33.3% - 30px);
+}
+
+.container .question-wrapper .name-wrapper .col-name input {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  border-bottom: 1px solid #000000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #4D4D4D;
+  outline: none;
+}
+
+.container .question-wrapper .name-wrapper .col-name input::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .name-wrapper .col-name input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .name-wrapper .col-name input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .name-wrapper .col-name input::-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .name-wrapper .col-name input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .email-wrapper {
+  padding-top: 40px;
+}
+
+.container .question-wrapper .email-wrapper input {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  border-bottom: 1px solid #000000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #4D4D4D;
+  outline: none;
+}
+
+.container .question-wrapper .email-wrapper input::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .email-wrapper input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .email-wrapper input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .email-wrapper input::-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .email-wrapper input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .phone-wrapper {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone {
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone .inputs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone .inputs .intl-tel-input {
+  width: 150px;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone .inputs .intl-tel-input input {
+  width: 120px;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone .inputs .phone {
+  padding-left: 30px;
+  padding-right: 0px;
+  width: calc(100% - 90px);
+}
+
+.container .question-wrapper .phone-wrapper .col-phone .lines {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone .lines .line {
+  height: 1px;
+  background: #A4A2A2;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone .lines .line:nth-child(1) {
+  width: 50px;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone .lines .line:nth-child(2) {
+  width: 50px;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone .lines .line:nth-child(3) {
+  width: calc(100% - 127px);
+}
+
+.container .question-wrapper .phone-wrapper .col-phone input {
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #0F0F0F;
+  outline: none;
+  padding-left: 65px;
+  width: 100%;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone input::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #A4A2A2;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #A4A2A2;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #A4A2A2;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone input::-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #A4A2A2;
+}
+
+.container .question-wrapper .phone-wrapper .col-phone input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #A4A2A2;
+}
+
+.container .question-wrapper .list-wrapper {
+  padding-top: 40px;
+}
+
+.container .question-wrapper .list-wrapper .form-group,
+.container .question-wrapper .list-wrapper .form-group label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #37353F;
+  padding-bottom: 10px;
+}
+
+.container .question-wrapper .list-wrapper input {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  border-bottom: 1px solid #000000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #4D4D4D;
+  outline: none;
+}
+
+.container .question-wrapper .list-wrapper input::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .list-wrapper input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .list-wrapper input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .list-wrapper input::-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
+.container .question-wrapper .list-wrapper input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 33px;
+  color: #C0BCBC;
+}
+
 .container .question-wrapper .radio-wrapper {
   padding-top: 40px;
   display: -webkit-box;
@@ -707,6 +1458,322 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* datepicker css */
+.ui-state-default, .ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button, html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  border: none !important;
+  background-color: #fff !important;
+}
+
+.ui-datepicker {
+  text-align: center;
+}
+
+.ui-datepicker-trigger {
+  margin: 0 0 0 5px;
+  vertical-align: text-top;
+}
+
+.ui-datepicker {
+  font-family: "Montserrat";
+  margin-top: 2px;
+  padding: 0 !important;
+  border-color: #c9f0f5 !important;
+}
+
+.ui-datepicker {
+  width: 256px;
+}
+
+.openemr-calendar .ui-datepicker {
+  width: 191px;
+}
+
+.ui-datepicker table {
+  width: 256px;
+  table-layout: fixed;
+}
+
+.openemr-calendar .ui-datepicker table {
+  width: 191px;
+  table-layout: fixed;
+}
+
+.ui-datepicker-header {
+  background-color: #563BC2 !important;
+  background-image: none !important;
+  border-radius: 0;
+}
+
+.openemr-calendar .ui-datepicker-header {
+  background-color: #e6f7f9 !important;
+  border-width: 1px;
+  border-color: #c9f0f5;
+  border-style: solid;
+}
+
+.ui-datepicker-title {
+  line-height: 35px !important;
+  margin: 0 10px !important;
+}
+
+.openemr-calendar .ui-datepicker-title {
+  line-height: 20px !important;
+}
+
+.ui-datepicker-prev span {
+  display: none !important;
+}
+
+.ui-datepicker-next {
+  text-align: center;
+}
+
+.ui-datepicker-next span {
+  display: none !important;
+}
+
+.ui-datepicker-prev {
+  background-color: transparent !important;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAUklEQVQYlXWPwQnAMAwDj9IBOlpH8CjdJLNksuujFIJjC/w6WUioFBcqJ7sGEAD5Y/hpqLRghRv4YQlUjqXI3Kql2MixraGbEhVcDXcFUR/1egEHNuTBpFW0NgAAAABJRU5ErkJggg==") !important;
+  height: 12px !important;
+  width: 7px !important;
+  margin: 14px 12px;
+  display: inline-block;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+.openemr-calendar .ui-datepicker-prev {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAYAAAD9lDaoAAAAuUlEQVQokXXRsUtCYRAA8J8pDQ1CVIgIgtBU2NDiZIuDS4uLf6WDS1O0tLREEE8icBNKS3lTs8/B78XHw3dwcHA/juOuqjzucYJVrQQMcYctvo4OgEFIeMK6iPphCjzjEWLUC3vACx7yRo5uMUIFr5gii1EL41AvMIkBVPGH04DrSLEsIvjEOZq4wi9+iijDR0ANXOMbmxjlcIY2LtANO6YxymGCDs5wg/ciYv+KBJeY4+2A+Y9j4Y47RtUkrNXeDxUAAAAASUVORK5CYII=") !important;
+  height: 14px !important;
+  width: 9px !important;
+  margin: 5px !important;
+}
+
+.ui-datepicker-next {
+  cursor: pointer;
+}
+
+.ui-datepicker-prev {
+  cursor: pointer;
+}
+
+.ui-datepicker-next {
+  background-color: transparent !important;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAAAVUlEQVQYlXWQ0Q3AIAhEL07gKI7kKN2kI3Wk1w9to3KQEELucQEECOizhhTQGHFnwOdgobWx0GkZILfYBhXl0STVbPoBarbkL7ozN/F8VBBXh8uJgF5r2hrI4GHUkAAAAABJRU5ErkJggg==") !important;
+  height: 12px !important;
+  width: 8px !important;
+  margin: 14px 12px;
+  display: inline-block;
+  right: 0 !important;
+  top: 0 !important;
+}
+
+.openemr-calendar .ui-datepicker-next {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAAtElEQVQYlXXQsUpCcRQH4I97EQyHa1pgIEE0hBGYL+BjNLRFjxXh4rM4F21BS4S4FAgqQioOngt/RM/6+zi/w4EanlA4MDkecYsO3vG/D8a4Rx03eMMqBQt8oodTXAdalwBm+IpNDVxG3aYEMMU3ujjDBT5SAH9R2cE58mwPFOgneJSCGp7RjLoXTEtQjbCFOV7xCxkqdp9sYxnhpFyb4QFXdh8c4Cc9Ko++OwzjFwfn5FiwBVeuI/K2UCkSAAAAAElFTkSuQmCC") !important;
+  height: 14px !important;
+  width: 8px !important;
+  margin: 5px;
+}
+
+.ui-datepicker-month {
+  border-radius: 2px;
+  background-color: #563BC2;
+  width: 110px !important;
+  height: 22px;
+  font-family: "Montserrat";
+  color: #fff;
+  font-size: 14px !important;
+  font-weight: 600;
+  text-align: left;
+  border: none !important;
+  margin-right: 17px !important;
+  vertical-align: text-top;
+}
+
+.openemr-calendar .ui-datepicker-month {
+  font-family: "Montserrat";
+  color: rgba(34, 34, 34, 0.87);
+  font-size: 12px !important;
+  font-weight: 700;
+  text-align: center;
+  -webkit-transform: scaleX(1.0029);
+      -ms-transform: scaleX(1.0029);
+       -o-transform: scaleX(1.0029);
+          transform: scaleX(1.0029);
+}
+
+.ui-datepicker-year {
+  border-radius: 2px;
+  background-color: #563BC2;
+  width: 61px !important;
+  height: 22px;
+  border: none !important;
+  font-family: "Montserrat";
+  color: #fff;
+  font-size: 14px !important;
+  font-weight: 600;
+  text-align: left;
+  vertical-align: text-top;
+}
+
+.openemr-calendar .ui-datepicker-year {
+  font-family: "Montserrat";
+  color: rgba(34, 34, 34, 0.87);
+  font-size: 12px !important;
+  font-weight: 700;
+  text-align: center;
+  -webkit-transform: scaleX(1.0029);
+      -ms-transform: scaleX(1.0029);
+       -o-transform: scaleX(1.0029);
+          transform: scaleX(1.0029);
+}
+
+.ui-datepicker-month option,
+.ui-datepicker-year option {
+  color: #3985a0 !important;
+  background-color: #fff !important;
+  font-family: "Montserrat";
+  font-size: 14px !important;
+  font-weight: 600;
+}
+
+.ui-datepicker-month option[selected],
+.ui-datepicker-year option[selected] {
+  background-color: #e5edf0 !important;
+}
+
+.ui-datepicker .ui-state-hover {
+  /*background: none !important;*/
+  border: 0 !important;
+}
+
+.ui-datepicker td {
+  vertical-align: top;
+}
+
+.ui-datepicker .ui-state-default {
+  border-radius: 2px;
+  border-color: #edebeb !important;
+  /*     background: white !important; */
+  width: 24px;
+  height: 24px;
+  padding: 0 !important;
+  line-height: 24px;
+  text-align: center !important;
+  font-family: "Montserrat";
+  color: #707070;
+  font-size: 13px;
+  font-weight: 400 !important;
+  margin: 7px 0 0 4px;
+}
+
+.ui-datepicker .ui-state-default.ui-state-highlight {
+  border-color: #dcdcdc;
+  background-color: #cff3f8 !important;
+  color: #4A52F7 !important;
+}
+
+.openemr-calendar .ui-state-default {
+  font-size: 10px;
+  margin: 0;
+}
+
+.ui-datepicker td {
+  width: 33px;
+}
+
+.openemr-calendar .ui-datepicker td {
+  width: 26px;
+}
+
+.openemr-calendar .ui-state-default {
+  width: 26px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.ui-state-default.ui-state-hover {
+  border-color: #dcdcdc;
+  background-color: #cff3f8 !important;
+}
+
+.ui-datepicker .ui-state-active {
+  border-color: #dcdcdc;
+  background-color: #cff3f8 !important;
+  color: #4A52F7 !important;
+}
+
+.ui-datepicker-calendar thead tr th {
+  font-family: "Montserrat";
+  color: #4A52F7;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0.45em 0.3em !important;
+  /*   width: 15px !important; */
+}
+
+.openemr-calendar .ui-datepicker-calendar thead tr th {
+  font-size: 10px;
+}
+
+.ui-datepicker-close {
+  display: none;
+}
+
+.ui-datepicker thead {
+  background-color: #f5f5f5;
+}
+
+.openemr-calendar .ui-datepicker thead {
+  background: none;
+}
+
+.ui-state-default.ui-datepicker-current {
+  float: none !important;
+  font-family: "Montserrat";
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  border-width: 0 !important;
+  border: none;
+  vertical-align: top;
+  margin: 0 !important;
+  background-color: transparent !important;
+}
+
+.ui-datepicker-buttonpane.ui-widget-content {
+  text-align: center;
+  background-color: #563BC2;
+  margin: 0 !important;
+  height: 28px;
+  padding: 0 !important;
+}
+
+.openemr-calendar .ui-datepicker-year {
+  background-color: transparent;
+}
+
+.openemr-calendar .ui-datepicker-month {
+  background-color: transparent;
+}
+
+.openemr-calendar .ui-state-default {
+  border: 0 !important;
+}
+
+.openemr-calendar .ui-datepicker-month {
+  margin-right: 10px !important;
+}
+
+.iti__flag {
+  background-image: url("./../img/flags16.png");
 }
 
 @media screen and (min-width: 1500px) {
