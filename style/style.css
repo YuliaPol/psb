@@ -262,6 +262,586 @@ body {
   color: #4D4D4D;
 }
 
+.container .question-wrapper .mediablock {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.container .question-wrapper .mediablock .imageblock {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.container .question-wrapper .mediablock .imageblock .image {
+  max-width: 33%;
+  padding: 7px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 33%;
+  max-height: 600px;
+  position: relative;
+  cursor: pointer;
+}
+
+.container .question-wrapper .mediablock .imageblock .image:hover .remove-picture {
+  opacity: 1;
+}
+
+.container .question-wrapper .mediablock .imageblock .image .remove-picture {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: url("./../img/close-grey.svg");
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+.container .question-wrapper .mediablock .imageblock .image .bottom-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .question-wrapper .mediablock .imageblock .image img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.container .question-wrapper .mediablock .videoblock {
+  width: 100%;
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.container .question-wrapper .mediablock .videoblock:hover .remove-video {
+  opacity: 1;
+}
+
+.container .question-wrapper .mediablock .videoblock .remove-video {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: url("./../img/close-grey.svg");
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+  z-index: 1000;
+}
+
+.container .question-wrapper .mediablock .videoblock video {
+  width: 100%;
+  height: auto;
+}
+
+.container .question-wrapper .mediablock .videoblock .play {
+  background: url(./../img/play.svg);
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  -o-transition: -o-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in, -o-transform 0.3s ease-in;
+}
+
+.container .question-wrapper .mediablock .videoblock .play:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container .question-wrapper .mediablock .audioblock {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 270px;
+  border-radius: 30px;
+  -webkit-box-shadow: inset 0px 0px 10px 2px rgba(144, 141, 150, 0.1);
+          box-shadow: inset 0px 0px 10px 2px rgba(144, 141, 150, 0.1);
+  position: relative;
+}
+
+.container .question-wrapper .mediablock .audioblock:hover .remove-audio {
+  opacity: 1;
+}
+
+.container .question-wrapper .mediablock .audioblock .remove-audio {
+  position: absolute;
+  top: 19px;
+  right: -30px;
+  width: 15px;
+  height: 15px;
+  background: url("./../img/close-grey.svg");
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+  z-index: 1000;
+}
+
+.container .question-wrapper .mediablock .audioblock .playaudio {
+  width: 53px;
+  height: 53px;
+  background-image: url(./../img/play.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.container .question-wrapper .mediablock .audioblock .playaudio:hover {
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(34, 13, 87, 0.3);
+          box-shadow: 0px 0px 2px 2px rgba(34, 13, 87, 0.3);
+}
+
+.container .question-wrapper .mediablock .audioblock .audio {
+  width: calc(100% - 53px);
+  background: transparent !important;
+}
+
+.container .question-wrapper .mediablock .textblock {
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  padding: 25px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #5722DE;
+  width: 100%;
+}
+
+.container .question-wrapper .mediablock .bottom-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .question-wrapper .mediablock .addmorepictures,
+.container .question-wrapper .mediablock .removeallpictures {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #37353F;
+  cursor: pointer;
+}
+
+.container .question-wrapper .mediablock .inputsimage {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.container .question-wrapper .mediablock .inputsimage .inputgroup {
+  width: 150px;
+  padding: 7px;
+}
+
+.container .question-wrapper .mediablock .inputsimage .inputgroup input[type=radio] {
+  display: none;
+}
+
+.container .question-wrapper .mediablock .inputsimage .inputgroup input[type=radio] + label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.container .question-wrapper .mediablock .inputsimage .inputgroup input[type=radio] + label::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border: 1px solid #C4C4C4;
+  margin-right: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.container .question-wrapper .mediablock .inputsimage .inputgroup input[type=radio]:checked + label::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border: 1px solid #563BC2;
+  margin-right: 10px;
+  background: #563BC2;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.container .question-wrapper .mediablock .inputsimage .inputgroup label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #37353F;
+  cursor: pointer;
+}
+
+.container .question-wrapper .dropdown-wrapper {
+  padding-top: 40px;
+}
+
+.container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block {
+  padding: 8px 10px;
+  position: relative;
+  background: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block.active .dropdown-arrow {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block .dropdown-arrow {
+  position: absolute;
+  background-image: url(./../img/arrow-dropdown.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  width: 25px;
+  height: 10px;
+  right: 14px;
+  top: 11px;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  -o-transition: -o-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in, -o-transform 0.3s ease-in;
+}
+
+.container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block .question-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #37353F;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+.container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block .dropdown-content {
+  display: none;
+  padding-left: 15px;
+}
+
+.container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block .dropdown-content .input-group {
+  padding-bottom: 6px;
+}
+
+.container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block .dropdown-content .input-group input[type=checkbox],
+.container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block .dropdown-content .input-group input[type=radio] {
+  display: none;
+}
+
+.container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block .dropdown-content .input-group input[type=checkbox]:checked + label::before,
+.container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block .dropdown-content .input-group input[type=radio]:checked + label::before {
+  background: #563BC2;
+}
+
+.container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block .dropdown-content .input-group input[type=checkbox] + label::before,
+.container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block .dropdown-content .input-group input[type=radio] + label::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 0.5px solid #563BC2;
+  border-radius: 50%;
+  margin-right: 5px;
+  -webkit-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+  cursor: pointer;
+}
+
+.container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block .dropdown-content .input-group label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #37353F;
+  cursor: pointer;
+}
+
+.container .question-wrapper .btn-wrapper {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.container .question-wrapper .btn-wrapper .btn {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.container .question-wrapper .single-wrapper {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.container .question-wrapper .single-wrapper > div {
+  width: 50%;
+}
+
+.container .question-wrapper .single-wrapper label {
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.container .question-wrapper .branching-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+.container .question-wrapper .branching-wrapper > div {
+  width: 50%;
+}
+
+.container .question-wrapper .branching-wrapper label {
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.container .question-wrapper .hidden-question-group {
+  display: none;
+}
+
+.container .question-wrapper .hidden-question {
+  padding: 10px;
+  padding-top: 30px;
+}
+
+.container .question-wrapper .hidden-question .name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.container .question-wrapper .hidden-question .hidden-question-answer input {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #A4A2A2;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  outline: none;
+  background: transparent;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #37353F;
+}
+
+.container .question-wrapper .hidden-question .hidden-question-answer input::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #A4A2A2;
+}
+
+.container .question-wrapper .hidden-question .hidden-question-answer input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #A4A2A2;
+}
+
+.container .question-wrapper .hidden-question .hidden-question-answer input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #A4A2A2;
+}
+
+.container .question-wrapper .hidden-question .hidden-question-answer input::-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #A4A2A2;
+}
+
+.container .question-wrapper .hidden-question .hidden-question-answer input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #A4A2A2;
+}
+
 .container .question-wrapper .ranging-wrapper {
   padding-top: 40px;
 }
@@ -483,6 +1063,7 @@ body {
   min-height: 28px;
   display: block;
   margin: auto;
+  cursor: pointer;
 }
 
 .container .question-wrapper .matrix-wrapper .matrix-table .matrix-row .col input:checked + label {
@@ -1057,6 +1638,7 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  cursor: pointer;
 }
 
 .container .question-wrapper .radio-wrapper .radio-cont label .number {
@@ -1107,6 +1689,7 @@ body {
 .container .question-wrapper .radio-wrapper .radio-cont:nth-child(1) label .number {
   border-color: #BA1417;
   color: #BA1417;
+  cursor: pointer;
 }
 
 .container .question-wrapper .radio-wrapper .radio-cont:nth-child(2) input[type=radio]:checked + label .number {
