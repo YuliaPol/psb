@@ -306,6 +306,10 @@ body {
   opacity: 1;
 }
 
+.container .question-wrapper .mediablock .imageblock .image.active img {
+  border-color: #4A52F7;
+}
+
 .container .question-wrapper .mediablock .imageblock .image .remove-picture {
   position: absolute;
   top: 10px;
@@ -342,12 +346,34 @@ body {
 .container .question-wrapper .mediablock .imageblock .image img {
   max-width: 100%;
   width: 100%;
+  -webkit-transition: border 0.3s ease-in;
+  -o-transition: border 0.3s ease-in;
+  transition: border 0.3s ease-in;
+  border: 2px solid transparent;
+}
+
+.container .question-wrapper .mediablock .videosblock {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .container .question-wrapper .mediablock .videoblock {
   width: 100%;
   position: relative;
-  max-width: 900px;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -2054,6 +2080,7 @@ html .ui-button.ui-state-disabled:active {
 
 .ui-datepicker {
   text-align: center;
+  z-index: 1000 !important;
 }
 
 .ui-datepicker-trigger {

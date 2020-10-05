@@ -254,6 +254,9 @@ body {
                             opacity: 1;
                         }
                     }
+                    &.active img {
+                        border-color: $blue;
+                    }
                     .remove-picture {
                         position: absolute;
                         top: 10px;
@@ -276,13 +279,21 @@ body {
                     img {
                         max-width: 100%;
                         width: 100%;
+                        transition: border 0.3s ease-in;
+                        border: 2px solid transparent;
                     }
                 }
+            }
+            .videosblock {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
             }
             .videoblock {
                 width: 100%;
                 position: relative;
-                max-width: 900px;
+                max-width: 600px;
                 margin: auto;
                 &:hover {
                     .remove-video {
@@ -1332,6 +1343,7 @@ html .ui-button.ui-state-disabled:active {
 }
 .ui-datepicker {
     text-align: center;
+    z-index: 1000 !important;
 }
 
 .ui-datepicker-trigger {
