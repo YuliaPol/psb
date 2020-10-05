@@ -171,6 +171,62 @@ jQuery(function ($) {
             $(this).parents('.date-wrapper').find('input').datepicker('show');
         });
 
+
+
+        //color set 
+        if($('.fontpage').val()){
+            //font
+            $('body').addClass('font' + $('.fontpage').val());
+        }
+        if($('.positionpage').val()){
+            //position
+            $('.container').addClass('align' + $('.positionpage').val());
+        }
+        if($('.color1').val()){
+            //color 1 level
+            $('.container .question-wrapper .question').css('color', $('.color1').val());
+            $('.container .question-wrapper .question-name').css('color', $('.color1').val());
+        }
+
+        if($('.color2').val()){
+            //color 2 level
+            $('.container .question-wrapper label').css('color', $('.color2').val());
+            $('.container .question-wrapper p').css('color', $('.color2').val());
+            $('.container .question-wrapper .description').css('color', $('.color2').val());
+            $('.container .question-wrapper .text').css('color', $('.color2').val());
+            $('.container .question-wrapper .matrix-table .value').css('color', $('.color2').val());
+        }
+
+        if($('.pickcolor').val()){
+
+            //color pick
+            var style =  
+            '<style title="colorpickselectstyle">'
+            +'    .container input[type=checkbox]:checked + label::before,'
+            +'    .container input[type=radio]:checked + label::before {'
+            +'    background: ' + $('.pickcolor').val() + ';'
+            +'    }'
+            +'    .container input[type=checkbox] + label::before,'
+            +'    .container input[type=radio] + label::before {'
+            +'    border-color: ' + $('.pickcolor').val() + ';'
+            +'    }'
+            '</style>';
+            $('head').append(style);
+        }
+
+        if($('.pickcolor').val()){
+            //color input
+            $('.container .question-wrapper input[type=text]').css('color', $('.pickcolor').val());
+            $('.container .question-wrapper input[type=email]').css('color', $('.pickcolor').val());
+            $('.container .question-wrapper input[type=tel]').css('color', $('.pickcolor').val());
+            $('.container .question-wrapper textarea').css('color', $('.pickcolor').val());
+        }
+
+        if($('.background').val()){
+            $('.container').css('background', $('.background').val());
+        }
+
+
         //validation
         var formValid = document.getElementsByClassName('form-valid')[0];
         $('.valid-form-send').click(function () {
