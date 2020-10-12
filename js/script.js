@@ -69,6 +69,32 @@ jQuery(function ($) {
             }
         });
 
+        
+        //branching hidden question show
+        $('.container').on('change', '.scalebranching input[type=radio]', function(e){
+            var idvalue = parseInt($(this).val());
+            $(this).parents('.scalebranching').find('.hidden-answer .answerscale').fadeOut(0);
+            if($(this).is(':checked')){
+                var Answers = $(this).parents('.scalebranching').find('.hidden-answer').children();
+                Answers.each(function (index, answer) {
+                    var ranges = $(answer).attr('data-range').split("-");
+                    if (ranges.length>1){
+                        var min = ranges[0];
+                        var max = ranges[1];
+                        if(idvalue >= min && idvalue <= max) {
+                            $(answer).fadeIn(300);
+                        }
+                    }
+                    else {
+                        if(idvalue == ranges[0]) {
+                            $(answer).fadeIn(300);
+                        }
+                    }
+                });
+            }
+        });
+        
+
         //dropdown show\hide
         $('.container').on('click', '.dropdown-list .question-name', function(e){
             if($(this).parents('.dropdown-block').hasClass('active')){

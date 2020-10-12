@@ -797,7 +797,16 @@ body {
                     min-width: 33%;
                     max-height: 600px;
                     position: relative;
+                    width: 33%;
+                    min-width: 33%;
+                    max-width: 33%;
+                    height: 300px;
                     cursor: pointer;
+                    img {
+                        height: calc(100% - 90px);
+                        object-fit: cover;
+                        max-width: 100%;
+                    }
                     &:hover {
                         .remove-picture {
                             opacity: 1;
@@ -1141,6 +1150,7 @@ body {
                     font-size: 22px;
                     line-height: 33px;
                     color: $fontcolor;
+                    background: transparent;
                     &::placeholder {
                         font-family: $fontpage;
                         font-style: normal;
@@ -1314,6 +1324,7 @@ body {
                 line-height: 33px;
                 color: #4D4D4D;
                 outline: none;
+                background: transparent;
                 &::placeholder {
                     font-family: $fontpage;
                     font-style: normal;
@@ -1358,6 +1369,7 @@ body {
                     line-height: 18px;
                     color: #4D4D4D;
                     outline: none;
+                    background: transparent;
                     &::placeholder {
                         font-family: $fontpage;
                         font-style: normal;
@@ -1392,6 +1404,7 @@ body {
                     line-height: 33px;
                     color: #4D4D4D;
                     outline: none;
+                    background: transparent;
                     &::placeholder {
                         font-family: $fontpage;
                         font-style: normal;
@@ -1486,6 +1499,8 @@ body {
                     outline: none;
                     padding-left: 65px;
                     width: 100%;
+
+                    background: transparent;
                     &::placeholder {
                         font-family: $fontpage;
                         font-style: normal;
@@ -1525,6 +1540,7 @@ body {
                 line-height: 33px;
                 color: #4D4D4D;
                 outline: none;
+                background: transparent;
                 &::placeholder {
                     font-family: $fontpage;
                     font-style: normal;
@@ -1689,6 +1705,7 @@ body {
                     line-height: 33px;
                     color: #4D4D4D;
                     outline: none;
+                    background: transparent;
                     &::placeholder {
                         font-family: $fontpage;
                         font-style: normal;

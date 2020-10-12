@@ -1774,7 +1774,18 @@ body.fontUbuntu button {
   min-width: 33%;
   max-height: 600px;
   position: relative;
+  width: 33%;
+  min-width: 33%;
+  max-width: 33%;
+  height: 300px;
   cursor: pointer;
+}
+
+.container .question-wrapper .mediablock .imageblock .image img {
+  height: calc(100% - 90px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
 }
 
 .container .question-wrapper .mediablock .imageblock .image:hover .remove-picture {
@@ -2270,6 +2281,7 @@ body.fontUbuntu button {
   font-size: 22px;
   line-height: 33px;
   color: #37353F;
+  background: transparent;
 }
 
 .container .question-wrapper .hidden-question .hidden-question-answer input::-webkit-input-placeholder {
@@ -2570,6 +2582,7 @@ body.fontUbuntu button {
   line-height: 33px;
   color: #4D4D4D;
   outline: none;
+  background: transparent;
 }
 
 .container .question-wrapper .free-wrapper input::-webkit-input-placeholder {
@@ -2657,6 +2670,7 @@ body.fontUbuntu button {
   line-height: 18px;
   color: #4D4D4D;
   outline: none;
+  background: transparent;
 }
 
 .container .question-wrapper .date-wrapper .col-date input::-webkit-input-placeholder {
@@ -2740,6 +2754,7 @@ body.fontUbuntu button {
   line-height: 33px;
   color: #4D4D4D;
   outline: none;
+  background: transparent;
 }
 
 .container .question-wrapper .name-wrapper .col-name input::-webkit-input-placeholder {
@@ -2948,6 +2963,7 @@ body.fontUbuntu button {
   outline: none;
   padding-left: 65px;
   width: 100%;
+  background: transparent;
 }
 
 .container .question-wrapper .phone-wrapper .col-phone input::-webkit-input-placeholder {
@@ -3026,6 +3042,7 @@ body.fontUbuntu button {
   line-height: 33px;
   color: #4D4D4D;
   outline: none;
+  background: transparent;
 }
 
 .container .question-wrapper .list-wrapper input::-webkit-input-placeholder {
@@ -3266,6 +3283,7 @@ body.fontUbuntu button {
   line-height: 33px;
   color: #4D4D4D;
   outline: none;
+  background: transparent;
 }
 
 .container .question-wrapper .hidden-answer .detail input::-webkit-input-placeholder {
