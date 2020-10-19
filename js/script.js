@@ -74,6 +74,7 @@ jQuery(function ($) {
         $('.container').on('change', '.scalebranching input[type=radio]', function(e){
             var idvalue = parseInt($(this).val());
             $(this).parents('.scalebranching').find('.hidden-answer .answerscale').fadeOut(0);
+            $(this).parents('.scalebranching').find('.hidden-answer .answerscale input[type=text]').val('');
             if($(this).is(':checked')){
                 var Answers = $(this).parents('.scalebranching').find('.hidden-answer').children();
                 Answers.each(function (index, answer) {
