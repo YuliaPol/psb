@@ -494,6 +494,30 @@ body {
             line-height: 33px;
             color: #4D4D4D;
         }
+        .scaleanswer {
+            display: inline-table;
+        }
+        .scaleanswer10 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .scalelabels {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+            padding-top: 10px;
+            > div {
+                max-width: 105px;
+            }
+        }
         .wrapper-ratings10 {
             display: flex;
             padding-top: 40px;
@@ -501,6 +525,7 @@ body {
             max-width: 1000px;
             margin: auto;
             padding-left: 0px;
+            width: 100%;
             input[type='radio'] {
               opacity: 0;
               display: none;
@@ -1460,7 +1485,7 @@ body {
                     .intl-tel-input {
                         width: 150px;
                         input {
-                            width: 120px;
+                            width: 130px;
                         }
                     }
                     .phone {
@@ -1732,7 +1757,7 @@ body {
             background: #FF4E00;
             border-radius: 5px;
             outline: none;
-            border: none;
+            border: 0px solid #ffffff;
         }
     }
     &.container-contact {
@@ -1835,7 +1860,118 @@ body {
         z-index: 5;
     }
 }
+.customselect-wrapper {
+    $background: #FEFDFD;
+    $select-background: #FEFDFD;
+    .checked {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 0.5px solid #C4C4C4;
+        border-radius: 50%;
+        margin-right: 5px;
+        transition: background 0.3s ease-in;
+        cursor: pointer;
+        &.active {
+            background: #C4C4C4;
+        }
+    }
+    .text {
+        display: inline-block;
+    }
+    .select-hidden {
+        display: none;
+        visibility: hidden;
+        padding-right: 10px;
+    }
+    .select {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+    }
+    .select-styled {
+        transition: all 0.2s ease-in;
+        font-family: $fontpage;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+        padding: 8px;
+        border: 1px solid #EEEFF3;
+        width: 100%;
+        transition: all 0.3s ease-in;
+        padding-right: 20px;
+        &:after {
+            content:"";
+            position: absolute;
+            width: 12px;
+            height: 7px;
+            right: 10px;
+            top: calc(50% - 2.5px);
+            display: block;
+            background: url(./../img/arrow-dropdown.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: all 0.3s ease-in;
+        }
+        &:hover {
+            border-color: $voilet;
+            &:after {
+                background: url(./../img/arrow-dropdown-a.svg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        &:active,
+        &.active {
+            border-color: $voilet;
+            &:after {
+                background: url(./../img/arrow-dropdown-a.svg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transform: rotate(180deg);
+            }
+        }
+    }
 
+    .select-options {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background: transparent;
+        border-right: 1px solid #EEEFF3;
+        border-left: 1px solid #EEEFF3;
+        li {
+            margin: 0;
+            transition: all 0.2s ease-in;
+            font-family: $fontpage;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: #000000;
+            padding: 8px;
+            border-bottom: 1px solid #EEEFF3;
+            &:hover {
+                border-color: $voilet;
+            }
+            &[rel="hide"] {
+            display: none;
+            }
+        }
+    }
+}
 
 /* The Modal (background) */
 .modal {
