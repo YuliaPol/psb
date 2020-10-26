@@ -1500,6 +1500,9 @@ body {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    .code {
+                        pointer-events: none;
+                    }
                     .intl-tel-input {
                         width: 150px;
                         input {

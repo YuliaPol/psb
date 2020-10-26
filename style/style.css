@@ -2974,6 +2974,10 @@ body.fontUbuntu button {
           justify-content: space-between;
 }
 
+.container .question-wrapper .phone-wrapper .col-phone .inputs .code {
+  pointer-events: none;
+}
+
 .container .question-wrapper .phone-wrapper .col-phone .inputs .intl-tel-input {
   width: 150px;
 }
