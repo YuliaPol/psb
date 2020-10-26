@@ -426,6 +426,23 @@ body {
 }
 .container {
     padding: 20px 60px;
+    &.bg-image {
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 200px;
+        .question-wrapper {
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid #AEAEAE;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+            margin-bottom: 20px;
+        }
+    }
     &.alignleft {
         text-align: left;
         .mediablock {
@@ -1459,6 +1476,7 @@ body {
                 line-height: 33px;
                 color: #4D4D4D;
                 outline: none;
+                background: transparent;
                 &::placeholder {
                     font-family: $fontpage;
                     font-style: normal;
@@ -1895,8 +1913,8 @@ body {
         font-family: $fontpage;
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 16px;
+        line-height: 18px;
         color: #000000;
         padding: 8px;
         border: 1px solid #EEEFF3;
@@ -1949,7 +1967,7 @@ body {
         margin: 0;
         padding: 0;
         list-style: none;
-        background: transparent;
+        background: #ffffff;
         border-right: 1px solid #EEEFF3;
         border-left: 1px solid #EEEFF3;
         li {
@@ -2389,6 +2407,13 @@ html .ui-button.ui-state-disabled:active {
     }
 }
 @media screen and (max-width: 768px) {
+    .container .question-wrapper .mediablock .imageblock .image {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .container.bg-image {
+        padding: 15px;
+    }
     .header {
         padding-top: 20px;
     }
@@ -2451,6 +2476,9 @@ html .ui-button.ui-state-disabled:active {
     }
 }
 @media screen and (max-width: 600px) {
+    .container .question-wrapper .single-wrapper > div {
+        width: 100%;
+    }
     .container .question-wrapper .wrapper-ratings10 label .digit {
         width: 30px;
         height: 30px;

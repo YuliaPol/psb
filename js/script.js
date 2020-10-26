@@ -377,6 +377,7 @@ jQuery(function ($) {
             $('.container .question-wrapper .description').css('color', $('.color2').val());
             $('.container .question-wrapper .text').css('color', $('.color2').val());
             $('.container .question-wrapper .matrix-table .value').css('color', $('.color2').val());
+            $('.customselect-wrapper .select-styled').css('color', $('.color2').val());
         }
 
         if($('.pickcolor').val()){
@@ -403,8 +404,14 @@ jQuery(function ($) {
             $('.container .question-wrapper input[type=tel]').css('color', $('.pickcolor').val());
             $('.container .question-wrapper textarea').css('color', $('.pickcolor').val());
         }
-
-        if($('.background').val()){
+        if($('.backgroundquestion').val()){
+            $('.container').addClass('bg-image');
+            var value = $('.backgroundquestion').val();
+            var opacity = $('.opacityquestion').val();
+            var rgbaCol = 'rgba(' + parseInt(value.slice(-6, -4), 16) + ',' + parseInt(value.slice(-4, -2), 16) + ',' + parseInt(value.slice(-2), 16) + ',' + opacity + ')';
+            $('.container .question-wrapper').css('background', rgbaCol);
+        }
+        else if($('.background').val()){
             $('.container').css('background', $('.background').val());
         }
 

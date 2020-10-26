@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оцените эффективность </title>
+    <link rel="stylesheet" href="./style/jquery-ui.css">
+    <link rel="stylesheet" href="./style/intlTelInput.css">
+    <link rel="stylesheet" href="./style/datepicker.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./img/logo.svg" alt="ПСБ">
+        </div>
+        <div class="header-content">
+            <div class="text-col">
+                <h2>
+                    Оцените эффективность
+                </h2>
+                <p>рекламных и информационных изображений, 
+                    баннеров, листовок, плакатов.</p>
+            </div>
+            <div class="pic-col">
+                <img src="./img/hedaer-pic.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container" style="background-image: url(./../img/design-bg.png);">
+        <div class="form-wrapper">
+            <form action="./contact.html" class="form-valid">
+                <input type="hidden" name="fontpage" class="fontpage"  value="Tahoma">
+                <input type="hidden" name="positionpage" class="positionpage" value="left">
+                <input type="hidden" name="color1" class="color1" value="#223344">
+                <input type="hidden" name="color2" class="color2" value="#556677">
+                <input type="hidden" name="pickcolor" class="pickcolor" value="#ff0000">
+                <input type="hidden" name="inputcolor" class="inputcolor" value="#00ff00">
+                <input type="hidden" name="background" class="background" value="#ffffff">
+                <input type="hidden" name="backgroundquestion" class="backgroundquestion" value="#ffffff">
+                <input type="hidden" name="opacityquestion" class="opacityquestion" value="0.5">
+                <div class="question-wrapper">
+                    <div class="mediablock">
+                        <div class="videoblock">
+                            <input class="videoviewed" type="hidden" name="videoviewed_180" value="0">
+                            <video width="100%">
+                                <source src="./img/video.mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                            <div class="play"></div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        1.Насколько этот рекламный материал привлекает Ваше внимание?
+                    </div>
+                    <div class="radio-wrapper">
+                        <div class="radio-cont">
+                            <input type="radio" name="q-1" id="q-1-1" value="1">
+                            <label for="q-1-1">
+                                <div class="number">1</div>
+                                <div class="text">
+                                    Совершенно НЕ привлекает
+                                </div>
+                            </label>
+                        </div>
+                        <div class="radio-cont">
+                            <input type="radio" name="q-1" id="q-1-2" value="2">
+                            <label for="q-1-2">
+                                <div class="number">2</div>
+                                <div class="text">
+                                    Скорее НЕ привлекает
+                                </div>
+                            </label>
+                        </div>
+                        <div class="radio-cont">
+                            <input type="radio" name="q-1" id="q-1-3" value="3">
+                            <label for="q-1-3">
+                                <div class="number">3</div>
+                                <div class="text">
+                                    Не могу определиться, привлекает или нет
+                                </div>
+                            </label>
+                        </div>
+                        <div class="radio-cont">
+                            <input type="radio" name="q-1" id="q-1-4" value="4">
+                            <label for="q-1-4">
+                                <div class="number">4</div>
+                                <div class="text">
+                                    Скорее привлекает
+                                </div>
+                            </label>
+                        </div>
+                        <div class="radio-cont">
+                            <input type="radio" name="q-1" id="q-1-5" value="5">
+                            <label for="q-1-5">
+                                <div class="number">5</div>
+                                <div class="text">
+                                    Очень привлекает
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrapper">
+                    <div class="mediablock">
+                        <!-- audio -->
+                        <div class="audioblock">
+                            <div class="playaudio"></div>
+                            <input type="hidden" class="audioheard" name="audioheard_180">
+                            <div class="audio audiowave" data-audiopath="./img/audio.mp3"> </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        2. Насколько понятна эта реклама? 
+                    </div>
+                    <div class="free-wrapper">
+                        <div class="form-group" id="q-2">
+                            <input type="text" name="q-2" id="q-2" placeholder="Ваш ответ" data-reqired="reqired">
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrapper">
+                    <div class="mediablock">
+                        <div class="textblock">
+                            Еще на заре торговли продавцы зазывали покупателей в свои лавки выкриками. От латинского глагола reclamare («выкрикивать») родилось знакомое нам слово — реклама. Сейчас она окружает нас повсюду: в печатных изданиях, по телевидению, в интернете, на радио, на улицах.
+                        </div>
+                    </div>
+                    <div class="question">
+                        2. Насколько понятна эта реклама? 
+                    </div>
+                    <div class="list-wrapper">
+                        <div class="form-group" id="q-2">
+                            <input type="text" name="q-2" id="q-2" placeholder="Ваш ответ" data-reqired="reqired">
+                        </div>
+                        <div class="form-group" id="q-2">
+                            <input type="text" name="q-2" id="q-2" placeholder="Ваш ответ" data-reqired="reqired">
+                        </div>
+                        <div class="form-group" id="q-2">
+                            <input type="text" name="q-2" id="q-2" placeholder="Ваш ответ" data-reqired="reqired">
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrapper">
+                    <div class="mediablock">
+                        <div class="imageblock">
+                            <div class="image" style="width: 33%">
+                                <input class="imageclick" type="hidden" name="image_click_180" value="0">
+                                <img src="./img/picture.png" alt="Picture">
+                            </div>
+                            <div class="image"  style="width: 33%">
+                                <input class="imageclick" type="hidden" name="image_click_181" value="0">
+                                <img src="./img/picture.png" alt="Picture">
+                            </div>
+                            <div class="image"  style="width: 33%">
+                                <input class="imageclick" type="hidden" name="image_click_182" value="0">
+                                <img src="./img/picture.png" alt="Picture">
+                            </div>
+                            <div class="image"  style="width: 33%">
+                                <input class="imageclick" type="hidden" name="image_click_183" value="0">
+                                <img src="./img/picture.png" alt="Picture">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        3. Дата? 
+                    </div>
+                    <div class="date-wrapper">
+                        <div class="col-date">
+                            <input type="text" name="q-3" id="q-3" placeholder="01.01.2020" data-reqired="reqired">
+                            <div class="icon-date"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrapper">
+                    <div class="mediablock">
+                        <!-- audio -->
+                        <div class="audioblock">
+                            <input type="hidden" class="audioheard" name="audioheard_180">
+                            <div class="playaudio"></div>
+                            <div class="audio audiowave" data-audiopath="./img/audio-2.mp3"> </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        4. Введите Ваше имя? 
+                    </div>
+                    <div class="name-wrapper">
+                        <div class="col-name">
+                            <input type="text" name="q-4-1" id="q-4-1" placeholder="Имя" data-reqired="reqired">
+                        </div>
+                        <div class="col-name">
+                            <input type="text" name="q-4-2" id="q-4-2" placeholder="Отчество">
+                        </div>
+                        <div class="col-name">
+                            <input type="text" name="q-4-3" id="q-4-3"  placeholder="Фамилия">
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrapper">
+                    <div class="question">
+                        5. Email? 
+                    </div>
+                    <div class="email-wrapper">
+                        <div class="col-email">
+                            <input type="email" name="q-5" id="q-5" placeholder="E-mail" data-reqired="reqired">
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrapper">
+                    <div class="question">
+                        6. Матрица? 
+                    </div>
+                    <div class="matrix-wrapper">
+                        <div class="matrix-table">
+                            <div class="first-row">
+                                <div class="empty col"></div>
+                                <div class="col">
+                                    <div class="value">1</div>
+                                </div>
+                                <div class="col">
+                                    <div class="value">2</div>
+                                </div>
+                                <div class="col">
+                                    <div class="value">3</div>
+                                </div>
+                            </div>
+                            <div class="matrix-row">
+                                <div class="col first-col">
+                                    <div class="value">Отрицательно</div>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" name="q-6-1" id="q-6-1-1" value="1">
+                                    <label for="q-6-1-1">
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" name="q-6-1" id="q-6-1-2" value="2">
+                                    <label for="q-6-1-2">
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" name="q-6-1" id="q-6-1-3" value="3">
+                                    <label for="q-6-1-3">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="matrix-row">
+                                <div class="col first-col">
+                                    <div class="value">Ровно</div>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" name="q-6-2" id="q-6-2-1" value="1">
+                                    <label for="q-6-2-1">
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" name="q-6-2" id="q-6-2-2" value="2">
+                                    <label for="q-6-2-2">
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" name="q-6-2" id="q-6-2-3" value="3">
+                                    <label for="q-6-2-3">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="matrix-row">
+                                <div class="col first-col">
+                                    <div class="value">Положительно</div>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" name="q-6-3" id="q-6-3-1" value="1">
+                                    <label for="q-6-3-1">
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" name="q-6-3" id="q-6-3-2" value="2">
+                                    <label for="q-6-3-2">
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" name="q-6-3" id="q-6-3-3" value="3">
+                                    <label for="q-6-3-3">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrapper">
+                    <div class="question">
+                        7. Ранжирование? 
+                    </div>
+                    <div class="ranging-wrapper">
+                        <div class="ranging-list">
+                            <div class="rangint-item">
+                                <input type="hidden" name="q-7-1" value="Отрицательно">
+                                <div class="arrows">
+                                    <div class="item-up"></div>
+                                    <div class="item-down"></div>
+                                </div>
+                                <div class="text">
+                                    Отрицательно
+                                </div>
+                            </div>
+                            <div class="rangint-item">
+                                <input type="hidden" name="q-7-2" value="Ровно">
+                                <div class="arrows">
+                                    <div class="item-up"></div>
+                                    <div class="item-down"></div>
+                                </div>
+                                <div class="text">
+                                    Ровно
+                                </div>
+                            </div>
+                            <div class="rangint-item">
+                                <input type="hidden" name="q-7-3" value="Положительно">
+                                <div class="arrows">
+                                    <div class="item-up"></div>
+                                    <div class="item-down"></div>
+                                </div>
+                                <div class="text">
+                                    Положительно
+                                </div>
+                            </div>
+                            <div class="rangint-item">
+                                <input type="hidden" name="q-7-4" value="Отлично!">
+                                <div class="arrows">
+                                    <div class="item-up"></div>
+                                    <div class="item-down"></div>
+                                </div>
+                                <div class="text">
+                                    Отлично!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrapper">
+                    <div class="question">
+                        8. Телефон? 
+                    </div>
+                    <div class="phone-wrapper">
+                        <div class="col-phone">
+                            <div class="inputs">
+                                <input class="code" type="text" name="q-8-1" id="q-8-1" value="ua">
+                                <input class="phone" type="tel" name="q-8-2" id="q-8-2" maxlength="11">
+                            </div>
+                            <div class="lines">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrapper">
+                    <div class="question">
+                        9. Насколько понятна эта реклама? 
+                    </div>
+                    <div class="dropdown-wrapper">
+                        <div class="dropdownanswer">
+                            <div class="selectdropdown">
+                                <select name="questionanswersdrp_6" class="customselect">
+                                    <option value="Как Вы оцените работу нашего банка?" selected>Как Вы оцените работу нашего банка?</option>
+                                    <option value="Какие специальные предложения от застройщиков Вас заинтересовали?">Какие специальные предложения от застройщиков Вас заинтересовали?</option>
+                                    <option value="Как Вы оцените работу нашего банка?">Как Вы оцените работу нашего банка?</option>
+                                </select> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrapper">
+                    <div class="question">
+                        2. Насколько понятна эта реклама? 
+                    </div>
+                    <div class="dropdown-wrapper">
+                        <div class="dropdown-list">
+                            <div class="dropdown-block">
+                                <div class="dropdown-arrow"></div>
+                                <div class="question-name">
+                                    Как Вы оцените работу нашего банка?
+                                </div>
+                                <div class="dropdown-content">
+                                </div>
+                            </div>
+                            <div class="dropdown-block">
+                                <div class="dropdown-arrow"></div>
+                                <div class="question-name">
+                                    Какие специальные предложения от застройщиков Вас заинтересовали?
+                                </div>
+                                <div class="dropdown-content">
+                                    <div class="input-group">
+                                        <input type="radio" name="q-9-2"
+                                            id="q-9-2-1" value="ЖК RED7">
+                                        <label for="q-9-2-1">ЖК RED7</label>
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="radio" name="q-9-2"
+                                            id="q-9-2-2" value="ЖК MainStreet">
+                                        <label for="q-9-2-2">ЖК MainStreet</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrapper">
+                    <div class="btn-wrapper" style="text-align: center;">
+                        <button class="btn" type="submit"
+                            style="
+                            background: #F26126;
+                            width: 131px;
+                            height: 36px;
+                            border-radius: 30px;">
+                            Отправить
+                        </button>
+                    </div>
+                </div>
+                <div class="question-wrapper">
+                    <div class="question">
+                        10. Насколько понятна эта реклама? 
+                    </div>
+                    <div class="single-wrapper">
+                        <div class="form-group">
+                            <input type="radio" name="q-10" id="q-10-1">
+                            <label for="q-10-1">Потребительские
+                                кредиты</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="q-10" id="q-10-2">
+                            <label for="q-10-2">Рефинансирование</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="q-10" id="q-10-3">
+                            <label for="q-10-3">Экспресс кредит</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="q-10" id="q-10-4">
+                            <label for="q-10-4">Ипотека</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrapper">
+                    <div class="question">
+                        11. Насколько понятна эта реклама? 
+                    </div>
+                    <div class="branching-wrapper">
+                        <div class="form-group" >
+                            <input type="radio" name="q-11" id="q-11-1">
+                            <label for="q-11-1">Потребительские
+                                кредиты</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="q-11" id="q-11-2">
+                            <label for="q-11-2">Рефинансирование</label>
+                        </div>
+                    </div>
+                    <div class="hidden-question-list">
+                        <div class="hidden-question-group" id="hiddenquestion_11_1" style="display: none;">
+                            <div class="hidden-question">
+                                <div class="name"> Вопрос </div>
+                                <div class="hidden-question-answer">
+                                    <div class="form-group">
+                                        <input type="text" name="hiddenquestionanswer_11_1_1" id="hiddenquestionanswer_11_1_1"
+                                            placeholder="Ваш ответ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden-question-group" id="hiddenquestion_11_2" style="display: none;">
+                            <div class="hidden-question">
+                                <div class="name"> Вопрос </div>
+                                <div class="hidden-question-answer">
+                                    <div class="form-group">
+                                        <input type="text" name="hiddenquestionanswer_11_2_1" id="hiddenquestionanswer_11_2_1"
+                                            placeholder="Ваш ответ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-container">
+                    <input type="submit" class="btn-submit valid-form-send" value="Отправить">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="modal-error" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="text">
+                <p>Выберете, пожалуйста, ответ.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="./js//intlTelInput.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/wavesurfer.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
