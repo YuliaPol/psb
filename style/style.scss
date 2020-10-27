@@ -533,6 +533,9 @@ body {
             padding-top: 10px;
             > div {
                 max-width: 105px;
+                &:last-child {
+                    text-align: right;
+                }
             }
         }
         .wrapper-ratings10 {
@@ -2349,6 +2352,17 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .iti__flag {background-image: url("./../img/flags16.png");}
+.intl-tel-input .flag-dropdown .selected-flag {
+    pointer-events: none;
+    .flag {
+        &.all-country {
+            background: url(./../img/country-all.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
 @media screen and (min-width: 1500px) {
     .contact-form,
     .header-content,

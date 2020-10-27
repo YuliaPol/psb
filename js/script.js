@@ -198,28 +198,39 @@ jQuery(function ($) {
             $(this).parents('.date-wrapper').find('input').datepicker('show');
         });
 
-        //set code country of downloadinf page
         var TelCountries = $('.phone-wrapper .inputs .code');
         if(TelCountries.length>0){
             TelCountries.each(function (index, telcountry) {
-                if($(telcountry).val()){
-                    var country =  $(telcountry).val();
-                    console.log(country);
-                    if(country == 'all'){
-                        $(telcountry).parents('.phone-wrapper').find('input.code').val('');
-                        $(telcountry).parents('.phone-wrapper').find('.intl-tel-input .selected-flag').css('pointer-events','all');    
-                        $(telcountry).parents('.phone-wrapper').find('.intl-tel-input .country[data-country-code="ru"]').click();    
-                    }
-                    else {
-                        $(telcountry).parents('.phone-wrapper').find('input.code').val('');
-                        $(telcountry).parents('.phone-wrapper').find('.intl-tel-input .selected-flag').css('pointer-events','none');    
-                        $(telcountry).parents('.phone-wrapper').find('.intl-tel-input .country[data-country-code="'+ country + '"]').click();    
+                var idQuestion =  $(telcountry).attr('name').split('_')[1];
+                if($(telcountry).val().split(',').length != 0 && !$(telcountry).val().includes('+')){
+                    country =  $(telcountry).val().split(',');
+                }
+                else {
+                    country = 'all';
+                }
+                if(country.includes('all')) {
+                    $(telcountry).parents('.phone-wrapper').find('input.code').val('');
+                    $(telcountry).parents('.phone-wrapper').find('.intl-tel-input .selected-flag').css('pointer-events','all');
+                    $(telcountry).parents('.phone-wrapper').find(' .intl-tel-input .country').css('display', 'block');
+                    $(telcountry).parents('.phone-wrapper').find('.intl-tel-input .selected-flag .flag').addClass('all-country');    
+                }
+                else if(country.length == 1) {
+                    $(telcountry).parents('.phone-wrapper').find('input.code').val('');
+                    $(telcountry).parents('.phone-wrapper').find('.intl-tel-input .country').css('display', 'block');
+                    $(telcountry).parents('.phone-wrapper').find('.intl-tel-input .selected-flag').css('pointer-events','none');
+                    $(telcountry).parents('.phone-wrapper').find('.intl-tel-input .country[data-country-code="'+ country + '"]').click();
+                }
+                else {
+                    $(telcountry).parents('.phone-wrapper').find('input.code').val('');
+                    $(telcountry).parents('.phone-wrapper').find('.intl-tel-input .selected-flag').css('pointer-events','all');
+                    $(telcountry).parents('.phone-wrapper').find('.intl-tel-input .selected-flag .flag').addClass('all-country');
+                    $(telcountry).parents('.phone-wrapper').find('.intl-tel-input .country').css('display', 'none');
+                    for(const element of country){
+                        $(telcountry).parents('.phone-wrapper').find('.intl-tel-input .country[data-country-code="'+ element + '"]').css('display', 'block');
                     }
                 }
             });
         }
-
-        
         customSelectActive();
         function customSelectActive(){
             $('.customselect').each(function(){

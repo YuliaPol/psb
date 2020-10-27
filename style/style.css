@@ -1369,6 +1369,10 @@ body.fontUbuntu button {
   max-width: 105px;
 }
 
+.container .question-wrapper .scalelabels > div:last-child {
+  text-align: right;
+}
+
 .container .question-wrapper .wrapper-ratings10 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4068,6 +4072,18 @@ html .ui-button.ui-state-disabled:active {
 
 .iti__flag {
   background-image: url("./../img/flags16.png");
+}
+
+.intl-tel-input .flag-dropdown .selected-flag {
+  pointer-events: none;
+}
+
+.intl-tel-input .flag-dropdown .selected-flag .flag.all-country {
+  background: url(./../img/country-all.svg);
+  background-position: center;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 1500px) {
