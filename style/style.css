@@ -3033,8 +3033,8 @@ body.fontUbuntu button {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
-  line-height: 33px;
+  font-size: 16px;
+  line-height: 18px;
   color: #0F0F0F;
   outline: none;
   padding-left: 65px;
@@ -3164,6 +3164,22 @@ body.fontUbuntu button {
   font-size: 12px;
   line-height: 33px;
   color: #C0BCBC;
+}
+
+.container .question-wrapper .multiple-list {
+  padding-top: 15px;
+}
+
+.container .question-wrapper .multiple-list .multiple-item {
+  padding-bottom: 15px;
+  padding-left: 5px;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.container .question-wrapper .multiple-list .multiple-item input[type=checkbox] + label::before,
+.container .question-wrapper .multiple-list .multiple-item input[type=radio] + label::before {
+  margin-right: 10px;
 }
 
 .container .question-wrapper .radio-wrapper {
@@ -4195,6 +4211,10 @@ html .ui-button.ui-state-disabled:active {
   }
   .container .question-wrapper .hidden-answer .detail label,
   .container.container-contact .contact-form .question-block .question {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .container .question-wrapper .multiple-list .multiple-item {
     font-size: 16px;
     line-height: 20px;
   }

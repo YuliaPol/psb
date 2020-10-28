@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оцените эффективность </title>
+    <link rel="stylesheet" href="./style/jquery-ui.css">
+    <link rel="stylesheet" href="./style/intlTelInput.css">
+    <link rel="stylesheet" href="./style/datepicker.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./img/logo.svg" alt="ПСБ">
+        </div>
+        <div class="header-content">
+            <div class="text-col">
+                <h2>
+                    Оцените эффективность
+                </h2>
+                <p>рекламных и информационных изображений, 
+                    баннеров, листовок, плакатов.</p>
+            </div>
+            <div class="pic-col">
+                <img src="./img/hedaer-pic.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-wrapper">
+            <form action="./contact.html" class="form-valid" autocomplete="off">
+                <input type="hidden" name="fontpage" class="fontpage"  value="Tahoma">
+                <input type="hidden" name="positionpage" class="positionpage" value="left">
+                <input type="hidden" name="color1" class="color1" value="#223344">
+                <input type="hidden" name="color2" class="color2" value="#556677">
+                <input type="hidden" name="pickcolor" class="pickcolor" value="#ff0000">
+                <input type="hidden" name="inputcolor" class="inputcolor" value="#00ff00">
+                <input type="hidden" name="background" class="background" value="#ffffff">
+
+                <div class="question-wrapper">
+                    <div class="question">
+                        2. Насколько понятна эта реклама? 
+                    </div>
+                    <div class="multiple-list">
+                        <div class="multiple-item">
+                            <input type="checkbox" name="q-9-1" id="q-9-1" value="Ответ 1">
+                            <label for="q-9-1">Ответ 1</label>
+                        </div>
+                        <div class="multiple-item">
+                            <input type="checkbox" name="q-9-2" id="q-9-2" value="Ответ 2">
+                            <label for="q-9-2">Ответ 2</label>
+                        </div>
+                        <div class="multiple-item">
+                            <input type="checkbox" name="q-9-3" id="q-9-3" value="Ответ 3">
+                            <label for="q-9-3">Ответ 3</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="submit-container">
+                    <input type="submit" class="btn-submit valid-form-send" value="Отправить">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="modal-error" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="text">
+                <p>Выберете, пожалуйста, ответ.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="./js//intlTelInput.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/wavesurfer.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
