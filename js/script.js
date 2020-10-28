@@ -2,6 +2,33 @@
 jQuery(function ($) {
     $(document).ready(function () {
 
+        // Restricts input for the set of matched elements to the given inputFilter function.
+        $.fn.inputFilter = function(inputFilter) {
+            return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function() {
+                var max = 999999999;
+                if($(this).parents('.col-phone').find('.code').val()){
+                    if($(this).parents('.col-phone').find('.code').val().length < 4){
+                       max = 9999999999;
+                    }
+                }
+                if (inputFilter(this.value) && this.value < max ) {
+                    this.oldValue = this.value;
+                    this.oldSelectionStart = this.selectionStart;
+                    this.oldSelectionEnd = this.selectionEnd;
+                    } else if (this.hasOwnProperty("oldValue")) {
+                    this.value = this.oldValue;
+                    this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+                    } else {
+                    this.value = "";
+                }
+            });
+        };
+             
+
+        $(".col-phone .phone").inputFilter(function(value) {
+            return /^\d*$/.test(value) && (value === "" || parseInt(value) <= 9999999999);
+        });
+
         //show hidden question
         $('.show-detail-answer input[type=radio]').change(function (e) {
             if($(this).val()<4){
@@ -27,7 +54,6 @@ jQuery(function ($) {
         });
 
         //modal
-
         $('.modal .close').click(function (e) {
             $('.modal').fadeOut(300);
         });
