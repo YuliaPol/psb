@@ -3332,6 +3332,14 @@ body.fontUbuntu button {
   display: none;
 }
 
+.container .question-wrapper .hidden-answer .multiple-wrapper {
+  padding-top: 10px;
+}
+
+.container .question-wrapper .hidden-answer .multiple-wrapper .question {
+  font-weight: normal;
+}
+
 .container .question-wrapper .hidden-answer .detail {
   width: 100%;
   display: -webkit-box;

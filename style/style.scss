@@ -1738,6 +1738,12 @@ body {
             &>div {
                 display: none;
             }
+            .multiple-wrapper {
+                padding-top: 10px;
+                .question {
+                    font-weight: normal;
+                }
+            }
             .detail {
                 width: 100%;
                 display: flex;
@@ -2011,7 +2017,6 @@ body {
         }
     }
 }
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
