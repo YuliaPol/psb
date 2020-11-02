@@ -36,23 +36,23 @@ jQuery(function ($) {
         });
 
         //set range value on start
-        var ranges = $('.range .input-box input[type=range]');
-        if(ranges.length>0){
-            ranges.each(function (index, range) {
-                if(!$(range).attr('min')) {
-                    $(range).attr('min', 0);
-                }
-                if(!$(range).attr('max')) {
-                    $(range).attr('max', 10);
-                }
-                if($(range).val()){
-                    SetRangeValue(range, $(range).val());
-                }
-                else {
-                    SetRangeValue(range, 0);
-                }
-            });
-        }
+        // var ranges = $('.range .input-box input[type=range]');
+        // if(ranges.length>0){
+        //     ranges.each(function (index, range) {
+        //         if(!$(range).attr('min')) {
+        //             $(range).attr('min', 0);
+        //         }
+        //         if(!$(range).attr('max')) {
+        //             $(range).attr('max', 10);
+        //         }
+        //         if($(range).val()){
+        //             SetRangeValue(range, $(range).val());
+        //         }
+        //         else {
+        //             SetRangeValue(range, 0);
+        //         }
+        //     });
+        // }
         
         //set new range value
         function SetRangeValue(rangeinput, value){
