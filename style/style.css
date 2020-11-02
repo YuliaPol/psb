@@ -1808,6 +1808,139 @@ body.fontUbuntu button {
   background-image: url("./../img/star-a-10.svg");
 }
 
+.container .question-wrapper .description {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.container .question-wrapper .range-list .range-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.container .question-wrapper .range-list .range-row .range-question {
+  width: calc(100% - 200px);
+}
+
+.container .question-wrapper .range-list .range-row .range {
+  width: 100%;
+  max-width: 200px;
+  height: 30px;
+  position: relative;
+}
+
+.container .question-wrapper .range-list .range-row .range .label {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #563BC2;
+  border-radius: 50%;
+  top: 0px;
+  left: calc(50% - 15px);
+  z-index: 5;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  pointer-events: none;
+  background-repeat: no-repeat;
+}
+
+.container .question-wrapper .range-list .range-row .range .label .value {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 14px;
+  width: 100%;
+  height: 100%;
+}
+
+.container .question-wrapper .range-list .range-row .range .input-box {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.container .question-wrapper .range-list .range-row .range .input-box .input-range {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.container .question-wrapper .range-list .range-row .range .input-box .input-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container .question-wrapper .range-list .range-row .range .input-box .input-range::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container .question-wrapper .range-list .range-row .range .input-box .bar {
+  position: absolute;
+  top: 14px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 2px;
+  background: #EEEFF3;
+  z-index: 1;
+}
+
+.container .question-wrapper .range-list .range-row .range .input-box .bar-filled {
+  position: absolute;
+  top: 14px;
+  left: 0px;
+  right: 0px;
+  width: 50%;
+  height: 2px;
+  background: #563BC2;
+  z-index: 2;
+  -webkit-transition: width 0.1s ease-in;
+  -o-transition: width 0.1s ease-in;
+  transition: width 0.1s ease-in;
+  background-repeat: no-repeat;
+}
+
 .container .question-wrapper .mediablock {
   padding-top: 25px;
   padding-bottom: 25px;

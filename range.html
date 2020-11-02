@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оцените эффективность </title>
+    <link rel="stylesheet" href="./style/jquery-ui.css">
+    <link rel="stylesheet" href="./style/intlTelInput.css">
+    <link rel="stylesheet" href="./style/datepicker.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./img/logo.svg" alt="ПСБ">
+        </div>
+        <div class="header-content">
+            <div class="text-col">
+                <h2>
+                    Оцените эффективность
+                </h2>
+                <p>рекламных и информационных изображений, 
+                    баннеров, листовок, плакатов.</p>
+            </div>
+            <div class="pic-col">
+                <img src="./img/hedaer-pic.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-wrapper">
+            <form action="./contact.html" class="form-valid" autocomplete="off">
+                <input type="hidden" name="fontpage" class="fontpage"  value="Tahoma">
+                <input type="hidden" name="positionpage" class="positionpage" value="left">
+                <input type="hidden" name="color1" class="color1" value="#223344">
+                <input type="hidden" name="color2" class="color2" value="#556677">
+                <input type="hidden" name="pickcolor" class="pickcolor" value="#ff0000">
+                <input type="hidden" name="inputcolor" class="inputcolor" value="#00ff00">
+                <input type="hidden" name="background" class="background" value="#ffffff">
+
+                <div class="question-wrapper">
+                    <div class="question">
+                        2. Насколько понятна эта реклама? 
+                    </div>
+                    <div class="description">
+                        Описание
+                    </div>
+                    <div class="range-list">
+                        <div class="range-row">
+                            <div class="range-question">
+                                Как Вы оцените работу нашего банка?
+                            </div>
+                            <div class="range">
+                                <!-- style="background: color1"  -->
+                                <!-- if color1 && color2 -->
+                                <!-- style="background: linear-gradient(to right, color1, color2) 50% center / 200px"  -->
+                                <div class="label"
+                                    style="background: #563BC2"
+                                    >
+                                    <!-- color: textcolor -->
+                                    <div class="value"
+                                    style="color: #ffffff" 
+                                    ></div>
+                                </div>
+                                <div class="input-box">
+                                    <input class="input-range" name="range_6_1" id="range_6_1" type="range" min="0" max="10" step="1"/>
+                                    <div class="bar"></div>
+                                    <div class="bar-filled"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range-row">
+                            <div class="range-question">
+                                Какие специальные предложения от застройщиков Вас заинтересовало?
+                            </div>
+                            <div class="range">
+                                <!-- style="background: color1"  -->
+                                <!-- if color1 && color2 -->
+                                <!-- style="background: linear-gradient(to right, color1, color2) 50% center / 200px"  -->
+                                <div class="label"
+                                    style="background: #563BC2"
+                                    >
+                                    <!-- color: textcolor -->
+                                    <div class="value"
+                                    style="color: #ffffff" 
+                                    ></div>
+                                </div>
+                                <div class="input-box">
+                                    <input class="input-range" name="range_6_2" id="range_6_2" type="range" min="0" max="10" step="1"/>
+                                    <div class="bar"></div>
+                                    <div class="bar-filled"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="submit-container">
+                    <input type="submit" class="btn-submit valid-form-send" value="Отправить">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="modal-error" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="text">
+                <p>Выберете, пожалуйста, ответ.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="./js//intlTelInput.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/wavesurfer.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
