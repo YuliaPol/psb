@@ -76,8 +76,7 @@ body {
     font-family: $fontpage;
     font-style: normal;
     font-weight: normal;
-    
-    &.fontMontserrat {
+    &.fontMontserrat .container {
         font-family: $fontpage !important;
         div,
         label,
@@ -90,7 +89,7 @@ body {
             font-family: $fontpage !important;
         }
     }
-    &.fontArial {
+    &.fontArial .container  {
         font-family: Arial, Helvetica, sans-serif !important;
         div,
         label,
@@ -103,7 +102,7 @@ body {
             font-family: Arial, Helvetica, sans-serif !important;
         }
     }
-    &.fontLora {
+    &.fontLora .container  {
         font-family: 'Lora', serif !important;
         div,
         label,
@@ -116,7 +115,7 @@ body {
             font-family: 'Lora', serif !important;
         }
     }
-    &.fontPTSans {
+    &.fontPTSans .container  {
         font-family: Arial, Helvetica, sans-serif !important;
         div,
         label,
@@ -129,7 +128,7 @@ body {
             font-family: 'PT Sans', sans-serif !important;
         }
     }
-    &.fontNotoSans {
+    &.fontNotoSans .container  {
         font-family: 'Noto Sans', sans-serif !important;
         div,
         label,
@@ -143,7 +142,7 @@ body {
         }
     }
     
-    &.fontTahoma {
+    &.fontTahoma .container  {
         font-family: Tahoma, Geneva, sans-serif  !important;
         div,
         label,
@@ -156,7 +155,7 @@ body {
             font-family: Tahoma, Geneva, sans-serif  !important;
         }
     }
-    &.fontImpact {
+    &.fontImpact .container  {
         font-family: Impact, Charcoal, sans-serif  !important;
         div,
         label,
@@ -169,7 +168,7 @@ body {
             font-family: Impact, Charcoal, sans-serif  !important;
         }
     }
-    &.fontLucida {
+    &.fontLucida .container  {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
         div,
         label,
@@ -182,7 +181,7 @@ body {
             font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif  !important;
         }
     }
-    &.fontCourier {
+    &.fontCourier .container  {
         font-family: "Courier New", Courier, monospace !important;
         div,
         label,
@@ -195,7 +194,7 @@ body {
             font-family: "Courier New", Courier, monospace !important;
         }
     }
-    &.fontGeorgia {
+    &.fontGeorgia .container  {
         font-family: Georgia, serif !important;
         div,
         label,
@@ -208,7 +207,7 @@ body {
             font-family: Georgia, serif !important;
         }
     }
-    &.fontTimesNewRoman {
+    &.fontTimesNewRoman .container  {
         font-family: "Times New Roman", Times, serif  !important;
         div,
         label,
@@ -221,7 +220,7 @@ body {
             font-family: "Times New Roman", Times, serif  !important;
         }
     }
-    &.fontRoboto {
+    &.fontRoboto .container  {
         font-family:  'Roboto', sans-serif !important;
         div,
         label,
@@ -234,7 +233,7 @@ body {
             font-family: 'Roboto', sans-serif !important;
         }
     }
-    &.fontOpenSans {
+    &.fontOpenSans .container  {
         font-family: 'Open Sans', sans-serif !important;
         div,
         label,
@@ -247,7 +246,7 @@ body {
             font-family: 'Open Sans', sans-serif  !important;
         }
     }
-    &.fontPiazzolla {
+    &.fontPiazzolla .container  {
         font-family: 'Piazzolla', serif !important;
         div,
         label,
@@ -260,7 +259,7 @@ body {
             font-family: 'Piazzolla', serif !important;
         }
     }
-    &.fontOswald {
+    &.fontOswald .container  {
         font-family: 'Oswald', sans-serif!important;
         div,
         label,
@@ -273,7 +272,7 @@ body {
             font-family: 'Oswald', sans-serif!important;
         }
     }
-    &.fontUbuntu {
+    &.fontUbuntu .container  {
         font-family:  'Ubuntu', sans-serif !important;
         div,
         label,
@@ -2510,6 +2509,165 @@ html .ui-button.ui-state-disabled:active {
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
+        }
+    }
+}
+.bannercontainer {
+    width: 100%;
+    max-width: 100%;
+    min-height: 480px;
+    background: #ffffff;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    .elements {
+        position: relative;
+        max-width: 1400px;
+        min-height: 480px;
+        margin: auto;
+    }
+    &.addshadowtext {
+        .text {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        }
+    }
+    &.fontMontserrat {
+        div {
+            font-family: $fontpage !important;
+        }
+    }
+    &.fontArial .container  {
+        div {
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+    }
+    &.fontLora .container  {
+        div {
+            font-family: 'Lora', serif !important;
+        }
+    }
+    &.fontPTSans .container  {
+        div {
+            font-family: 'PT Sans', sans-serif !important;
+        }
+    }
+    &.fontNotoSans .container  {
+        div {
+            font-family: 'Noto Sans', sans-serif !important;
+        }
+    }
+    
+    &.fontTahoma .container  {
+        div {
+            font-family: Tahoma, Geneva, sans-serif  !important;
+        }
+    }
+    &.fontImpact .container  {
+        div {
+            font-family: Impact, Charcoal, sans-serif  !important;
+        }
+    }
+    &.fontLucida .container  {
+        div {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif  !important;
+        }
+    }
+    &.fontCourier .container  {
+        div {
+            font-family: "Courier New", Courier, monospace !important;
+        }
+    }
+    &.fontGeorgia .container  {
+        div {
+            font-family: Georgia, serif !important;
+        }
+    }
+    &.fontTimesNewRoman .container  {
+        div {
+            font-family: "Times New Roman", Times, serif  !important;
+        }
+    }
+    &.fontRoboto .container  {
+        div {
+            font-family: 'Roboto', sans-serif !important;
+        }
+    }
+    &.fontOpenSans .container  {
+        div {
+            font-family: 'Open Sans', sans-serif  !important;
+        }
+    }
+    &.fontPiazzolla .container  {
+        div {
+            font-family: 'Piazzolla', serif !important;
+        }
+    }
+    &.fontOswald .container  {
+        div {
+            font-family: 'Oswald', sans-serif!important;
+        }
+    }
+    &.fontUbuntu .container  {
+        div {
+            font-family:  'Ubuntu', sans-serif !important;
+        }
+    }
+    .logo {
+        position: absolute;
+        max-width: 100px;
+        top: 40px;
+        left: 40px;
+        img {
+            max-width: 100%;
+        }
+    }
+    .image {
+        position: absolute;
+        max-width: 100%;
+        max-height: 480px;
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 480px;
+            object-fit: cover;
+        }
+    }
+    .text {
+        overflow: hidden;
+        max-width: calc(100% - 40px);
+        max-height: calc(100% - 40px);
+        position: absolute;
+        font-weight: bold;
+        line-height: 1.2em;
+        padding: 10px;
+        &.hidden {
+            display: none;
+        }
+        &.text1level {
+            .text {
+                font-family: $fontpage;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 50px;
+                line-height: 1.2em;
+                text-transform: uppercase;
+                color: #4D4D4D;
+                padding: 10px;
+            }
+        }
+        &.textsecond {
+            .text {
+                font-family: $fontpage;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 1.2em;
+                color: #5722DE;
+                padding: 5px;
+            }
         }
     }
 }

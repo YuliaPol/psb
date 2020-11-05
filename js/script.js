@@ -236,6 +236,7 @@ jQuery(function ($) {
                 $(this).children('.play').fadeIn();
             }
         });
+        
         $('.container .videoblock video').on('ended', function(e){
             $(this).parents('.videoblock').find('.videoviewed').val(1);
             console.log("Video ended");
