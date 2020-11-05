@@ -142,6 +142,7 @@ jQuery(function ($) {
             var idvalue = parseInt($(this).val());
             $(this).parents('.scalebranching').find('.hidden-answer .answerscale').fadeOut(0);
             $(this).parents('.scalebranching').find('.hidden-answer .answerscale input[type=text]').val('');
+            $(this).parents('.scalebranching').find('.hidden-answer .answerscale').find('input').removeAttr('data-reqired');
             if($(this).is(':checked')){
                 var Answers = $(this).parents('.scalebranching').find('.hidden-answer').children();
                 Answers.each(function (index, answer) {
@@ -151,11 +152,13 @@ jQuery(function ($) {
                         var max = ranges[1];
                         if(idvalue >= min && idvalue <= max) {
                             $(answer).fadeIn(300);
+                            $(answer).find('input').attr('data-reqired', 'reqired');
                         }
                     }
                     else {
                         if(idvalue == ranges[0]) {
                             $(answer).fadeIn(300);
+                            $(answer).find('input').attr('data-reqired', 'reqired');
                         }
                     }
                 });
@@ -545,7 +548,6 @@ jQuery(function ($) {
                                     }
                                 }
                             });
-                            console.log(imageclick);
                             if(imageclick) {
                                 $('.modal').find('.text').html("Выберите, пожалуйста, картинку.");
                                 $('.modal').fadeIn(300);
@@ -560,7 +562,6 @@ jQuery(function ($) {
                     for (var i = 0; i < el.length; i++) {
                         if (el[i].value === '' || el[i].value === ' ' || el[i].value === '-') {
                             erroreArrayElemnts.push(el[i]);
-                            console.log($(el[i]).attr('type'));
                             if($(el[i]).attr('type')=='text'){
                                 $(el[i]).addClass('borderred');
                             }
@@ -574,13 +575,24 @@ jQuery(function ($) {
                             else {
                                 $('.modal').find('.text').html("Введите, пожалуйста, ответ.");
                             }
+                            if($(el[i]).parents('.hidden-answer').length==0){
+                                $(el[i]).parents('.question-wrapper').addClass('has-error');
+                            }
+                            else {
+                                $(el[i]).parents('.detail').addClass('has-error');
+                            }
                             $('.modal').fadeIn(300);
-                            $(el[i]).parents('.question-wrapper').addClass('has-error');
                             $(el[i]).focus(function (e) {
-                                $(e.target).parents('.question-wrapper').removeClass('has-error');
-                                $(el[i]).removeClass('borderred');
-                                $(el[i]).parents('.col-phone').find('.lines').removeClass('borderredcode');
-                                $(el[i]).parents('.col-phone').find('.lines').removeClass('borderredphone');
+                                if($(e.target).parents('.hidden-answer').length==0){
+                                    $(e.target).parents('.question-wrapper').removeClass('has-error');
+
+                                }
+                                else {
+                                    $(e.target).parents('.detail').removeClass('has-error');
+                                }
+                                $(e.target).removeClass('borderred');
+                                $(e.target).parents('.col-phone').find('.lines').removeClass('borderredcode');
+                                $(e.target).parents('.col-phone').find('.lines').removeClass('borderredphone');
                             });
                         }
                     }
@@ -591,11 +603,15 @@ jQuery(function ($) {
                             var name = el[i].getAttribute('name');
                             if (document.querySelectorAll('[name=' + name + ']:checked').length === 0) {
                                 erroreArrayElemnts.push(el[i]);
-                                if($(el[i]).parents('.question-wrapper')){
+                                if($(el[i]).parents('.question-wrapper') && $(el[i]).parents('.hidden-answer').length==0 ){
                                     $(el[i]).parents('.question-wrapper').addClass('has-error');
+                                }
+                                else if($(el[i]).parents('.hidden-answer').length>0){
+                                    $(el[i]).parents('.multiple-wrapper').addClass('has-error');
                                 }
                                 $(el[i]).focus(function (e) {
                                     $(e.target).parents('.question-wrapper').removeClass('has-error');
+                                    $(e.target).parents('.multiple-wrapper').removeClass('has-error');
                                 });
                                 $('.modal').find('.text').html("Выберете, пожалуйста, ответ.");
                                 $('.modal').fadeIn(300);

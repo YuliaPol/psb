@@ -499,7 +499,7 @@ body {
         padding-bottom: 40px;
         border-bottom: 1px solid #EBEBEB;
         &.has-error {
-            .question {
+            > .question {
                 color: $radiocolor2 !important;
             }
             .borderred {
@@ -516,6 +516,21 @@ body {
                         .line:nth-child(3){
                             background: $radiocolor2 !important;
                         }  
+                    }
+                }
+            }
+        }
+        .answerscale {
+            .has-error {
+                &.multiple-wrapper .question {
+                    color: $radiocolor2 !important;
+                }
+                &.detail {
+                    input {
+                        border-bottom-color: $radiocolor2 !important;
+                    }
+                    label {
+                        color: $radiocolor2 !important;
                     }
                 }
             }

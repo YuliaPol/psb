@@ -1312,7 +1312,7 @@ body.fontUbuntu button {
   border-bottom: 1px solid #EBEBEB;
 }
 
-.container .question-wrapper.has-error .question {
+.container .question-wrapper.has-error > .question {
   color: #F63030 !important;
 }
 
@@ -1326,6 +1326,18 @@ body.fontUbuntu button {
 
 .container .question-wrapper.has-error .col-phone .lines.borderredphone .line:nth-child(3) {
   background: #F63030 !important;
+}
+
+.container .question-wrapper .answerscale .has-error.multiple-wrapper .question {
+  color: #F63030 !important;
+}
+
+.container .question-wrapper .answerscale .has-error.detail input {
+  border-bottom-color: #F63030 !important;
+}
+
+.container .question-wrapper .answerscale .has-error.detail label {
+  color: #F63030 !important;
 }
 
 .container .question-wrapper .question {
