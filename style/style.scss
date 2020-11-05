@@ -500,7 +500,24 @@ body {
         border-bottom: 1px solid #EBEBEB;
         &.has-error {
             .question {
-                color: $radiocolor2;
+                color: $radiocolor2 !important;
+            }
+            .borderred {
+                border-bottom-color: $radiocolor2 !important;
+            }
+            .col-phone {
+                .lines {
+                    &.borderredcode {
+                        .line:nth-child(1){
+                            background: $radiocolor2 !important;
+                        }
+                    }
+                    &.borderredphone {
+                        .line:nth-child(3){
+                            background: $radiocolor2 !important;
+                        }  
+                    }
+                }
             }
         }
         .question {

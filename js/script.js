@@ -560,11 +560,27 @@ jQuery(function ($) {
                     for (var i = 0; i < el.length; i++) {
                         if (el[i].value === '' || el[i].value === ' ' || el[i].value === '-') {
                             erroreArrayElemnts.push(el[i]);
+                            console.log($(el[i]).attr('type'));
+                            if($(el[i]).attr('type')=='text'){
+                                $(el[i]).addClass('borderred');
+                            }
+                            if($(el[i]).hasClass('phone')){
+                                $(el[i]).parents('.col-phone').find('.lines').addClass('borderredphone');
+                            }
+                            if($(el[i]).hasClass('code')){
+                                $('.modal').find('.text').html("Выберете, пожалуйста, код страны.");
+                                $(el[i]).parents('.col-phone').find('.lines').addClass('borderredcode');
+                            }
+                            else {
+                                $('.modal').find('.text').html("Введите, пожалуйста, ответ.");
+                            }
                             $('.modal').fadeIn(300);
-                            $('.modal').find('.text').html("Введите, пожалуйста, ответ.");
                             $(el[i]).parents('.question-wrapper').addClass('has-error');
                             $(el[i]).focus(function (e) {
                                 $(e.target).parents('.question-wrapper').removeClass('has-error');
+                                $(el[i]).removeClass('borderred');
+                                $(el[i]).parents('.col-phone').find('.lines').removeClass('borderredcode');
+                                $(el[i]).parents('.col-phone').find('.lines').removeClass('borderredphone');
                             });
                         }
                     }
@@ -580,7 +596,7 @@ jQuery(function ($) {
                                 }
                                 $(el[i]).focus(function (e) {
                                     $(e.target).parents('.question-wrapper').removeClass('has-error');
-                                });    
+                                });
                                 $('.modal').find('.text').html("Выберете, пожалуйста, ответ.");
                                 $('.modal').fadeIn(300);
                             }

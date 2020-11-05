@@ -1313,7 +1313,19 @@ body.fontUbuntu button {
 }
 
 .container .question-wrapper.has-error .question {
-  color: #F63030;
+  color: #F63030 !important;
+}
+
+.container .question-wrapper.has-error .borderred {
+  border-bottom-color: #F63030 !important;
+}
+
+.container .question-wrapper.has-error .col-phone .lines.borderredcode .line:nth-child(1) {
+  background: #F63030 !important;
+}
+
+.container .question-wrapper.has-error .col-phone .lines.borderredphone .line:nth-child(3) {
+  background: #F63030 !important;
 }
 
 .container .question-wrapper .question {
