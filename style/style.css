@@ -4371,6 +4371,7 @@ html .ui-button.ui-state-disabled:active {
   position: absolute;
   max-width: 100%;
   max-height: 480px;
+  z-index: 50;
 }
 
 .bannercontainer .image img {
@@ -4390,6 +4391,7 @@ html .ui-button.ui-state-disabled:active {
   font-weight: bold;
   line-height: 1.2em;
   padding: 10px;
+  z-index: 100;
 }
 
 .bannercontainer .text.hidden {
@@ -4448,6 +4450,25 @@ html .ui-button.ui-state-disabled:active {
   }
 }
 
+@media screen and (max-width: 993px) {
+  .bannercontainer .logo {
+    top: 10px;
+    left: 10px;
+    max-width: 80px;
+  }
+  .bannercontainer .elements {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .bannercontainer .text,
+  .bannercontainer .image {
+    position: initial;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .container {
     padding-left: 25px;
@@ -4479,6 +4500,11 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @media screen and (max-width: 768px) {
+  .bannercontainer .elements {
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .container .question-wrapper .range-list .range-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

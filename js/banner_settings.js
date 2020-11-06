@@ -1,6 +1,7 @@
 
 jQuery(function ($) {
     $(document).ready(function () {
+        var windowWidth = $(window).width();
         var prevwidth;
         var prevheight;
         if($('.bannercontainer').attr('data-width')){
@@ -19,10 +20,101 @@ jQuery(function ($) {
             var fontFamily = 'font' + $('.bannercontainer').attr('data-fontFamily');
             $('.bannercontainer').addClass(fontFamily);
         }
-        if($('.bannercontainer .elements').children().length>0){
+        if(windowWidth > 992){
+            if($('.bannercontainer .elements').children().length>0){
+                ResizeScreen();
+            }
             ResizeScreen();
+            SetTextSettings();
+            CheckTextCovering();
+        }
+        else {
+            MobileSettings();
+        }
+        $(window).resize(function() {
+            windowWidth = $(window).width();
+            console.log(windowWidth);
+            if(windowWidth > 992){
+                console.log('>992');
+                ResizeScreen();
+                CheckTextCovering();
+            }
+            else {
+                console.log('<992');
+               MobileSettings();
+            }
+        });
+        function CheckTextCovering(){
+            var ContHeight = parseInt($('.bannercontainer .elements').height());
+            var ContWidth = parseInt($('.bannercontainer .elements').width());
+            var elements = $('.bannercontainer .elements').find('.text');
+            elements.each(function (index, element) {
+                var top = parseInt($(element).position().top);
+                var left = parseInt($(element).position().left);
+                var right = left +  parseInt($(element).outerWidth());
+                var bottom = top +  parseInt($(element).outerHeight());
+                var elements2 = $('.bannercontainer .elements').find('.text');
+                elements2.each(function (index2, element2) {
+                    if(element2 !== element){
+                        var top2 = parseInt($(element2).position().top);
+                        var left2 = parseInt($(element2).position().left);
+                        var right2 = left2 +  parseInt($(element2).outerWidth());
+                        var bottom2 = top2 +  parseInt($(element2).outerHeight());
+                        // cover cons
+                        if(bottom + 10 > top2 && top<top2){
+                            console.log(right2 - left);
+                            console.log(Math.abs(top - bottom));
+                            if(left<right2){
+                                console.log("cover bottom");
+                                if(bottom2 + 10 < ContHeight){
+                                    var addToTop = 0;
+                                    while(bottom2 + addToTop < ContHeight && addToTop < 50 && (bottom + 10) > (top2 + addToTop)) {
+                                        addToTop = addToTop + 10;
+                                        console.log(addToTop);
+                                        $(element2).css('top', top2 + addToTop + 'px');
+                                    }
+                                }
+                                else if(top - 10 > 10){
+                                    var minusToTop = 10;
+                                    while(top - minusToTop > 10 && minusToTop < 50) {
+                                        $(element).css('top', top - minusToTop + 'px');
+                                        minusToTop = minusToTop + 10;
+                                    }
+                                }
+                                else {
+                                    var fontsize1 = parseInt($(element).attr('data-fontSize')) - 2;
+                                    var fontsize2 = parseInt($(element2).attr('data-fontSize')) - 2;
+                                    $(element).css('font-size', fontsize1 + 'px');
+                                    $(element2).css('font-size', fontsize2 + 'px');
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        }
+        function SetTextSettings(){
+            //set text settings
+            var elements = $('.bannercontainer .elements').children();
+            elements.each(function (index, element) {
+                if($(element).hasClass('text')){
+                    var fontSize = $(element).attr('data-fontSize') + 'px';
+                    $(element).css('font-size', fontSize);
+                    var color = $(element).attr('data-color');
+                    $(element).css('color', color);
+                    if($('.bannercontainer').attr('data-radius')){
+                        var radius = $('.bannercontainer').attr('data-radius') + 'px';
+                        $(element).css('border-radius', radius);
+                    }
+                    if($('.bannercontainer').attr('data-backgroundtext')){
+                        var backgroundtext = $('.bannercontainer').attr('data-backgroundtext');
+                        $(element).css('background', backgroundtext);
+                    }
+                }
+            });
         }
         function ResizeScreen(){
+            console.log('ResizeScreen');
             //set position of element
             if(prevwidth && prevheight){
                 var elements = $('.bannercontainer .elements').children();
@@ -88,59 +180,60 @@ jQuery(function ($) {
                 });
             }
         }
-        CheckTextCovering();
-        function CheckTextCovering(){
-            var elements = $('.bannercontainer .elements').find('.text');
-            elements.each(function (index, element) {
-                var top = parseInt($(element).position().top);
-                var left = parseInt($(element).position().left);
-                var right = left +  parseInt($(element).width());
-                var bottom = top +  parseInt($(element).height());
-                var elements2 = $('.bannercontainer .elements').find('.text');
-                elements2.each(function (index, element2) {
-                    var top2 = parseInt($(element).position().top);
-                    var left2 = parseInt($(element).position().left);
-                    var right2 = left +  parseInt($(element).width());
-                    var bottom2 = top +  parseInt($(element).height());
-                    if(right < left2){
-                        // cover 
-                        if(bottom>top2){
-                            console.log("cover right bottom");
+        function MobileSettings(){
+            console.log('MobileSettings');
+            var elements = $('.bannercontainer .elements').children();
+            if(elements.length>0){
+                elements.sort(function(a, b){
+                    return parseInt($(a).attr('data-top'))-parseInt($(b).attr('data-top'))
+                });
+                var images = new Array(0);
+                $('.bannercontainer .elements').html(' ');
+                elements.each(function (index, element) {
+                    if(!$(element).hasClass('image')){
+                        width = parseInt($(element).attr('data-width'));
+                        height = parseInt($(element).attr('data-height'));
+                        var fontSize = parseInt($(element).attr('data-fontSize'));
+                        if(fontSize > 18) {
+                            fontSize = '18px';
                         }
+                        else {
+                            fontSize = '14px';
+                        }
+                        $(element).css('font-size', fontSize);
+                        var color = $(element).attr('data-color');
+                        $(element).css('color', color);
+                        if($('.bannercontainer').attr('data-radius')){
+                            var radius = $('.bannercontainer').attr('data-radius') + 'px';
+                            $(element).css('border-radius', radius);
+                        }
+                        if($('.bannercontainer').attr('data-backgroundtext')){
+                            var backgroundtext = $('.bannercontainer').attr('data-backgroundtext');
+                            $(element).css('background', backgroundtext);
+                        }
+                        $(element).css('max-width', '100%');
+                        $(element).css('width', width);
+                        $(element).css('height', 'auto');
+                        $(element).appendTo($('.bannercontainer .elements'));
                     }
-                    if(right < left2){
+                    else {
+                        images.push(element);
                     }
                 });
-                console.log(top);
-                console.log(left);
-                console.log(right);
-                console.log(bottom);
-            });
-        }
-        function SetTextSettings(){
-            //set text settings
-            var elements = $('.bannercontainer .elements').children();
-            elements.each(function (index, element) {
-                if($(element).hasClass('text')){
-                    var fontSize = $(element).attr('data-fontSize') + 'px';
-                    $(element).css('font-size', fontSize);
-                    var color = $(element).attr('data-color');
-                    $(element).css('color', color);
-                    if($('.bannercontainer').attr('data-radius')){
-                        var radius = $('.bannercontainer').attr('data-radius') + 'px';
-                        $(element).css('border-radius', radius);
-                    }
-                    if($('.bannercontainer').attr('data-backgroundtext')){
-                        var backgroundtext = $('.bannercontainer').attr('data-backgroundtext');
-                        $(element).css('background', backgroundtext);
+                if(images.length>0){
+                    console.log(images);
+                    for (let i = 0; i < images.length; i++) {
+                        width = parseInt($(images[i]).attr('data-width'));
+                        height = parseInt($(images[i]).attr('data-height'));
+                        $(images[i]).css('max-height', height);
+                        $(images[i]).css('max-width', '100%');
+                        $(images[i]).css('width', width);
+                        $(images[i]).find('img').css('max-width', width);
+                        $(images[i]).find('img').css('max-height', height);
+                        $(images[i]).appendTo($('.bannercontainer .elements'));
                     }
                 }
-            });
+            }
         }
-        ResizeScreen();
-        SetTextSettings();
-        $(window).resize(function() {
-            ResizeScreen();
-        });
     });
 });
