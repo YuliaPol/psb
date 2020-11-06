@@ -76,7 +76,8 @@ body {
     font-family: $fontpage;
     font-style: normal;
     font-weight: normal;
-    &.fontMontserrat .container {
+    &.fontMontserrat .container,
+    &.fontMontserrat .mediacontainer {
         font-family: $fontpage !important;
         div,
         label,
@@ -89,7 +90,8 @@ body {
             font-family: $fontpage !important;
         }
     }
-    &.fontArial .container  {
+    &.fontArial .container,
+    &.fontArial .mediacontainer   {
         font-family: Arial, Helvetica, sans-serif !important;
         div,
         label,
@@ -102,7 +104,8 @@ body {
             font-family: Arial, Helvetica, sans-serif !important;
         }
     }
-    &.fontLora .container  {
+    &.fontLora .container,
+    &.fontLora .mediacontainer   {
         font-family: 'Lora', serif !important;
         div,
         label,
@@ -115,7 +118,8 @@ body {
             font-family: 'Lora', serif !important;
         }
     }
-    &.fontPTSans .container  {
+    &.fontPTSans .container,
+    &.fontPTSans .mediacontainer   {
         font-family: Arial, Helvetica, sans-serif !important;
         div,
         label,
@@ -128,7 +132,8 @@ body {
             font-family: 'PT Sans', sans-serif !important;
         }
     }
-    &.fontNotoSans .container  {
+    &.fontNotoSans .container,
+    &.fontNotoSans .mediacontainer   {
         font-family: 'Noto Sans', sans-serif !important;
         div,
         label,
@@ -142,7 +147,8 @@ body {
         }
     }
     
-    &.fontTahoma .container  {
+    &.fontTahoma .container ,
+    &.fontTahoma .mediacontainer  {
         font-family: Tahoma, Geneva, sans-serif  !important;
         div,
         label,
@@ -155,7 +161,8 @@ body {
             font-family: Tahoma, Geneva, sans-serif  !important;
         }
     }
-    &.fontImpact .container  {
+    &.fontImpact .container,
+    &.fontImpact .mediacontainer   {
         font-family: Impact, Charcoal, sans-serif  !important;
         div,
         label,
@@ -168,7 +175,8 @@ body {
             font-family: Impact, Charcoal, sans-serif  !important;
         }
     }
-    &.fontLucida .container  {
+    &.fontLucida .container ,
+    &.fontLucida .mediacontainer  {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
         div,
         label,
@@ -181,7 +189,8 @@ body {
             font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif  !important;
         }
     }
-    &.fontCourier .container  {
+    &.fontCourier .container ,
+    &.fontCourier .mediacontainer  {
         font-family: "Courier New", Courier, monospace !important;
         div,
         label,
@@ -194,7 +203,8 @@ body {
             font-family: "Courier New", Courier, monospace !important;
         }
     }
-    &.fontGeorgia .container  {
+    &.fontGeorgia .container,
+    &.fontGeorgia .mediacontainer   {
         font-family: Georgia, serif !important;
         div,
         label,
@@ -207,7 +217,8 @@ body {
             font-family: Georgia, serif !important;
         }
     }
-    &.fontTimesNewRoman .container  {
+    &.fontTimesNewRoman .container,
+    &.fontTimesNewRoman .mediacontainer   {
         font-family: "Times New Roman", Times, serif  !important;
         div,
         label,
@@ -220,7 +231,8 @@ body {
             font-family: "Times New Roman", Times, serif  !important;
         }
     }
-    &.fontRoboto .container  {
+    &.fontRoboto .container ,
+    &.fontRoboto .mediacontainer  {
         font-family:  'Roboto', sans-serif !important;
         div,
         label,
@@ -233,7 +245,8 @@ body {
             font-family: 'Roboto', sans-serif !important;
         }
     }
-    &.fontOpenSans .container  {
+    &.fontOpenSans .container,
+    &.fontOpenSans .mediacontainer   {
         font-family: 'Open Sans', sans-serif !important;
         div,
         label,
@@ -246,7 +259,8 @@ body {
             font-family: 'Open Sans', sans-serif  !important;
         }
     }
-    &.fontPiazzolla .container  {
+    &.fontPiazzolla .container,
+    &.fontPiazzolla .mediacontainer   {
         font-family: 'Piazzolla', serif !important;
         div,
         label,
@@ -259,7 +273,8 @@ body {
             font-family: 'Piazzolla', serif !important;
         }
     }
-    &.fontOswald .container  {
+    &.fontOswald .container,
+    &.fontOswald .mediacontainer   {
         font-family: 'Oswald', sans-serif!important;
         div,
         label,
@@ -272,7 +287,8 @@ body {
             font-family: 'Oswald', sans-serif!important;
         }
     }
-    &.fontUbuntu .container  {
+    &.fontUbuntu .container,
+    &.fontUbuntu .mediacontainer   {
         font-family:  'Ubuntu', sans-serif !important;
         div,
         label,
@@ -2682,6 +2698,96 @@ html .ui-button.ui-state-disabled:active {
         }
     }
 }
+.mediacontainer {
+    padding: 40px 40px 0px;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    .text-wrapper {
+        font-family: $fontpage;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .media-text {
+        font-family: $fontpage;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+    .audio-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 270px;
+        background: #DEE1E9;
+        box-shadow: inset 0px 0px 10px 2px rgba(144, 141, 150, 0.2);
+        border-radius: 30px;
+        overflow: hidden;
+        .playaudio {
+            width: 53px;
+            height: 53px;
+            background-image: url(./../img/play.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            border-radius: 50%;
+            &:hover {
+                box-shadow: 0px 0px 2px 2px rgba(34.1, 13.3, 87.1, 0.3);
+            }
+        }
+        .audio {
+            width: calc(100% - 53px);
+        }
+    }
+    .pic-col {
+        width: 100%;
+        max-width: 800px;
+        img {
+            max-width: 100%;
+        }
+        .vide-wrapper {
+            width: 100%;
+            position: relative;
+            video {
+                width: 100%;
+                height: auto;
+            }
+            .play {
+                background-image:url(./../img/play.png);
+                background-repeat:no-repeat;
+                width:70px;
+                height:70px;
+                position:absolute;
+                left:0%;
+                right:0%;
+                top:0%;
+                bottom:0%;
+                margin:auto;
+                background-size:contain;
+                background-position: center;
+                transition: transform 0.3s ease-in;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .image-wrapper {
+        max-width: 500px;
+        max-height: 300px;
+        img {
+            object-fit: contain;
+            object-position: left;
+            width: 100%;
+            max-width: 500px;
+            max-height: 300px;
+        }
+    }
+}
 @media screen and (min-width: 1500px) {
     .contact-form,
     .header-content,
@@ -2732,7 +2838,8 @@ html .ui-button.ui-state-disabled:active {
     }
 }
 @media screen and (max-width: 900px) {
-    .container {
+    .container,
+    .mediacontainer {
         padding-left: 25px;
         padding-right: 25px;
     }
@@ -2763,6 +2870,10 @@ html .ui-button.ui-state-disabled:active {
     }
 }
 @media screen and (max-width: 768px) {
+    .mediacontainer .media-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
     .bannercontainer .elements {
         padding-top: 40px;
         padding-left: 15px;
@@ -2851,6 +2962,10 @@ html .ui-button.ui-state-disabled:active {
 @media screen and (max-width: 600px) {
     .container .question-wrapper .single-wrapper > div {
         width: 100%;
+    }
+    .mediacontainer {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .container .question-wrapper .wrapper-ratings10 label .digit {
         width: 30px;

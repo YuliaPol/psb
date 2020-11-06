@@ -52,7 +52,8 @@ body {
   font-weight: normal;
 }
 
-body.fontMontserrat .container {
+body.fontMontserrat .container,
+body.fontMontserrat .mediacontainer {
   font-family: "Montserrat" !important;
 }
 
@@ -63,7 +64,15 @@ body.fontMontserrat .container p,
 body.fontMontserrat .container textarea,
 body.fontMontserrat .container input::-webkit-input-placeholder,
 body.fontMontserrat .container textarea::-webkit-input-placeholder,
-body.fontMontserrat .container button {
+body.fontMontserrat .container button,
+body.fontMontserrat .mediacontainer div,
+body.fontMontserrat .mediacontainer label,
+body.fontMontserrat .mediacontainer input,
+body.fontMontserrat .mediacontainer p,
+body.fontMontserrat .mediacontainer textarea,
+body.fontMontserrat .mediacontainer input::-webkit-input-placeholder,
+body.fontMontserrat .mediacontainer textarea::-webkit-input-placeholder,
+body.fontMontserrat .mediacontainer button {
   font-family: "Montserrat" !important;
 }
 
@@ -74,7 +83,15 @@ body.fontMontserrat .container p,
 body.fontMontserrat .container textarea,
 body.fontMontserrat .container input::-moz-placeholder,
 body.fontMontserrat .container textarea::-moz-placeholder,
-body.fontMontserrat .container button {
+body.fontMontserrat .container button,
+body.fontMontserrat .mediacontainer div,
+body.fontMontserrat .mediacontainer label,
+body.fontMontserrat .mediacontainer input,
+body.fontMontserrat .mediacontainer p,
+body.fontMontserrat .mediacontainer textarea,
+body.fontMontserrat .mediacontainer input::-moz-placeholder,
+body.fontMontserrat .mediacontainer textarea::-moz-placeholder,
+body.fontMontserrat .mediacontainer button {
   font-family: "Montserrat" !important;
 }
 
@@ -85,7 +102,15 @@ body.fontMontserrat .container p,
 body.fontMontserrat .container textarea,
 body.fontMontserrat .container input:-ms-input-placeholder,
 body.fontMontserrat .container textarea:-ms-input-placeholder,
-body.fontMontserrat .container button {
+body.fontMontserrat .container button,
+body.fontMontserrat .mediacontainer div,
+body.fontMontserrat .mediacontainer label,
+body.fontMontserrat .mediacontainer input,
+body.fontMontserrat .mediacontainer p,
+body.fontMontserrat .mediacontainer textarea,
+body.fontMontserrat .mediacontainer input:-ms-input-placeholder,
+body.fontMontserrat .mediacontainer textarea:-ms-input-placeholder,
+body.fontMontserrat .mediacontainer button {
   font-family: "Montserrat" !important;
 }
 
@@ -96,7 +121,15 @@ body.fontMontserrat .container p,
 body.fontMontserrat .container textarea,
 body.fontMontserrat .container input::-ms-input-placeholder,
 body.fontMontserrat .container textarea::-ms-input-placeholder,
-body.fontMontserrat .container button {
+body.fontMontserrat .container button,
+body.fontMontserrat .mediacontainer div,
+body.fontMontserrat .mediacontainer label,
+body.fontMontserrat .mediacontainer input,
+body.fontMontserrat .mediacontainer p,
+body.fontMontserrat .mediacontainer textarea,
+body.fontMontserrat .mediacontainer input::-ms-input-placeholder,
+body.fontMontserrat .mediacontainer textarea::-ms-input-placeholder,
+body.fontMontserrat .mediacontainer button {
   font-family: "Montserrat" !important;
 }
 
@@ -107,11 +140,20 @@ body.fontMontserrat .container p,
 body.fontMontserrat .container textarea,
 body.fontMontserrat .container input::placeholder,
 body.fontMontserrat .container textarea::placeholder,
-body.fontMontserrat .container button {
+body.fontMontserrat .container button,
+body.fontMontserrat .mediacontainer div,
+body.fontMontserrat .mediacontainer label,
+body.fontMontserrat .mediacontainer input,
+body.fontMontserrat .mediacontainer p,
+body.fontMontserrat .mediacontainer textarea,
+body.fontMontserrat .mediacontainer input::placeholder,
+body.fontMontserrat .mediacontainer textarea::placeholder,
+body.fontMontserrat .mediacontainer button {
   font-family: "Montserrat" !important;
 }
 
-body.fontArial .container {
+body.fontArial .container,
+body.fontArial .mediacontainer {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
@@ -122,7 +164,15 @@ body.fontArial .container p,
 body.fontArial .container textarea,
 body.fontArial .container input::-webkit-input-placeholder,
 body.fontArial .container textarea::-webkit-input-placeholder,
-body.fontArial .container button {
+body.fontArial .container button,
+body.fontArial .mediacontainer div,
+body.fontArial .mediacontainer label,
+body.fontArial .mediacontainer input,
+body.fontArial .mediacontainer p,
+body.fontArial .mediacontainer textarea,
+body.fontArial .mediacontainer input::-webkit-input-placeholder,
+body.fontArial .mediacontainer textarea::-webkit-input-placeholder,
+body.fontArial .mediacontainer button {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
@@ -133,7 +183,15 @@ body.fontArial .container p,
 body.fontArial .container textarea,
 body.fontArial .container input::-moz-placeholder,
 body.fontArial .container textarea::-moz-placeholder,
-body.fontArial .container button {
+body.fontArial .container button,
+body.fontArial .mediacontainer div,
+body.fontArial .mediacontainer label,
+body.fontArial .mediacontainer input,
+body.fontArial .mediacontainer p,
+body.fontArial .mediacontainer textarea,
+body.fontArial .mediacontainer input::-moz-placeholder,
+body.fontArial .mediacontainer textarea::-moz-placeholder,
+body.fontArial .mediacontainer button {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
@@ -144,7 +202,15 @@ body.fontArial .container p,
 body.fontArial .container textarea,
 body.fontArial .container input:-ms-input-placeholder,
 body.fontArial .container textarea:-ms-input-placeholder,
-body.fontArial .container button {
+body.fontArial .container button,
+body.fontArial .mediacontainer div,
+body.fontArial .mediacontainer label,
+body.fontArial .mediacontainer input,
+body.fontArial .mediacontainer p,
+body.fontArial .mediacontainer textarea,
+body.fontArial .mediacontainer input:-ms-input-placeholder,
+body.fontArial .mediacontainer textarea:-ms-input-placeholder,
+body.fontArial .mediacontainer button {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
@@ -155,7 +221,15 @@ body.fontArial .container p,
 body.fontArial .container textarea,
 body.fontArial .container input::-ms-input-placeholder,
 body.fontArial .container textarea::-ms-input-placeholder,
-body.fontArial .container button {
+body.fontArial .container button,
+body.fontArial .mediacontainer div,
+body.fontArial .mediacontainer label,
+body.fontArial .mediacontainer input,
+body.fontArial .mediacontainer p,
+body.fontArial .mediacontainer textarea,
+body.fontArial .mediacontainer input::-ms-input-placeholder,
+body.fontArial .mediacontainer textarea::-ms-input-placeholder,
+body.fontArial .mediacontainer button {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
@@ -166,11 +240,20 @@ body.fontArial .container p,
 body.fontArial .container textarea,
 body.fontArial .container input::placeholder,
 body.fontArial .container textarea::placeholder,
-body.fontArial .container button {
+body.fontArial .container button,
+body.fontArial .mediacontainer div,
+body.fontArial .mediacontainer label,
+body.fontArial .mediacontainer input,
+body.fontArial .mediacontainer p,
+body.fontArial .mediacontainer textarea,
+body.fontArial .mediacontainer input::placeholder,
+body.fontArial .mediacontainer textarea::placeholder,
+body.fontArial .mediacontainer button {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
-body.fontLora .container {
+body.fontLora .container,
+body.fontLora .mediacontainer {
   font-family: 'Lora', serif !important;
 }
 
@@ -181,7 +264,15 @@ body.fontLora .container p,
 body.fontLora .container textarea,
 body.fontLora .container input::-webkit-input-placeholder,
 body.fontLora .container textarea::-webkit-input-placeholder,
-body.fontLora .container button {
+body.fontLora .container button,
+body.fontLora .mediacontainer div,
+body.fontLora .mediacontainer label,
+body.fontLora .mediacontainer input,
+body.fontLora .mediacontainer p,
+body.fontLora .mediacontainer textarea,
+body.fontLora .mediacontainer input::-webkit-input-placeholder,
+body.fontLora .mediacontainer textarea::-webkit-input-placeholder,
+body.fontLora .mediacontainer button {
   font-family: 'Lora', serif !important;
 }
 
@@ -192,7 +283,15 @@ body.fontLora .container p,
 body.fontLora .container textarea,
 body.fontLora .container input::-moz-placeholder,
 body.fontLora .container textarea::-moz-placeholder,
-body.fontLora .container button {
+body.fontLora .container button,
+body.fontLora .mediacontainer div,
+body.fontLora .mediacontainer label,
+body.fontLora .mediacontainer input,
+body.fontLora .mediacontainer p,
+body.fontLora .mediacontainer textarea,
+body.fontLora .mediacontainer input::-moz-placeholder,
+body.fontLora .mediacontainer textarea::-moz-placeholder,
+body.fontLora .mediacontainer button {
   font-family: 'Lora', serif !important;
 }
 
@@ -203,7 +302,15 @@ body.fontLora .container p,
 body.fontLora .container textarea,
 body.fontLora .container input:-ms-input-placeholder,
 body.fontLora .container textarea:-ms-input-placeholder,
-body.fontLora .container button {
+body.fontLora .container button,
+body.fontLora .mediacontainer div,
+body.fontLora .mediacontainer label,
+body.fontLora .mediacontainer input,
+body.fontLora .mediacontainer p,
+body.fontLora .mediacontainer textarea,
+body.fontLora .mediacontainer input:-ms-input-placeholder,
+body.fontLora .mediacontainer textarea:-ms-input-placeholder,
+body.fontLora .mediacontainer button {
   font-family: 'Lora', serif !important;
 }
 
@@ -214,7 +321,15 @@ body.fontLora .container p,
 body.fontLora .container textarea,
 body.fontLora .container input::-ms-input-placeholder,
 body.fontLora .container textarea::-ms-input-placeholder,
-body.fontLora .container button {
+body.fontLora .container button,
+body.fontLora .mediacontainer div,
+body.fontLora .mediacontainer label,
+body.fontLora .mediacontainer input,
+body.fontLora .mediacontainer p,
+body.fontLora .mediacontainer textarea,
+body.fontLora .mediacontainer input::-ms-input-placeholder,
+body.fontLora .mediacontainer textarea::-ms-input-placeholder,
+body.fontLora .mediacontainer button {
   font-family: 'Lora', serif !important;
 }
 
@@ -225,11 +340,20 @@ body.fontLora .container p,
 body.fontLora .container textarea,
 body.fontLora .container input::placeholder,
 body.fontLora .container textarea::placeholder,
-body.fontLora .container button {
+body.fontLora .container button,
+body.fontLora .mediacontainer div,
+body.fontLora .mediacontainer label,
+body.fontLora .mediacontainer input,
+body.fontLora .mediacontainer p,
+body.fontLora .mediacontainer textarea,
+body.fontLora .mediacontainer input::placeholder,
+body.fontLora .mediacontainer textarea::placeholder,
+body.fontLora .mediacontainer button {
   font-family: 'Lora', serif !important;
 }
 
-body.fontPTSans .container {
+body.fontPTSans .container,
+body.fontPTSans .mediacontainer {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
@@ -240,7 +364,15 @@ body.fontPTSans .container p,
 body.fontPTSans .container textarea,
 body.fontPTSans .container input::-webkit-input-placeholder,
 body.fontPTSans .container textarea::-webkit-input-placeholder,
-body.fontPTSans .container button {
+body.fontPTSans .container button,
+body.fontPTSans .mediacontainer div,
+body.fontPTSans .mediacontainer label,
+body.fontPTSans .mediacontainer input,
+body.fontPTSans .mediacontainer p,
+body.fontPTSans .mediacontainer textarea,
+body.fontPTSans .mediacontainer input::-webkit-input-placeholder,
+body.fontPTSans .mediacontainer textarea::-webkit-input-placeholder,
+body.fontPTSans .mediacontainer button {
   font-family: 'PT Sans', sans-serif !important;
 }
 
@@ -251,7 +383,15 @@ body.fontPTSans .container p,
 body.fontPTSans .container textarea,
 body.fontPTSans .container input::-moz-placeholder,
 body.fontPTSans .container textarea::-moz-placeholder,
-body.fontPTSans .container button {
+body.fontPTSans .container button,
+body.fontPTSans .mediacontainer div,
+body.fontPTSans .mediacontainer label,
+body.fontPTSans .mediacontainer input,
+body.fontPTSans .mediacontainer p,
+body.fontPTSans .mediacontainer textarea,
+body.fontPTSans .mediacontainer input::-moz-placeholder,
+body.fontPTSans .mediacontainer textarea::-moz-placeholder,
+body.fontPTSans .mediacontainer button {
   font-family: 'PT Sans', sans-serif !important;
 }
 
@@ -262,7 +402,15 @@ body.fontPTSans .container p,
 body.fontPTSans .container textarea,
 body.fontPTSans .container input:-ms-input-placeholder,
 body.fontPTSans .container textarea:-ms-input-placeholder,
-body.fontPTSans .container button {
+body.fontPTSans .container button,
+body.fontPTSans .mediacontainer div,
+body.fontPTSans .mediacontainer label,
+body.fontPTSans .mediacontainer input,
+body.fontPTSans .mediacontainer p,
+body.fontPTSans .mediacontainer textarea,
+body.fontPTSans .mediacontainer input:-ms-input-placeholder,
+body.fontPTSans .mediacontainer textarea:-ms-input-placeholder,
+body.fontPTSans .mediacontainer button {
   font-family: 'PT Sans', sans-serif !important;
 }
 
@@ -273,7 +421,15 @@ body.fontPTSans .container p,
 body.fontPTSans .container textarea,
 body.fontPTSans .container input::-ms-input-placeholder,
 body.fontPTSans .container textarea::-ms-input-placeholder,
-body.fontPTSans .container button {
+body.fontPTSans .container button,
+body.fontPTSans .mediacontainer div,
+body.fontPTSans .mediacontainer label,
+body.fontPTSans .mediacontainer input,
+body.fontPTSans .mediacontainer p,
+body.fontPTSans .mediacontainer textarea,
+body.fontPTSans .mediacontainer input::-ms-input-placeholder,
+body.fontPTSans .mediacontainer textarea::-ms-input-placeholder,
+body.fontPTSans .mediacontainer button {
   font-family: 'PT Sans', sans-serif !important;
 }
 
@@ -284,11 +440,20 @@ body.fontPTSans .container p,
 body.fontPTSans .container textarea,
 body.fontPTSans .container input::placeholder,
 body.fontPTSans .container textarea::placeholder,
-body.fontPTSans .container button {
+body.fontPTSans .container button,
+body.fontPTSans .mediacontainer div,
+body.fontPTSans .mediacontainer label,
+body.fontPTSans .mediacontainer input,
+body.fontPTSans .mediacontainer p,
+body.fontPTSans .mediacontainer textarea,
+body.fontPTSans .mediacontainer input::placeholder,
+body.fontPTSans .mediacontainer textarea::placeholder,
+body.fontPTSans .mediacontainer button {
   font-family: 'PT Sans', sans-serif !important;
 }
 
-body.fontNotoSans .container {
+body.fontNotoSans .container,
+body.fontNotoSans .mediacontainer {
   font-family: 'Noto Sans', sans-serif !important;
 }
 
@@ -299,7 +464,15 @@ body.fontNotoSans .container p,
 body.fontNotoSans .container textarea,
 body.fontNotoSans .container input::-webkit-input-placeholder,
 body.fontNotoSans .container textarea::-webkit-input-placeholder,
-body.fontNotoSans .container button {
+body.fontNotoSans .container button,
+body.fontNotoSans .mediacontainer div,
+body.fontNotoSans .mediacontainer label,
+body.fontNotoSans .mediacontainer input,
+body.fontNotoSans .mediacontainer p,
+body.fontNotoSans .mediacontainer textarea,
+body.fontNotoSans .mediacontainer input::-webkit-input-placeholder,
+body.fontNotoSans .mediacontainer textarea::-webkit-input-placeholder,
+body.fontNotoSans .mediacontainer button {
   font-family: 'Noto Sans', sans-serif !important;
 }
 
@@ -310,7 +483,15 @@ body.fontNotoSans .container p,
 body.fontNotoSans .container textarea,
 body.fontNotoSans .container input::-moz-placeholder,
 body.fontNotoSans .container textarea::-moz-placeholder,
-body.fontNotoSans .container button {
+body.fontNotoSans .container button,
+body.fontNotoSans .mediacontainer div,
+body.fontNotoSans .mediacontainer label,
+body.fontNotoSans .mediacontainer input,
+body.fontNotoSans .mediacontainer p,
+body.fontNotoSans .mediacontainer textarea,
+body.fontNotoSans .mediacontainer input::-moz-placeholder,
+body.fontNotoSans .mediacontainer textarea::-moz-placeholder,
+body.fontNotoSans .mediacontainer button {
   font-family: 'Noto Sans', sans-serif !important;
 }
 
@@ -321,7 +502,15 @@ body.fontNotoSans .container p,
 body.fontNotoSans .container textarea,
 body.fontNotoSans .container input:-ms-input-placeholder,
 body.fontNotoSans .container textarea:-ms-input-placeholder,
-body.fontNotoSans .container button {
+body.fontNotoSans .container button,
+body.fontNotoSans .mediacontainer div,
+body.fontNotoSans .mediacontainer label,
+body.fontNotoSans .mediacontainer input,
+body.fontNotoSans .mediacontainer p,
+body.fontNotoSans .mediacontainer textarea,
+body.fontNotoSans .mediacontainer input:-ms-input-placeholder,
+body.fontNotoSans .mediacontainer textarea:-ms-input-placeholder,
+body.fontNotoSans .mediacontainer button {
   font-family: 'Noto Sans', sans-serif !important;
 }
 
@@ -332,7 +521,15 @@ body.fontNotoSans .container p,
 body.fontNotoSans .container textarea,
 body.fontNotoSans .container input::-ms-input-placeholder,
 body.fontNotoSans .container textarea::-ms-input-placeholder,
-body.fontNotoSans .container button {
+body.fontNotoSans .container button,
+body.fontNotoSans .mediacontainer div,
+body.fontNotoSans .mediacontainer label,
+body.fontNotoSans .mediacontainer input,
+body.fontNotoSans .mediacontainer p,
+body.fontNotoSans .mediacontainer textarea,
+body.fontNotoSans .mediacontainer input::-ms-input-placeholder,
+body.fontNotoSans .mediacontainer textarea::-ms-input-placeholder,
+body.fontNotoSans .mediacontainer button {
   font-family: 'Noto Sans', sans-serif !important;
 }
 
@@ -343,11 +540,20 @@ body.fontNotoSans .container p,
 body.fontNotoSans .container textarea,
 body.fontNotoSans .container input::placeholder,
 body.fontNotoSans .container textarea::placeholder,
-body.fontNotoSans .container button {
+body.fontNotoSans .container button,
+body.fontNotoSans .mediacontainer div,
+body.fontNotoSans .mediacontainer label,
+body.fontNotoSans .mediacontainer input,
+body.fontNotoSans .mediacontainer p,
+body.fontNotoSans .mediacontainer textarea,
+body.fontNotoSans .mediacontainer input::placeholder,
+body.fontNotoSans .mediacontainer textarea::placeholder,
+body.fontNotoSans .mediacontainer button {
   font-family: 'Noto Sans', sans-serif !important;
 }
 
-body.fontTahoma .container {
+body.fontTahoma .container,
+body.fontTahoma .mediacontainer {
   font-family: Tahoma, Geneva, sans-serif  !important;
 }
 
@@ -358,7 +564,15 @@ body.fontTahoma .container p,
 body.fontTahoma .container textarea,
 body.fontTahoma .container input::-webkit-input-placeholder,
 body.fontTahoma .container textarea::-webkit-input-placeholder,
-body.fontTahoma .container button {
+body.fontTahoma .container button,
+body.fontTahoma .mediacontainer div,
+body.fontTahoma .mediacontainer label,
+body.fontTahoma .mediacontainer input,
+body.fontTahoma .mediacontainer p,
+body.fontTahoma .mediacontainer textarea,
+body.fontTahoma .mediacontainer input::-webkit-input-placeholder,
+body.fontTahoma .mediacontainer textarea::-webkit-input-placeholder,
+body.fontTahoma .mediacontainer button {
   font-family: Tahoma, Geneva, sans-serif  !important;
 }
 
@@ -369,7 +583,15 @@ body.fontTahoma .container p,
 body.fontTahoma .container textarea,
 body.fontTahoma .container input::-moz-placeholder,
 body.fontTahoma .container textarea::-moz-placeholder,
-body.fontTahoma .container button {
+body.fontTahoma .container button,
+body.fontTahoma .mediacontainer div,
+body.fontTahoma .mediacontainer label,
+body.fontTahoma .mediacontainer input,
+body.fontTahoma .mediacontainer p,
+body.fontTahoma .mediacontainer textarea,
+body.fontTahoma .mediacontainer input::-moz-placeholder,
+body.fontTahoma .mediacontainer textarea::-moz-placeholder,
+body.fontTahoma .mediacontainer button {
   font-family: Tahoma, Geneva, sans-serif  !important;
 }
 
@@ -380,7 +602,15 @@ body.fontTahoma .container p,
 body.fontTahoma .container textarea,
 body.fontTahoma .container input:-ms-input-placeholder,
 body.fontTahoma .container textarea:-ms-input-placeholder,
-body.fontTahoma .container button {
+body.fontTahoma .container button,
+body.fontTahoma .mediacontainer div,
+body.fontTahoma .mediacontainer label,
+body.fontTahoma .mediacontainer input,
+body.fontTahoma .mediacontainer p,
+body.fontTahoma .mediacontainer textarea,
+body.fontTahoma .mediacontainer input:-ms-input-placeholder,
+body.fontTahoma .mediacontainer textarea:-ms-input-placeholder,
+body.fontTahoma .mediacontainer button {
   font-family: Tahoma, Geneva, sans-serif  !important;
 }
 
@@ -391,7 +621,15 @@ body.fontTahoma .container p,
 body.fontTahoma .container textarea,
 body.fontTahoma .container input::-ms-input-placeholder,
 body.fontTahoma .container textarea::-ms-input-placeholder,
-body.fontTahoma .container button {
+body.fontTahoma .container button,
+body.fontTahoma .mediacontainer div,
+body.fontTahoma .mediacontainer label,
+body.fontTahoma .mediacontainer input,
+body.fontTahoma .mediacontainer p,
+body.fontTahoma .mediacontainer textarea,
+body.fontTahoma .mediacontainer input::-ms-input-placeholder,
+body.fontTahoma .mediacontainer textarea::-ms-input-placeholder,
+body.fontTahoma .mediacontainer button {
   font-family: Tahoma, Geneva, sans-serif  !important;
 }
 
@@ -402,11 +640,20 @@ body.fontTahoma .container p,
 body.fontTahoma .container textarea,
 body.fontTahoma .container input::placeholder,
 body.fontTahoma .container textarea::placeholder,
-body.fontTahoma .container button {
+body.fontTahoma .container button,
+body.fontTahoma .mediacontainer div,
+body.fontTahoma .mediacontainer label,
+body.fontTahoma .mediacontainer input,
+body.fontTahoma .mediacontainer p,
+body.fontTahoma .mediacontainer textarea,
+body.fontTahoma .mediacontainer input::placeholder,
+body.fontTahoma .mediacontainer textarea::placeholder,
+body.fontTahoma .mediacontainer button {
   font-family: Tahoma, Geneva, sans-serif  !important;
 }
 
-body.fontImpact .container {
+body.fontImpact .container,
+body.fontImpact .mediacontainer {
   font-family: Impact, Charcoal, sans-serif  !important;
 }
 
@@ -417,7 +664,15 @@ body.fontImpact .container p,
 body.fontImpact .container textarea,
 body.fontImpact .container input::-webkit-input-placeholder,
 body.fontImpact .container textarea::-webkit-input-placeholder,
-body.fontImpact .container button {
+body.fontImpact .container button,
+body.fontImpact .mediacontainer div,
+body.fontImpact .mediacontainer label,
+body.fontImpact .mediacontainer input,
+body.fontImpact .mediacontainer p,
+body.fontImpact .mediacontainer textarea,
+body.fontImpact .mediacontainer input::-webkit-input-placeholder,
+body.fontImpact .mediacontainer textarea::-webkit-input-placeholder,
+body.fontImpact .mediacontainer button {
   font-family: Impact, Charcoal, sans-serif  !important;
 }
 
@@ -428,7 +683,15 @@ body.fontImpact .container p,
 body.fontImpact .container textarea,
 body.fontImpact .container input::-moz-placeholder,
 body.fontImpact .container textarea::-moz-placeholder,
-body.fontImpact .container button {
+body.fontImpact .container button,
+body.fontImpact .mediacontainer div,
+body.fontImpact .mediacontainer label,
+body.fontImpact .mediacontainer input,
+body.fontImpact .mediacontainer p,
+body.fontImpact .mediacontainer textarea,
+body.fontImpact .mediacontainer input::-moz-placeholder,
+body.fontImpact .mediacontainer textarea::-moz-placeholder,
+body.fontImpact .mediacontainer button {
   font-family: Impact, Charcoal, sans-serif  !important;
 }
 
@@ -439,7 +702,15 @@ body.fontImpact .container p,
 body.fontImpact .container textarea,
 body.fontImpact .container input:-ms-input-placeholder,
 body.fontImpact .container textarea:-ms-input-placeholder,
-body.fontImpact .container button {
+body.fontImpact .container button,
+body.fontImpact .mediacontainer div,
+body.fontImpact .mediacontainer label,
+body.fontImpact .mediacontainer input,
+body.fontImpact .mediacontainer p,
+body.fontImpact .mediacontainer textarea,
+body.fontImpact .mediacontainer input:-ms-input-placeholder,
+body.fontImpact .mediacontainer textarea:-ms-input-placeholder,
+body.fontImpact .mediacontainer button {
   font-family: Impact, Charcoal, sans-serif  !important;
 }
 
@@ -450,7 +721,15 @@ body.fontImpact .container p,
 body.fontImpact .container textarea,
 body.fontImpact .container input::-ms-input-placeholder,
 body.fontImpact .container textarea::-ms-input-placeholder,
-body.fontImpact .container button {
+body.fontImpact .container button,
+body.fontImpact .mediacontainer div,
+body.fontImpact .mediacontainer label,
+body.fontImpact .mediacontainer input,
+body.fontImpact .mediacontainer p,
+body.fontImpact .mediacontainer textarea,
+body.fontImpact .mediacontainer input::-ms-input-placeholder,
+body.fontImpact .mediacontainer textarea::-ms-input-placeholder,
+body.fontImpact .mediacontainer button {
   font-family: Impact, Charcoal, sans-serif  !important;
 }
 
@@ -461,11 +740,20 @@ body.fontImpact .container p,
 body.fontImpact .container textarea,
 body.fontImpact .container input::placeholder,
 body.fontImpact .container textarea::placeholder,
-body.fontImpact .container button {
+body.fontImpact .container button,
+body.fontImpact .mediacontainer div,
+body.fontImpact .mediacontainer label,
+body.fontImpact .mediacontainer input,
+body.fontImpact .mediacontainer p,
+body.fontImpact .mediacontainer textarea,
+body.fontImpact .mediacontainer input::placeholder,
+body.fontImpact .mediacontainer textarea::placeholder,
+body.fontImpact .mediacontainer button {
   font-family: Impact, Charcoal, sans-serif  !important;
 }
 
-body.fontLucida .container {
+body.fontLucida .container,
+body.fontLucida .mediacontainer {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
 }
 
@@ -476,7 +764,15 @@ body.fontLucida .container p,
 body.fontLucida .container textarea,
 body.fontLucida .container input::-webkit-input-placeholder,
 body.fontLucida .container textarea::-webkit-input-placeholder,
-body.fontLucida .container button {
+body.fontLucida .container button,
+body.fontLucida .mediacontainer div,
+body.fontLucida .mediacontainer label,
+body.fontLucida .mediacontainer input,
+body.fontLucida .mediacontainer p,
+body.fontLucida .mediacontainer textarea,
+body.fontLucida .mediacontainer input::-webkit-input-placeholder,
+body.fontLucida .mediacontainer textarea::-webkit-input-placeholder,
+body.fontLucida .mediacontainer button {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif  !important;
 }
 
@@ -487,7 +783,15 @@ body.fontLucida .container p,
 body.fontLucida .container textarea,
 body.fontLucida .container input::-moz-placeholder,
 body.fontLucida .container textarea::-moz-placeholder,
-body.fontLucida .container button {
+body.fontLucida .container button,
+body.fontLucida .mediacontainer div,
+body.fontLucida .mediacontainer label,
+body.fontLucida .mediacontainer input,
+body.fontLucida .mediacontainer p,
+body.fontLucida .mediacontainer textarea,
+body.fontLucida .mediacontainer input::-moz-placeholder,
+body.fontLucida .mediacontainer textarea::-moz-placeholder,
+body.fontLucida .mediacontainer button {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif  !important;
 }
 
@@ -498,7 +802,15 @@ body.fontLucida .container p,
 body.fontLucida .container textarea,
 body.fontLucida .container input:-ms-input-placeholder,
 body.fontLucida .container textarea:-ms-input-placeholder,
-body.fontLucida .container button {
+body.fontLucida .container button,
+body.fontLucida .mediacontainer div,
+body.fontLucida .mediacontainer label,
+body.fontLucida .mediacontainer input,
+body.fontLucida .mediacontainer p,
+body.fontLucida .mediacontainer textarea,
+body.fontLucida .mediacontainer input:-ms-input-placeholder,
+body.fontLucida .mediacontainer textarea:-ms-input-placeholder,
+body.fontLucida .mediacontainer button {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif  !important;
 }
 
@@ -509,7 +821,15 @@ body.fontLucida .container p,
 body.fontLucida .container textarea,
 body.fontLucida .container input::-ms-input-placeholder,
 body.fontLucida .container textarea::-ms-input-placeholder,
-body.fontLucida .container button {
+body.fontLucida .container button,
+body.fontLucida .mediacontainer div,
+body.fontLucida .mediacontainer label,
+body.fontLucida .mediacontainer input,
+body.fontLucida .mediacontainer p,
+body.fontLucida .mediacontainer textarea,
+body.fontLucida .mediacontainer input::-ms-input-placeholder,
+body.fontLucida .mediacontainer textarea::-ms-input-placeholder,
+body.fontLucida .mediacontainer button {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif  !important;
 }
 
@@ -520,11 +840,20 @@ body.fontLucida .container p,
 body.fontLucida .container textarea,
 body.fontLucida .container input::placeholder,
 body.fontLucida .container textarea::placeholder,
-body.fontLucida .container button {
+body.fontLucida .container button,
+body.fontLucida .mediacontainer div,
+body.fontLucida .mediacontainer label,
+body.fontLucida .mediacontainer input,
+body.fontLucida .mediacontainer p,
+body.fontLucida .mediacontainer textarea,
+body.fontLucida .mediacontainer input::placeholder,
+body.fontLucida .mediacontainer textarea::placeholder,
+body.fontLucida .mediacontainer button {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif  !important;
 }
 
-body.fontCourier .container {
+body.fontCourier .container,
+body.fontCourier .mediacontainer {
   font-family: "Courier New", Courier, monospace !important;
 }
 
@@ -535,7 +864,15 @@ body.fontCourier .container p,
 body.fontCourier .container textarea,
 body.fontCourier .container input::-webkit-input-placeholder,
 body.fontCourier .container textarea::-webkit-input-placeholder,
-body.fontCourier .container button {
+body.fontCourier .container button,
+body.fontCourier .mediacontainer div,
+body.fontCourier .mediacontainer label,
+body.fontCourier .mediacontainer input,
+body.fontCourier .mediacontainer p,
+body.fontCourier .mediacontainer textarea,
+body.fontCourier .mediacontainer input::-webkit-input-placeholder,
+body.fontCourier .mediacontainer textarea::-webkit-input-placeholder,
+body.fontCourier .mediacontainer button {
   font-family: "Courier New", Courier, monospace !important;
 }
 
@@ -546,7 +883,15 @@ body.fontCourier .container p,
 body.fontCourier .container textarea,
 body.fontCourier .container input::-moz-placeholder,
 body.fontCourier .container textarea::-moz-placeholder,
-body.fontCourier .container button {
+body.fontCourier .container button,
+body.fontCourier .mediacontainer div,
+body.fontCourier .mediacontainer label,
+body.fontCourier .mediacontainer input,
+body.fontCourier .mediacontainer p,
+body.fontCourier .mediacontainer textarea,
+body.fontCourier .mediacontainer input::-moz-placeholder,
+body.fontCourier .mediacontainer textarea::-moz-placeholder,
+body.fontCourier .mediacontainer button {
   font-family: "Courier New", Courier, monospace !important;
 }
 
@@ -557,7 +902,15 @@ body.fontCourier .container p,
 body.fontCourier .container textarea,
 body.fontCourier .container input:-ms-input-placeholder,
 body.fontCourier .container textarea:-ms-input-placeholder,
-body.fontCourier .container button {
+body.fontCourier .container button,
+body.fontCourier .mediacontainer div,
+body.fontCourier .mediacontainer label,
+body.fontCourier .mediacontainer input,
+body.fontCourier .mediacontainer p,
+body.fontCourier .mediacontainer textarea,
+body.fontCourier .mediacontainer input:-ms-input-placeholder,
+body.fontCourier .mediacontainer textarea:-ms-input-placeholder,
+body.fontCourier .mediacontainer button {
   font-family: "Courier New", Courier, monospace !important;
 }
 
@@ -568,7 +921,15 @@ body.fontCourier .container p,
 body.fontCourier .container textarea,
 body.fontCourier .container input::-ms-input-placeholder,
 body.fontCourier .container textarea::-ms-input-placeholder,
-body.fontCourier .container button {
+body.fontCourier .container button,
+body.fontCourier .mediacontainer div,
+body.fontCourier .mediacontainer label,
+body.fontCourier .mediacontainer input,
+body.fontCourier .mediacontainer p,
+body.fontCourier .mediacontainer textarea,
+body.fontCourier .mediacontainer input::-ms-input-placeholder,
+body.fontCourier .mediacontainer textarea::-ms-input-placeholder,
+body.fontCourier .mediacontainer button {
   font-family: "Courier New", Courier, monospace !important;
 }
 
@@ -579,11 +940,20 @@ body.fontCourier .container p,
 body.fontCourier .container textarea,
 body.fontCourier .container input::placeholder,
 body.fontCourier .container textarea::placeholder,
-body.fontCourier .container button {
+body.fontCourier .container button,
+body.fontCourier .mediacontainer div,
+body.fontCourier .mediacontainer label,
+body.fontCourier .mediacontainer input,
+body.fontCourier .mediacontainer p,
+body.fontCourier .mediacontainer textarea,
+body.fontCourier .mediacontainer input::placeholder,
+body.fontCourier .mediacontainer textarea::placeholder,
+body.fontCourier .mediacontainer button {
   font-family: "Courier New", Courier, monospace !important;
 }
 
-body.fontGeorgia .container {
+body.fontGeorgia .container,
+body.fontGeorgia .mediacontainer {
   font-family: Georgia, serif !important;
 }
 
@@ -594,7 +964,15 @@ body.fontGeorgia .container p,
 body.fontGeorgia .container textarea,
 body.fontGeorgia .container input::-webkit-input-placeholder,
 body.fontGeorgia .container textarea::-webkit-input-placeholder,
-body.fontGeorgia .container button {
+body.fontGeorgia .container button,
+body.fontGeorgia .mediacontainer div,
+body.fontGeorgia .mediacontainer label,
+body.fontGeorgia .mediacontainer input,
+body.fontGeorgia .mediacontainer p,
+body.fontGeorgia .mediacontainer textarea,
+body.fontGeorgia .mediacontainer input::-webkit-input-placeholder,
+body.fontGeorgia .mediacontainer textarea::-webkit-input-placeholder,
+body.fontGeorgia .mediacontainer button {
   font-family: Georgia, serif !important;
 }
 
@@ -605,7 +983,15 @@ body.fontGeorgia .container p,
 body.fontGeorgia .container textarea,
 body.fontGeorgia .container input::-moz-placeholder,
 body.fontGeorgia .container textarea::-moz-placeholder,
-body.fontGeorgia .container button {
+body.fontGeorgia .container button,
+body.fontGeorgia .mediacontainer div,
+body.fontGeorgia .mediacontainer label,
+body.fontGeorgia .mediacontainer input,
+body.fontGeorgia .mediacontainer p,
+body.fontGeorgia .mediacontainer textarea,
+body.fontGeorgia .mediacontainer input::-moz-placeholder,
+body.fontGeorgia .mediacontainer textarea::-moz-placeholder,
+body.fontGeorgia .mediacontainer button {
   font-family: Georgia, serif !important;
 }
 
@@ -616,7 +1002,15 @@ body.fontGeorgia .container p,
 body.fontGeorgia .container textarea,
 body.fontGeorgia .container input:-ms-input-placeholder,
 body.fontGeorgia .container textarea:-ms-input-placeholder,
-body.fontGeorgia .container button {
+body.fontGeorgia .container button,
+body.fontGeorgia .mediacontainer div,
+body.fontGeorgia .mediacontainer label,
+body.fontGeorgia .mediacontainer input,
+body.fontGeorgia .mediacontainer p,
+body.fontGeorgia .mediacontainer textarea,
+body.fontGeorgia .mediacontainer input:-ms-input-placeholder,
+body.fontGeorgia .mediacontainer textarea:-ms-input-placeholder,
+body.fontGeorgia .mediacontainer button {
   font-family: Georgia, serif !important;
 }
 
@@ -627,7 +1021,15 @@ body.fontGeorgia .container p,
 body.fontGeorgia .container textarea,
 body.fontGeorgia .container input::-ms-input-placeholder,
 body.fontGeorgia .container textarea::-ms-input-placeholder,
-body.fontGeorgia .container button {
+body.fontGeorgia .container button,
+body.fontGeorgia .mediacontainer div,
+body.fontGeorgia .mediacontainer label,
+body.fontGeorgia .mediacontainer input,
+body.fontGeorgia .mediacontainer p,
+body.fontGeorgia .mediacontainer textarea,
+body.fontGeorgia .mediacontainer input::-ms-input-placeholder,
+body.fontGeorgia .mediacontainer textarea::-ms-input-placeholder,
+body.fontGeorgia .mediacontainer button {
   font-family: Georgia, serif !important;
 }
 
@@ -638,11 +1040,20 @@ body.fontGeorgia .container p,
 body.fontGeorgia .container textarea,
 body.fontGeorgia .container input::placeholder,
 body.fontGeorgia .container textarea::placeholder,
-body.fontGeorgia .container button {
+body.fontGeorgia .container button,
+body.fontGeorgia .mediacontainer div,
+body.fontGeorgia .mediacontainer label,
+body.fontGeorgia .mediacontainer input,
+body.fontGeorgia .mediacontainer p,
+body.fontGeorgia .mediacontainer textarea,
+body.fontGeorgia .mediacontainer input::placeholder,
+body.fontGeorgia .mediacontainer textarea::placeholder,
+body.fontGeorgia .mediacontainer button {
   font-family: Georgia, serif !important;
 }
 
-body.fontTimesNewRoman .container {
+body.fontTimesNewRoman .container,
+body.fontTimesNewRoman .mediacontainer {
   font-family: "Times New Roman", Times, serif  !important;
 }
 
@@ -653,7 +1064,15 @@ body.fontTimesNewRoman .container p,
 body.fontTimesNewRoman .container textarea,
 body.fontTimesNewRoman .container input::-webkit-input-placeholder,
 body.fontTimesNewRoman .container textarea::-webkit-input-placeholder,
-body.fontTimesNewRoman .container button {
+body.fontTimesNewRoman .container button,
+body.fontTimesNewRoman .mediacontainer div,
+body.fontTimesNewRoman .mediacontainer label,
+body.fontTimesNewRoman .mediacontainer input,
+body.fontTimesNewRoman .mediacontainer p,
+body.fontTimesNewRoman .mediacontainer textarea,
+body.fontTimesNewRoman .mediacontainer input::-webkit-input-placeholder,
+body.fontTimesNewRoman .mediacontainer textarea::-webkit-input-placeholder,
+body.fontTimesNewRoman .mediacontainer button {
   font-family: "Times New Roman", Times, serif  !important;
 }
 
@@ -664,7 +1083,15 @@ body.fontTimesNewRoman .container p,
 body.fontTimesNewRoman .container textarea,
 body.fontTimesNewRoman .container input::-moz-placeholder,
 body.fontTimesNewRoman .container textarea::-moz-placeholder,
-body.fontTimesNewRoman .container button {
+body.fontTimesNewRoman .container button,
+body.fontTimesNewRoman .mediacontainer div,
+body.fontTimesNewRoman .mediacontainer label,
+body.fontTimesNewRoman .mediacontainer input,
+body.fontTimesNewRoman .mediacontainer p,
+body.fontTimesNewRoman .mediacontainer textarea,
+body.fontTimesNewRoman .mediacontainer input::-moz-placeholder,
+body.fontTimesNewRoman .mediacontainer textarea::-moz-placeholder,
+body.fontTimesNewRoman .mediacontainer button {
   font-family: "Times New Roman", Times, serif  !important;
 }
 
@@ -675,7 +1102,15 @@ body.fontTimesNewRoman .container p,
 body.fontTimesNewRoman .container textarea,
 body.fontTimesNewRoman .container input:-ms-input-placeholder,
 body.fontTimesNewRoman .container textarea:-ms-input-placeholder,
-body.fontTimesNewRoman .container button {
+body.fontTimesNewRoman .container button,
+body.fontTimesNewRoman .mediacontainer div,
+body.fontTimesNewRoman .mediacontainer label,
+body.fontTimesNewRoman .mediacontainer input,
+body.fontTimesNewRoman .mediacontainer p,
+body.fontTimesNewRoman .mediacontainer textarea,
+body.fontTimesNewRoman .mediacontainer input:-ms-input-placeholder,
+body.fontTimesNewRoman .mediacontainer textarea:-ms-input-placeholder,
+body.fontTimesNewRoman .mediacontainer button {
   font-family: "Times New Roman", Times, serif  !important;
 }
 
@@ -686,7 +1121,15 @@ body.fontTimesNewRoman .container p,
 body.fontTimesNewRoman .container textarea,
 body.fontTimesNewRoman .container input::-ms-input-placeholder,
 body.fontTimesNewRoman .container textarea::-ms-input-placeholder,
-body.fontTimesNewRoman .container button {
+body.fontTimesNewRoman .container button,
+body.fontTimesNewRoman .mediacontainer div,
+body.fontTimesNewRoman .mediacontainer label,
+body.fontTimesNewRoman .mediacontainer input,
+body.fontTimesNewRoman .mediacontainer p,
+body.fontTimesNewRoman .mediacontainer textarea,
+body.fontTimesNewRoman .mediacontainer input::-ms-input-placeholder,
+body.fontTimesNewRoman .mediacontainer textarea::-ms-input-placeholder,
+body.fontTimesNewRoman .mediacontainer button {
   font-family: "Times New Roman", Times, serif  !important;
 }
 
@@ -697,11 +1140,20 @@ body.fontTimesNewRoman .container p,
 body.fontTimesNewRoman .container textarea,
 body.fontTimesNewRoman .container input::placeholder,
 body.fontTimesNewRoman .container textarea::placeholder,
-body.fontTimesNewRoman .container button {
+body.fontTimesNewRoman .container button,
+body.fontTimesNewRoman .mediacontainer div,
+body.fontTimesNewRoman .mediacontainer label,
+body.fontTimesNewRoman .mediacontainer input,
+body.fontTimesNewRoman .mediacontainer p,
+body.fontTimesNewRoman .mediacontainer textarea,
+body.fontTimesNewRoman .mediacontainer input::placeholder,
+body.fontTimesNewRoman .mediacontainer textarea::placeholder,
+body.fontTimesNewRoman .mediacontainer button {
   font-family: "Times New Roman", Times, serif  !important;
 }
 
-body.fontRoboto .container {
+body.fontRoboto .container,
+body.fontRoboto .mediacontainer {
   font-family: 'Roboto', sans-serif !important;
 }
 
@@ -712,7 +1164,15 @@ body.fontRoboto .container p,
 body.fontRoboto .container textarea,
 body.fontRoboto .container input::-webkit-input-placeholder,
 body.fontRoboto .container textarea::-webkit-input-placeholder,
-body.fontRoboto .container button {
+body.fontRoboto .container button,
+body.fontRoboto .mediacontainer div,
+body.fontRoboto .mediacontainer label,
+body.fontRoboto .mediacontainer input,
+body.fontRoboto .mediacontainer p,
+body.fontRoboto .mediacontainer textarea,
+body.fontRoboto .mediacontainer input::-webkit-input-placeholder,
+body.fontRoboto .mediacontainer textarea::-webkit-input-placeholder,
+body.fontRoboto .mediacontainer button {
   font-family: 'Roboto', sans-serif !important;
 }
 
@@ -723,7 +1183,15 @@ body.fontRoboto .container p,
 body.fontRoboto .container textarea,
 body.fontRoboto .container input::-moz-placeholder,
 body.fontRoboto .container textarea::-moz-placeholder,
-body.fontRoboto .container button {
+body.fontRoboto .container button,
+body.fontRoboto .mediacontainer div,
+body.fontRoboto .mediacontainer label,
+body.fontRoboto .mediacontainer input,
+body.fontRoboto .mediacontainer p,
+body.fontRoboto .mediacontainer textarea,
+body.fontRoboto .mediacontainer input::-moz-placeholder,
+body.fontRoboto .mediacontainer textarea::-moz-placeholder,
+body.fontRoboto .mediacontainer button {
   font-family: 'Roboto', sans-serif !important;
 }
 
@@ -734,7 +1202,15 @@ body.fontRoboto .container p,
 body.fontRoboto .container textarea,
 body.fontRoboto .container input:-ms-input-placeholder,
 body.fontRoboto .container textarea:-ms-input-placeholder,
-body.fontRoboto .container button {
+body.fontRoboto .container button,
+body.fontRoboto .mediacontainer div,
+body.fontRoboto .mediacontainer label,
+body.fontRoboto .mediacontainer input,
+body.fontRoboto .mediacontainer p,
+body.fontRoboto .mediacontainer textarea,
+body.fontRoboto .mediacontainer input:-ms-input-placeholder,
+body.fontRoboto .mediacontainer textarea:-ms-input-placeholder,
+body.fontRoboto .mediacontainer button {
   font-family: 'Roboto', sans-serif !important;
 }
 
@@ -745,7 +1221,15 @@ body.fontRoboto .container p,
 body.fontRoboto .container textarea,
 body.fontRoboto .container input::-ms-input-placeholder,
 body.fontRoboto .container textarea::-ms-input-placeholder,
-body.fontRoboto .container button {
+body.fontRoboto .container button,
+body.fontRoboto .mediacontainer div,
+body.fontRoboto .mediacontainer label,
+body.fontRoboto .mediacontainer input,
+body.fontRoboto .mediacontainer p,
+body.fontRoboto .mediacontainer textarea,
+body.fontRoboto .mediacontainer input::-ms-input-placeholder,
+body.fontRoboto .mediacontainer textarea::-ms-input-placeholder,
+body.fontRoboto .mediacontainer button {
   font-family: 'Roboto', sans-serif !important;
 }
 
@@ -756,11 +1240,20 @@ body.fontRoboto .container p,
 body.fontRoboto .container textarea,
 body.fontRoboto .container input::placeholder,
 body.fontRoboto .container textarea::placeholder,
-body.fontRoboto .container button {
+body.fontRoboto .container button,
+body.fontRoboto .mediacontainer div,
+body.fontRoboto .mediacontainer label,
+body.fontRoboto .mediacontainer input,
+body.fontRoboto .mediacontainer p,
+body.fontRoboto .mediacontainer textarea,
+body.fontRoboto .mediacontainer input::placeholder,
+body.fontRoboto .mediacontainer textarea::placeholder,
+body.fontRoboto .mediacontainer button {
   font-family: 'Roboto', sans-serif !important;
 }
 
-body.fontOpenSans .container {
+body.fontOpenSans .container,
+body.fontOpenSans .mediacontainer {
   font-family: 'Open Sans', sans-serif !important;
 }
 
@@ -771,7 +1264,15 @@ body.fontOpenSans .container p,
 body.fontOpenSans .container textarea,
 body.fontOpenSans .container input::-webkit-input-placeholder,
 body.fontOpenSans .container textarea::-webkit-input-placeholder,
-body.fontOpenSans .container button {
+body.fontOpenSans .container button,
+body.fontOpenSans .mediacontainer div,
+body.fontOpenSans .mediacontainer label,
+body.fontOpenSans .mediacontainer input,
+body.fontOpenSans .mediacontainer p,
+body.fontOpenSans .mediacontainer textarea,
+body.fontOpenSans .mediacontainer input::-webkit-input-placeholder,
+body.fontOpenSans .mediacontainer textarea::-webkit-input-placeholder,
+body.fontOpenSans .mediacontainer button {
   font-family: 'Open Sans', sans-serif  !important;
 }
 
@@ -782,7 +1283,15 @@ body.fontOpenSans .container p,
 body.fontOpenSans .container textarea,
 body.fontOpenSans .container input::-moz-placeholder,
 body.fontOpenSans .container textarea::-moz-placeholder,
-body.fontOpenSans .container button {
+body.fontOpenSans .container button,
+body.fontOpenSans .mediacontainer div,
+body.fontOpenSans .mediacontainer label,
+body.fontOpenSans .mediacontainer input,
+body.fontOpenSans .mediacontainer p,
+body.fontOpenSans .mediacontainer textarea,
+body.fontOpenSans .mediacontainer input::-moz-placeholder,
+body.fontOpenSans .mediacontainer textarea::-moz-placeholder,
+body.fontOpenSans .mediacontainer button {
   font-family: 'Open Sans', sans-serif  !important;
 }
 
@@ -793,7 +1302,15 @@ body.fontOpenSans .container p,
 body.fontOpenSans .container textarea,
 body.fontOpenSans .container input:-ms-input-placeholder,
 body.fontOpenSans .container textarea:-ms-input-placeholder,
-body.fontOpenSans .container button {
+body.fontOpenSans .container button,
+body.fontOpenSans .mediacontainer div,
+body.fontOpenSans .mediacontainer label,
+body.fontOpenSans .mediacontainer input,
+body.fontOpenSans .mediacontainer p,
+body.fontOpenSans .mediacontainer textarea,
+body.fontOpenSans .mediacontainer input:-ms-input-placeholder,
+body.fontOpenSans .mediacontainer textarea:-ms-input-placeholder,
+body.fontOpenSans .mediacontainer button {
   font-family: 'Open Sans', sans-serif  !important;
 }
 
@@ -804,7 +1321,15 @@ body.fontOpenSans .container p,
 body.fontOpenSans .container textarea,
 body.fontOpenSans .container input::-ms-input-placeholder,
 body.fontOpenSans .container textarea::-ms-input-placeholder,
-body.fontOpenSans .container button {
+body.fontOpenSans .container button,
+body.fontOpenSans .mediacontainer div,
+body.fontOpenSans .mediacontainer label,
+body.fontOpenSans .mediacontainer input,
+body.fontOpenSans .mediacontainer p,
+body.fontOpenSans .mediacontainer textarea,
+body.fontOpenSans .mediacontainer input::-ms-input-placeholder,
+body.fontOpenSans .mediacontainer textarea::-ms-input-placeholder,
+body.fontOpenSans .mediacontainer button {
   font-family: 'Open Sans', sans-serif  !important;
 }
 
@@ -815,11 +1340,20 @@ body.fontOpenSans .container p,
 body.fontOpenSans .container textarea,
 body.fontOpenSans .container input::placeholder,
 body.fontOpenSans .container textarea::placeholder,
-body.fontOpenSans .container button {
+body.fontOpenSans .container button,
+body.fontOpenSans .mediacontainer div,
+body.fontOpenSans .mediacontainer label,
+body.fontOpenSans .mediacontainer input,
+body.fontOpenSans .mediacontainer p,
+body.fontOpenSans .mediacontainer textarea,
+body.fontOpenSans .mediacontainer input::placeholder,
+body.fontOpenSans .mediacontainer textarea::placeholder,
+body.fontOpenSans .mediacontainer button {
   font-family: 'Open Sans', sans-serif  !important;
 }
 
-body.fontPiazzolla .container {
+body.fontPiazzolla .container,
+body.fontPiazzolla .mediacontainer {
   font-family: 'Piazzolla', serif !important;
 }
 
@@ -830,7 +1364,15 @@ body.fontPiazzolla .container p,
 body.fontPiazzolla .container textarea,
 body.fontPiazzolla .container input::-webkit-input-placeholder,
 body.fontPiazzolla .container textarea::-webkit-input-placeholder,
-body.fontPiazzolla .container button {
+body.fontPiazzolla .container button,
+body.fontPiazzolla .mediacontainer div,
+body.fontPiazzolla .mediacontainer label,
+body.fontPiazzolla .mediacontainer input,
+body.fontPiazzolla .mediacontainer p,
+body.fontPiazzolla .mediacontainer textarea,
+body.fontPiazzolla .mediacontainer input::-webkit-input-placeholder,
+body.fontPiazzolla .mediacontainer textarea::-webkit-input-placeholder,
+body.fontPiazzolla .mediacontainer button {
   font-family: 'Piazzolla', serif !important;
 }
 
@@ -841,7 +1383,15 @@ body.fontPiazzolla .container p,
 body.fontPiazzolla .container textarea,
 body.fontPiazzolla .container input::-moz-placeholder,
 body.fontPiazzolla .container textarea::-moz-placeholder,
-body.fontPiazzolla .container button {
+body.fontPiazzolla .container button,
+body.fontPiazzolla .mediacontainer div,
+body.fontPiazzolla .mediacontainer label,
+body.fontPiazzolla .mediacontainer input,
+body.fontPiazzolla .mediacontainer p,
+body.fontPiazzolla .mediacontainer textarea,
+body.fontPiazzolla .mediacontainer input::-moz-placeholder,
+body.fontPiazzolla .mediacontainer textarea::-moz-placeholder,
+body.fontPiazzolla .mediacontainer button {
   font-family: 'Piazzolla', serif !important;
 }
 
@@ -852,7 +1402,15 @@ body.fontPiazzolla .container p,
 body.fontPiazzolla .container textarea,
 body.fontPiazzolla .container input:-ms-input-placeholder,
 body.fontPiazzolla .container textarea:-ms-input-placeholder,
-body.fontPiazzolla .container button {
+body.fontPiazzolla .container button,
+body.fontPiazzolla .mediacontainer div,
+body.fontPiazzolla .mediacontainer label,
+body.fontPiazzolla .mediacontainer input,
+body.fontPiazzolla .mediacontainer p,
+body.fontPiazzolla .mediacontainer textarea,
+body.fontPiazzolla .mediacontainer input:-ms-input-placeholder,
+body.fontPiazzolla .mediacontainer textarea:-ms-input-placeholder,
+body.fontPiazzolla .mediacontainer button {
   font-family: 'Piazzolla', serif !important;
 }
 
@@ -863,7 +1421,15 @@ body.fontPiazzolla .container p,
 body.fontPiazzolla .container textarea,
 body.fontPiazzolla .container input::-ms-input-placeholder,
 body.fontPiazzolla .container textarea::-ms-input-placeholder,
-body.fontPiazzolla .container button {
+body.fontPiazzolla .container button,
+body.fontPiazzolla .mediacontainer div,
+body.fontPiazzolla .mediacontainer label,
+body.fontPiazzolla .mediacontainer input,
+body.fontPiazzolla .mediacontainer p,
+body.fontPiazzolla .mediacontainer textarea,
+body.fontPiazzolla .mediacontainer input::-ms-input-placeholder,
+body.fontPiazzolla .mediacontainer textarea::-ms-input-placeholder,
+body.fontPiazzolla .mediacontainer button {
   font-family: 'Piazzolla', serif !important;
 }
 
@@ -874,11 +1440,20 @@ body.fontPiazzolla .container p,
 body.fontPiazzolla .container textarea,
 body.fontPiazzolla .container input::placeholder,
 body.fontPiazzolla .container textarea::placeholder,
-body.fontPiazzolla .container button {
+body.fontPiazzolla .container button,
+body.fontPiazzolla .mediacontainer div,
+body.fontPiazzolla .mediacontainer label,
+body.fontPiazzolla .mediacontainer input,
+body.fontPiazzolla .mediacontainer p,
+body.fontPiazzolla .mediacontainer textarea,
+body.fontPiazzolla .mediacontainer input::placeholder,
+body.fontPiazzolla .mediacontainer textarea::placeholder,
+body.fontPiazzolla .mediacontainer button {
   font-family: 'Piazzolla', serif !important;
 }
 
-body.fontOswald .container {
+body.fontOswald .container,
+body.fontOswald .mediacontainer {
   font-family: "Oswald", sans-serif !important;
 }
 
@@ -889,7 +1464,15 @@ body.fontOswald .container p,
 body.fontOswald .container textarea,
 body.fontOswald .container input::-webkit-input-placeholder,
 body.fontOswald .container textarea::-webkit-input-placeholder,
-body.fontOswald .container button {
+body.fontOswald .container button,
+body.fontOswald .mediacontainer div,
+body.fontOswald .mediacontainer label,
+body.fontOswald .mediacontainer input,
+body.fontOswald .mediacontainer p,
+body.fontOswald .mediacontainer textarea,
+body.fontOswald .mediacontainer input::-webkit-input-placeholder,
+body.fontOswald .mediacontainer textarea::-webkit-input-placeholder,
+body.fontOswald .mediacontainer button {
   font-family: "Oswald", sans-serif !important;
 }
 
@@ -900,7 +1483,15 @@ body.fontOswald .container p,
 body.fontOswald .container textarea,
 body.fontOswald .container input::-moz-placeholder,
 body.fontOswald .container textarea::-moz-placeholder,
-body.fontOswald .container button {
+body.fontOswald .container button,
+body.fontOswald .mediacontainer div,
+body.fontOswald .mediacontainer label,
+body.fontOswald .mediacontainer input,
+body.fontOswald .mediacontainer p,
+body.fontOswald .mediacontainer textarea,
+body.fontOswald .mediacontainer input::-moz-placeholder,
+body.fontOswald .mediacontainer textarea::-moz-placeholder,
+body.fontOswald .mediacontainer button {
   font-family: "Oswald", sans-serif !important;
 }
 
@@ -911,7 +1502,15 @@ body.fontOswald .container p,
 body.fontOswald .container textarea,
 body.fontOswald .container input:-ms-input-placeholder,
 body.fontOswald .container textarea:-ms-input-placeholder,
-body.fontOswald .container button {
+body.fontOswald .container button,
+body.fontOswald .mediacontainer div,
+body.fontOswald .mediacontainer label,
+body.fontOswald .mediacontainer input,
+body.fontOswald .mediacontainer p,
+body.fontOswald .mediacontainer textarea,
+body.fontOswald .mediacontainer input:-ms-input-placeholder,
+body.fontOswald .mediacontainer textarea:-ms-input-placeholder,
+body.fontOswald .mediacontainer button {
   font-family: "Oswald", sans-serif !important;
 }
 
@@ -922,7 +1521,15 @@ body.fontOswald .container p,
 body.fontOswald .container textarea,
 body.fontOswald .container input::-ms-input-placeholder,
 body.fontOswald .container textarea::-ms-input-placeholder,
-body.fontOswald .container button {
+body.fontOswald .container button,
+body.fontOswald .mediacontainer div,
+body.fontOswald .mediacontainer label,
+body.fontOswald .mediacontainer input,
+body.fontOswald .mediacontainer p,
+body.fontOswald .mediacontainer textarea,
+body.fontOswald .mediacontainer input::-ms-input-placeholder,
+body.fontOswald .mediacontainer textarea::-ms-input-placeholder,
+body.fontOswald .mediacontainer button {
   font-family: "Oswald", sans-serif !important;
 }
 
@@ -933,11 +1540,20 @@ body.fontOswald .container p,
 body.fontOswald .container textarea,
 body.fontOswald .container input::placeholder,
 body.fontOswald .container textarea::placeholder,
-body.fontOswald .container button {
+body.fontOswald .container button,
+body.fontOswald .mediacontainer div,
+body.fontOswald .mediacontainer label,
+body.fontOswald .mediacontainer input,
+body.fontOswald .mediacontainer p,
+body.fontOswald .mediacontainer textarea,
+body.fontOswald .mediacontainer input::placeholder,
+body.fontOswald .mediacontainer textarea::placeholder,
+body.fontOswald .mediacontainer button {
   font-family: "Oswald", sans-serif !important;
 }
 
-body.fontUbuntu .container {
+body.fontUbuntu .container,
+body.fontUbuntu .mediacontainer {
   font-family: 'Ubuntu', sans-serif !important;
 }
 
@@ -948,7 +1564,15 @@ body.fontUbuntu .container p,
 body.fontUbuntu .container textarea,
 body.fontUbuntu .container input::-webkit-input-placeholder,
 body.fontUbuntu .container textarea::-webkit-input-placeholder,
-body.fontUbuntu .container button {
+body.fontUbuntu .container button,
+body.fontUbuntu .mediacontainer div,
+body.fontUbuntu .mediacontainer label,
+body.fontUbuntu .mediacontainer input,
+body.fontUbuntu .mediacontainer p,
+body.fontUbuntu .mediacontainer textarea,
+body.fontUbuntu .mediacontainer input::-webkit-input-placeholder,
+body.fontUbuntu .mediacontainer textarea::-webkit-input-placeholder,
+body.fontUbuntu .mediacontainer button {
   font-family: 'Ubuntu', sans-serif !important;
 }
 
@@ -959,7 +1583,15 @@ body.fontUbuntu .container p,
 body.fontUbuntu .container textarea,
 body.fontUbuntu .container input::-moz-placeholder,
 body.fontUbuntu .container textarea::-moz-placeholder,
-body.fontUbuntu .container button {
+body.fontUbuntu .container button,
+body.fontUbuntu .mediacontainer div,
+body.fontUbuntu .mediacontainer label,
+body.fontUbuntu .mediacontainer input,
+body.fontUbuntu .mediacontainer p,
+body.fontUbuntu .mediacontainer textarea,
+body.fontUbuntu .mediacontainer input::-moz-placeholder,
+body.fontUbuntu .mediacontainer textarea::-moz-placeholder,
+body.fontUbuntu .mediacontainer button {
   font-family: 'Ubuntu', sans-serif !important;
 }
 
@@ -970,7 +1602,15 @@ body.fontUbuntu .container p,
 body.fontUbuntu .container textarea,
 body.fontUbuntu .container input:-ms-input-placeholder,
 body.fontUbuntu .container textarea:-ms-input-placeholder,
-body.fontUbuntu .container button {
+body.fontUbuntu .container button,
+body.fontUbuntu .mediacontainer div,
+body.fontUbuntu .mediacontainer label,
+body.fontUbuntu .mediacontainer input,
+body.fontUbuntu .mediacontainer p,
+body.fontUbuntu .mediacontainer textarea,
+body.fontUbuntu .mediacontainer input:-ms-input-placeholder,
+body.fontUbuntu .mediacontainer textarea:-ms-input-placeholder,
+body.fontUbuntu .mediacontainer button {
   font-family: 'Ubuntu', sans-serif !important;
 }
 
@@ -981,7 +1621,15 @@ body.fontUbuntu .container p,
 body.fontUbuntu .container textarea,
 body.fontUbuntu .container input::-ms-input-placeholder,
 body.fontUbuntu .container textarea::-ms-input-placeholder,
-body.fontUbuntu .container button {
+body.fontUbuntu .container button,
+body.fontUbuntu .mediacontainer div,
+body.fontUbuntu .mediacontainer label,
+body.fontUbuntu .mediacontainer input,
+body.fontUbuntu .mediacontainer p,
+body.fontUbuntu .mediacontainer textarea,
+body.fontUbuntu .mediacontainer input::-ms-input-placeholder,
+body.fontUbuntu .mediacontainer textarea::-ms-input-placeholder,
+body.fontUbuntu .mediacontainer button {
   font-family: 'Ubuntu', sans-serif !important;
 }
 
@@ -992,7 +1640,15 @@ body.fontUbuntu .container p,
 body.fontUbuntu .container textarea,
 body.fontUbuntu .container input::placeholder,
 body.fontUbuntu .container textarea::placeholder,
-body.fontUbuntu .container button {
+body.fontUbuntu .container button,
+body.fontUbuntu .mediacontainer div,
+body.fontUbuntu .mediacontainer label,
+body.fontUbuntu .mediacontainer input,
+body.fontUbuntu .mediacontainer p,
+body.fontUbuntu .mediacontainer textarea,
+body.fontUbuntu .mediacontainer input::placeholder,
+body.fontUbuntu .mediacontainer textarea::placeholder,
+body.fontUbuntu .mediacontainer button {
   font-family: 'Ubuntu', sans-serif !important;
 }
 
@@ -4431,6 +5087,133 @@ html .ui-button.ui-state-disabled:active {
   padding: 5px;
 }
 
+.mediacontainer {
+  padding: 40px 40px 0px;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.mediacontainer .text-wrapper {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 33px;
+}
+
+.mediacontainer .media-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.mediacontainer .audio-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 270px;
+  background: #DEE1E9;
+  -webkit-box-shadow: inset 0px 0px 10px 2px rgba(144, 141, 150, 0.2);
+          box-shadow: inset 0px 0px 10px 2px rgba(144, 141, 150, 0.2);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.mediacontainer .audio-wrapper .playaudio {
+  width: 53px;
+  height: 53px;
+  background-image: url(./../img/play.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.mediacontainer .audio-wrapper .playaudio:hover {
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(34, 13, 87, 0.3);
+          box-shadow: 0px 0px 2px 2px rgba(34, 13, 87, 0.3);
+}
+
+.mediacontainer .audio-wrapper .audio {
+  width: calc(100% - 53px);
+}
+
+.mediacontainer .pic-col {
+  width: 100%;
+  max-width: 800px;
+}
+
+.mediacontainer .pic-col img {
+  max-width: 100%;
+}
+
+.mediacontainer .pic-col .vide-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.mediacontainer .pic-col .vide-wrapper video {
+  width: 100%;
+  height: auto;
+}
+
+.mediacontainer .pic-col .vide-wrapper .play {
+  background-image: url(./../img/play.png);
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  -o-transition: -o-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in, -o-transform 0.3s ease-in;
+}
+
+.mediacontainer .pic-col .vide-wrapper .play:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.mediacontainer .image-wrapper {
+  max-width: 500px;
+  max-height: 300px;
+}
+
+.mediacontainer .image-wrapper img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+  width: 100%;
+  max-width: 500px;
+  max-height: 300px;
+}
+
 @media screen and (min-width: 1500px) {
   .contact-form,
   .header-content,
@@ -4482,7 +5265,8 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @media screen and (max-width: 900px) {
-  .container {
+  .container,
+  .mediacontainer {
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -4512,6 +5296,10 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @media screen and (max-width: 768px) {
+  .mediacontainer .media-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
   .bannercontainer .elements {
     padding-top: 40px;
     padding-left: 15px;
@@ -4611,6 +5399,10 @@ html .ui-button.ui-state-disabled:active {
 @media screen and (max-width: 600px) {
   .container .question-wrapper .single-wrapper > div {
     width: 100%;
+  }
+  .mediacontainer {
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .container .question-wrapper .wrapper-ratings10 label .digit {
     width: 30px;

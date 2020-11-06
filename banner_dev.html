@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="./style/intlTelInput.css">
     <link rel="stylesheet" href="./style/datepicker.min.css">
     <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="./js//intlTelInput.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/wavesurfer.js"></script>
+    <script src="./js/banner_settings.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -73,6 +81,51 @@
             </div>
         </div>
     </div>
+    <div class="mediacontainer">
+        <!-- <div class="text-wrapper">
+            Описание некоторой идеи которую необходимо оценить
+        </div> -->
+        <!-- <div class="pic-col">
+            <div class="image-wrapper">
+                <img src="./img/picture.png" alt="">
+            </div>
+        </div> -->
+        <!-- <p class="media-text">
+            Пожалуйста, посмотрите внимательно это видео.
+        </p>
+        <div class="pic-col">
+            <div class="vide-wrapper">
+                <video class="video" width="460" height="300" controls>
+                    <source src="./img/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="play"></div>
+            </div>
+        </div> -->
+        <p class="media-text">
+            Прослушайте, пожалуйста, аудиозапись.
+        </p>
+        <div class="audio-wrapper">
+            <div class="playaudio"></div>
+            <div class="audio" id="audiowave"> </div>
+        </div>
+    </div>
+    <script>
+        var wavesurfer = WaveSurfer.create({
+            container: '#audiowave',
+            scrollParent: true,
+            backgroundColor: '#DEE1E9',
+            height: 40,
+            cursorWidth: 0,
+            waveColor: 'rgba(87, 34, 222, 0.2)',
+            hideScrollbar: true,
+            progressColor: "#5722DE"
+        });
+        wavesurfer.load('./img/audio.mp3');
+        $('.playaudio').click(function(e){
+            wavesurfer.playPause();
+        });
+    </script>
     <div class="container">
         <div class="form-wrapper">
             <form action="./contact.html" class="form-valid">
@@ -309,13 +362,6 @@
             </div>
         </div>
     </div>
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/datepicker.min.js"></script>
-    <script src="./js//intlTelInput.js"></script>
-    <script src="./js/jquery-ui.js"></script>
-    <script src="./js/wavesurfer.js"></script>
-    <script src="./js/banner_settings.js"></script>
-    <script src="./js/script.js"></script>
 </body>
 
 </html>
