@@ -16,6 +16,10 @@ jQuery(function ($) {
                 $('.bannercontainer').addClass('addshadowtext');
             }
         }
+        if($('.bannercontainer').attr('data-position')){
+            var positionClass = 'align' + $('.bannercontainer').attr('data-position');
+            $('.bannercontainer').addClass(positionClass);
+        }
         if($('.bannercontainer').attr('data-fontFamily')){
             var fontFamily = 'font' + $('.bannercontainer').attr('data-fontFamily');
             $('.bannercontainer').addClass(fontFamily);
@@ -106,7 +110,7 @@ jQuery(function ($) {
                         var radius = $('.bannercontainer').attr('data-radius') + 'px';
                         $(element).css('border-radius', radius);
                     }
-                    if($('.bannercontainer').attr('data-backgroundtext')){
+                    if($('.bannercontainer').attr('data-backgroundtext') && $('.bannercontainer').attr('data-setbackgroundtext')=='on'){
                         var backgroundtext = $('.bannercontainer').attr('data-backgroundtext');
                         $(element).css('background', backgroundtext);
                     }
@@ -207,7 +211,7 @@ jQuery(function ($) {
                             var radius = $('.bannercontainer').attr('data-radius') + 'px';
                             $(element).css('border-radius', radius);
                         }
-                        if($('.bannercontainer').attr('data-backgroundtext')){
+                        if($('.bannercontainer').attr('data-backgroundtext') && $('.bannercontainer').attr('data-setbackgroundtext')=='on'){
                             var backgroundtext = $('.bannercontainer').attr('data-backgroundtext');
                             $(element).css('background', backgroundtext);
                         }

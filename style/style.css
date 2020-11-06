@@ -4292,6 +4292,18 @@ html .ui-button.ui-state-disabled:active {
           box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
+.bannercontainer.alignleft {
+  text-align: left;
+}
+
+.bannercontainer.aligncenter {
+  text-align: center;
+}
+
+.bannercontainer.alignright {
+  text-align: right;
+}
+
 .bannercontainer.fontMontserrat div {
   font-family: "Montserrat" !important;
 }
