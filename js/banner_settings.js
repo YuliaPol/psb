@@ -130,7 +130,6 @@ jQuery(function ($) {
                         // cover cons
                         if(bottom + 10 > top2 && top<top2){
                             if(left<right2){
-                                console.log("cover bottom");
                                 if(bottom2 + 10 < ContHeight){
                                     var addToTop = 0;
                                     while(bottom2 + addToTop < ContHeight && addToTop < 50 && (bottom + 10) > (top2 + addToTop)) {
