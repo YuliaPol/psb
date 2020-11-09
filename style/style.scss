@@ -2528,6 +2528,197 @@ html .ui-button.ui-state-disabled:active {
         }
     }
 }
+.hellopage {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    .btn-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        cursor: pointer;
+        .btn {
+            font-family: $fontpage;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 18px;
+            color: #FFFFFF;
+            overflow: hidden;
+            outline: none;
+            border: none;
+        }
+    }
+    .elements {
+        position: relative;
+        max-width: 1400px;
+        min-height: 480px;
+        margin: auto;
+    }
+    .btn-el {
+        position: absolute;
+    }
+    &.addshadowtext {
+        .text {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        }
+    }
+    &.alignleft {
+        text-align: left;
+    }
+    &.aligncenter {
+        text-align: center;
+    }
+    &.alignright {
+        text-align: right;
+    }
+    &.fontMontserrat {
+        div {
+            font-family: $fontpage !important;
+        }
+    }
+    &.fontArial .container  {
+        div {
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+    }
+    &.fontLora .container  {
+        div {
+            font-family: 'Lora', serif !important;
+        }
+    }
+    &.fontPTSans .container  {
+        div {
+            font-family: 'PT Sans', sans-serif !important;
+        }
+    }
+    &.fontNotoSans .container  {
+        div {
+            font-family: 'Noto Sans', sans-serif !important;
+        }
+    }
+    
+    &.fontTahoma .container  {
+        div {
+            font-family: Tahoma, Geneva, sans-serif  !important;
+        }
+    }
+    &.fontImpact .container  {
+        div {
+            font-family: Impact, Charcoal, sans-serif  !important;
+        }
+    }
+    &.fontLucida .container  {
+        div {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif  !important;
+        }
+    }
+    &.fontCourier .container  {
+        div {
+            font-family: "Courier New", Courier, monospace !important;
+        }
+    }
+    &.fontGeorgia .container  {
+        div {
+            font-family: Georgia, serif !important;
+        }
+    }
+    &.fontTimesNewRoman .container  {
+        div {
+            font-family: "Times New Roman", Times, serif  !important;
+        }
+    }
+    &.fontRoboto .container  {
+        div {
+            font-family: 'Roboto', sans-serif !important;
+        }
+    }
+    &.fontOpenSans .container  {
+        div {
+            font-family: 'Open Sans', sans-serif  !important;
+        }
+    }
+    &.fontPiazzolla .container  {
+        div {
+            font-family: 'Piazzolla', serif !important;
+        }
+    }
+    &.fontOswald .container  {
+        div {
+            font-family: 'Oswald', sans-serif!important;
+        }
+    }
+    &.fontUbuntu .container  {
+        div {
+            font-family:  'Ubuntu', sans-serif !important;
+        }
+    }
+    .logo {
+        position: absolute;
+        max-width: 100px;
+        top: 40px;
+        left: 40px;
+        img {
+            max-width: 100%;
+        }
+    }
+    .image {
+        position: absolute;
+        max-width: 100%;
+        max-height: 480px;
+        z-index: 50;
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 480px;
+            object-fit: cover;
+        }
+    }
+    .text {
+        overflow: hidden;
+        max-width: calc(100% - 40px);
+        max-height: calc(100% - 40px);
+        position: absolute;
+        font-weight: bold;
+        line-height: 1.2em;
+        padding: 10px;
+        z-index: 100;
+        &.hidden {
+            display: none;
+        }
+        &.text1level {
+            .text {
+                font-family: $fontpage;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 50px;
+                line-height: 1.2em;
+                text-transform: uppercase;
+                color: #4D4D4D;
+                padding: 10px;
+            }
+        }
+        &.textsecond {
+            .text {
+                font-family: $fontpage;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 1.2em;
+                color: #5722DE;
+                padding: 5px;
+            }
+        }
+    }
+}
 .bannercontainer {
     width: 100%;
     max-width: 100%;
@@ -2836,6 +3027,25 @@ html .ui-button.ui-state-disabled:active {
             margin-bottom: 20px;
         }
     }
+    .hellopage {
+        .logo {
+            top: 10px;
+            left: 10px;
+            max-width: 80px;
+        }
+        .elements {
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .text,
+        .image,
+        .btn-el {
+            position: initial;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+    }
 }
 @media screen and (max-width: 900px) {
     .container,
@@ -2874,7 +3084,8 @@ html .ui-button.ui-state-disabled:active {
         font-size: 14px;
         line-height: 16px;
     }
-    .bannercontainer .elements {
+    .bannercontainer .elements,
+    .hellopage .elements {
         padding-top: 40px;
         padding-left: 15px;
         padding-right: 15px;

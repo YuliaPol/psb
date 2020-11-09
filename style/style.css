@@ -4923,6 +4923,203 @@ html .ui-button.ui-state-disabled:active {
   background-repeat: no-repeat;
 }
 
+.hellopage {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  position: relative;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+.hellopage .btn-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.hellopage .btn-cont .btn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 18px;
+  color: #FFFFFF;
+  overflow: hidden;
+  outline: none;
+  border: none;
+}
+
+.hellopage .elements {
+  position: relative;
+  max-width: 1400px;
+  min-height: 480px;
+  margin: auto;
+}
+
+.hellopage .btn-el {
+  position: absolute;
+}
+
+.hellopage.addshadowtext .text {
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hellopage.alignleft {
+  text-align: left;
+}
+
+.hellopage.aligncenter {
+  text-align: center;
+}
+
+.hellopage.alignright {
+  text-align: right;
+}
+
+.hellopage.fontMontserrat div {
+  font-family: "Montserrat" !important;
+}
+
+.hellopage.fontArial .container div {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.hellopage.fontLora .container div {
+  font-family: 'Lora', serif !important;
+}
+
+.hellopage.fontPTSans .container div {
+  font-family: 'PT Sans', sans-serif !important;
+}
+
+.hellopage.fontNotoSans .container div {
+  font-family: 'Noto Sans', sans-serif !important;
+}
+
+.hellopage.fontTahoma .container div {
+  font-family: Tahoma, Geneva, sans-serif  !important;
+}
+
+.hellopage.fontImpact .container div {
+  font-family: Impact, Charcoal, sans-serif  !important;
+}
+
+.hellopage.fontLucida .container div {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif  !important;
+}
+
+.hellopage.fontCourier .container div {
+  font-family: "Courier New", Courier, monospace !important;
+}
+
+.hellopage.fontGeorgia .container div {
+  font-family: Georgia, serif !important;
+}
+
+.hellopage.fontTimesNewRoman .container div {
+  font-family: "Times New Roman", Times, serif  !important;
+}
+
+.hellopage.fontRoboto .container div {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.hellopage.fontOpenSans .container div {
+  font-family: 'Open Sans', sans-serif  !important;
+}
+
+.hellopage.fontPiazzolla .container div {
+  font-family: 'Piazzolla', serif !important;
+}
+
+.hellopage.fontOswald .container div {
+  font-family: "Oswald", sans-serif !important;
+}
+
+.hellopage.fontUbuntu .container div {
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+.hellopage .logo {
+  position: absolute;
+  max-width: 100px;
+  top: 40px;
+  left: 40px;
+}
+
+.hellopage .logo img {
+  max-width: 100%;
+}
+
+.hellopage .image {
+  position: absolute;
+  max-width: 100%;
+  max-height: 480px;
+  z-index: 50;
+}
+
+.hellopage .image img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hellopage .text {
+  overflow: hidden;
+  max-width: calc(100% - 40px);
+  max-height: calc(100% - 40px);
+  position: absolute;
+  font-weight: bold;
+  line-height: 1.2em;
+  padding: 10px;
+  z-index: 100;
+}
+
+.hellopage .text.hidden {
+  display: none;
+}
+
+.hellopage .text.text1level .text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #4D4D4D;
+  padding: 10px;
+}
+
+.hellopage .text.textsecond .text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 1.2em;
+  color: #5722DE;
+  padding: 5px;
+}
+
 .bannercontainer {
   width: 100%;
   max-width: 100%;
@@ -5262,6 +5459,23 @@ html .ui-button.ui-state-disabled:active {
     margin: auto;
     margin-bottom: 20px;
   }
+  .hellopage .logo {
+    top: 10px;
+    left: 10px;
+    max-width: 80px;
+  }
+  .hellopage .elements {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .hellopage .text,
+  .hellopage .image,
+  .hellopage .btn-el {
+    position: initial;
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -5300,7 +5514,8 @@ html .ui-button.ui-state-disabled:active {
     font-size: 14px;
     line-height: 16px;
   }
-  .bannercontainer .elements {
+  .bannercontainer .elements,
+  .hellopage .elements {
     padding-top: 40px;
     padding-left: 15px;
     padding-right: 15px;
