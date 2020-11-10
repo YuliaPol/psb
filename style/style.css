@@ -1972,6 +1972,10 @@ body.fontUbuntu .mediacontainer button {
   color: #F63030 !important;
 }
 
+.container .question-wrapper.has-error .error-message {
+  display: block;
+}
+
 .container .question-wrapper.has-error .borderred {
   border-bottom-color: #F63030 !important;
 }
@@ -1982,6 +1986,15 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper.has-error .col-phone .lines.borderredphone .line:nth-child(3) {
   background: #F63030 !important;
+}
+
+.container .question-wrapper .error-message {
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 22px;
+  color: #F63030;
+  display: none;
+  padding-top: 20px;
 }
 
 .container .question-wrapper .answerscale .has-error.multiple-wrapper .question {

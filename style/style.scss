@@ -517,6 +517,9 @@ body {
             > .question {
                 color: $radiocolor2 !important;
             }
+            .error-message {
+                display: block;
+            }
             .borderred {
                 border-bottom-color: $radiocolor2 !important;
             }
@@ -534,6 +537,14 @@ body {
                     }
                 }
             }
+        }
+        .error-message {
+            font-family: $fontpage;
+            font-size: 18px;
+            line-height: 22px;
+            color: $radiocolor2;
+            display: none;  
+            padding-top: 20px;
         }
         .answerscale {
             .has-error {

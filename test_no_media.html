@@ -40,22 +40,13 @@
                 <input type="hidden" name="inputcolor" class="inputcolor" value="#00ff00">
                 <input type="hidden" name="background" class="background" value="#ffffff">
                 <div class="question-wrapper">
-                    <div class="mediablock">
-                        <div class="videoblock">
-                            <input class="videoviewed" type="hidden" name="videoviewed_180" value="0">
-                            <video width="100%">
-                                <source src="./img/video.mp4">
-                                Your browser does not support HTML5 video.
-                            </video>
-                            <div class="play"></div>
-                        </div>
-                    </div>
+
                     <div class="question">
                         1.Насколько этот рекламный материал привлекает Ваше внимание?
                     </div>
                     <div class="radio-wrapper">
                         <div class="radio-cont">
-                            <input type="radio" name="q-1" id="q-1-1" value="1">
+                            <input type="radio" name="q-1" id="q-1-1" value="1" data-reqired="reqired">
                             <label for="q-1-1">
                                 <div class="number">1</div>
                                 <div class="text">
@@ -103,14 +94,6 @@
                     <div class="error-message">Выберете значение</div>
                 </div>
                 <div class="question-wrapper">
-                    <div class="mediablock">
-                        <!-- audio -->
-                        <div class="audioblock">
-                            <div class="playaudio"></div>
-                            <input type="hidden" class="audioheard" name="audioheard_180">
-                            <div class="audio audiowave" data-audiopath="./img/audio.mp3"> </div>
-                        </div>
-                    </div>
                     <div class="question">
                         2. Насколько понятна эта реклама? 
                     </div>
@@ -119,13 +102,9 @@
                             <input type="text" name="q-2" id="q-2" placeholder="Ваш ответ" data-reqired="reqired">
                         </div>
                     </div>
+                    <div class="error-message">Выберете значение</div>
                 </div>
                 <div class="question-wrapper">
-                    <div class="mediablock">
-                        <div class="textblock">
-                            Еще на заре торговли продавцы зазывали покупателей в свои лавки выкриками. От латинского глагола reclamare («выкрикивать») родилось знакомое нам слово — реклама. Сейчас она окружает нас повсюду: в печатных изданиях, по телевидению, в интернете, на радио, на улицах.
-                        </div>
-                    </div>
                     <div class="question">
                         2. Насколько понятна эта реклама? 
                     </div>
@@ -140,28 +119,9 @@
                             <input type="text" name="q-2" id="q-2" placeholder="Ваш ответ" data-reqired="reqired">
                         </div>
                     </div>
+                    <div class="error-message">Выберете значение</div>
                 </div>
                 <div class="question-wrapper">
-                    <div class="mediablock">
-                        <div class="imageblock">
-                            <div class="image" style="width: 33%">
-                                <input class="imageclick" type="hidden" name="image_click_180" value="0">
-                                <img src="./img/picture.png" alt="Picture">
-                            </div>
-                            <div class="image"  style="width: 33%">
-                                <input class="imageclick" type="hidden" name="image_click_181" value="0">
-                                <img src="./img/picture.png" alt="Picture">
-                            </div>
-                            <div class="image"  style="width: 33%">
-                                <input class="imageclick" type="hidden" name="image_click_182" value="0">
-                                <img src="./img/picture.png" alt="Picture">
-                            </div>
-                            <div class="image"  style="width: 33%">
-                                <input class="imageclick" type="hidden" name="image_click_183" value="0">
-                                <img src="./img/picture.png" alt="Picture">
-                            </div>
-                        </div>
-                    </div>
                     <div class="question">
                         3. Дата? 
                     </div>
@@ -171,16 +131,9 @@
                             <div class="icon-date"></div>
                         </div>
                     </div>
+                    <div class="error-message">Выберете значение</div>
                 </div>
                 <div class="question-wrapper">
-                    <div class="mediablock">
-                        <!-- audio -->
-                        <div class="audioblock">
-                            <input type="hidden" class="audioheard" name="audioheard_180">
-                            <div class="playaudio"></div>
-                            <div class="audio audiowave" data-audiopath="./img/audio-2.mp3"> </div>
-                        </div>
-                    </div>
                     <div class="question">
                         4. Введите Ваше имя? 
                     </div>
@@ -195,6 +148,7 @@
                             <input type="text" name="q-4-3" id="q-4-3"  placeholder="Фамилия">
                         </div>
                     </div>
+                    <div class="error-message">Выберете значение</div>
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
@@ -205,6 +159,7 @@
                             <input type="email" name="q-5" id="q-5" placeholder="E-mail" data-reqired="reqired">
                         </div>
                     </div>
+                    <div class="error-message">Выберете значение</div>
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
@@ -286,6 +241,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="error-message">Выберете значение</div>
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
@@ -335,6 +291,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="error-message">Выберете значение</div>
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
@@ -353,6 +310,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="error-message">Выберете значение</div>
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
@@ -361,14 +319,15 @@
                     <div class="dropdown-wrapper">
                         <div class="dropdownanswer">
                             <div class="selectdropdown">
-                                <select name="questionanswersdrp_6" class="customselect">
-                                    <option value="Как Вы оцените работу нашего банка?" selected>Как Вы оцените работу нашего банка?</option>
+                                <select name="questionanswersdrp_6" class="customselect" data-reqired="reqired">
+                                    <option value="Как Вы оцените работу нашего банка?">Как Вы оцените работу нашего банка?</option>
                                     <option value="Какие специальные предложения от застройщиков Вас заинтересовали?">Какие специальные предложения от застройщиков Вас заинтересовали?</option>
                                     <option value="Как Вы оцените работу нашего банка?">Как Вы оцените работу нашего банка?</option>
                                 </select> 
                             </div>
                         </div>
                     </div>
+                    <div class="error-message">Выберете значение</div>
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
@@ -404,6 +363,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="error-message">Выберете значение</div>
                 </div>
                 <div class="question-wrapper">
                     <div class="btn-wrapper" style="text-align: center;">
@@ -440,6 +400,7 @@
                             <label for="q-10-4">Ипотека</label>
                         </div>
                     </div>
+                    <div class="error-message">Выберете значение</div>
                 </div>
                 <div class="question-wrapper">
                     <div class="question">
@@ -456,6 +417,7 @@
                             <label for="q-11-2">Рефинансирование</label>
                         </div>
                     </div>
+                    <div class="error-message">Выберете значение</div>
                     <div class="hidden-question-list">
                         <div class="hidden-question-group" id="hiddenquestion_11_1" style="display: none;">
                             <div class="hidden-question">

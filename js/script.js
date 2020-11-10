@@ -598,7 +598,7 @@ jQuery(function ($) {
                         }
                     }
 
-                    var el = document.querySelectorAll('.form-valid input[type="radio"]');
+                    var el = document.querySelectorAll('.form-valid input[type="radio"][data-reqired=reqired]');
                     for (var i = 0; i < el.length; i++) {
                         if (el[i].tagName === 'INPUT') {
                             var name = el[i].getAttribute('name');
@@ -610,7 +610,9 @@ jQuery(function ($) {
                                 else if($(el[i]).parents('.hidden-answer').length>0){
                                     $(el[i]).parents('.multiple-wrapper').addClass('has-error');
                                 }
-                                $(el[i]).focus(function (e) {
+                                var inputname = $(el[i]).attr('name');
+                                $('input[name='+ inputname + ']').change(function (e) {
+                                    console.log($(e.target));
                                     $(e.target).parents('.question-wrapper').removeClass('has-error');
                                     $(e.target).parents('.multiple-wrapper').removeClass('has-error');
                                 });
@@ -619,9 +621,44 @@ jQuery(function ($) {
                             }
                         }
                     }
+
+                    var el = document.querySelectorAll('.form-valid input[type="range"][data-reqired=reqired]');
+                    for (var i = 0; i < el.length; i++) {
+                        if (el[i].tagName === 'INPUT') {
+                            var valueRange = $(el[i]).parents('.range').find('.label .value').html();
+                            if (valueRange === '' || valueRange === ' ' || valueRange === '-') {
+                                erroreArrayElemnts.push(el[i]);
+                                $(el[i]).parents('.question-wrapper').addClass('has-error');
+                                var inputname = $(el[i]).attr('name');
+                                $('input[name='+ inputname + ']').change(function (e) {
+                                    $(e.target).parents('.question-wrapper').removeClass('has-error');
+                                });
+                                $('.modal').find('.text').html("Выберете, пожалуйста, значение.");
+                                $('.modal').fadeIn(300);
+                            }
+                        }
+                    }
+
+                    var el = document.querySelectorAll('.form-valid select[data-reqired=reqired]');
+                    console.log(el);
+                    for (var i = 0; i < el.length; i++) {
+                        if (el[i].tagName === 'SELECT') {
+                            if ($(el[i]).find('option:selected').length==0) {
+                                erroreArrayElemnts.push(el[i]);
+                                $(el[i]).parents('.question-wrapper').addClass('has-error');
+                                var inputname = $(el[i]).attr('name');
+                                $('input[name='+ inputname + ']').change(function (e) {
+                                    $(e.target).parents('.question-wrapper').removeClass('has-error');
+                                });
+                                $('.modal').find('.text').html("Выберете, пожалуйста, значение.");
+                                $('.modal').fadeIn(300);
+                            }
+                        }
+                    }
+
                 }
                 if (erroreArrayElemnts.length == 0) {
-                    formValid.submit();
+                    // formValid.submit();
                 }
                 if (erroreArrayElemnts.length > 0) {
                     console.log('Valid error');
