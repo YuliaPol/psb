@@ -317,7 +317,6 @@ jQuery(function ($) {
                         if($this.find('option:selected').length == 0){
                             $styledSelect.html('<div class="default">Выберите ответ</div>');
                         }
-                    
                         var $list = $('<ul />', {
                             'class': 'select-options'
                         }).insertAfter($styledSelect);
@@ -325,12 +324,14 @@ jQuery(function ($) {
                             var lioption;
                             var id = Math.floor(Math.random() * 100000);
                             $this.children('option').eq(i).attr('data-id', id);
-                            if($this.children('option').eq(i)[0].selected){
-                                $styledSelect.append('<div class="selectvalue" data-value="' + $this.children('option').eq(i).text() + '" data-id="'+ id + '">' + $this.children('option').eq(i).text() + '</div>');
-                                lioption = '<li rel="'+ $this.children('option').eq(i).val() + '" data-id="'+ id + '"><div class="checked active"></div><div class="text">'+ $this.children('option').eq(i).text() + '</div></li>';
-                            }
-                            else {
-                                lioption = '<li rel="'+ $this.children('option').eq(i).val() + '" data-id="'+ id + '" ><div class="checked"></div><div class="text">'+ $this.children('option').eq(i).text() + '</div></li>';
+                            if(!$this.children('option').eq(i)[0].attr('disabled')){
+                                if($this.children('option').eq(i)[0].selected){
+                                    $styledSelect.append('<div class="selectvalue" data-value="' + $this.children('option').eq(i).text() + '" data-id="'+ id + '">' + $this.children('option').eq(i).text() + '</div>');
+                                    lioption = '<li rel="'+ $this.children('option').eq(i).val() + '" data-id="'+ id + '"><div class="checked active"></div><div class="text">'+ $this.children('option').eq(i).text() + '</div></li>';
+                                }
+                                else {
+                                    lioption = '<li rel="'+ $this.children('option').eq(i).val() + '" data-id="'+ id + '" ><div class="checked"></div><div class="text">'+ $this.children('option').eq(i).text() + '</div></li>';
+                                }
                             }
                             $(lioption).appendTo($list);
                         }
@@ -400,10 +401,12 @@ jQuery(function ($) {
                         }).insertAfter($styledSelect);
                     
                         for (var i = 0; i < numberOfOptions; i++) {
-                            var id = Math.floor(Math.random() * 100000);
-                            $this.children('option').eq(i).attr('data-id', id);
-                            lioption = '<li rel="'+ $this.children('option').eq(i).val() + '" data-id="'+ id + '">'+ $this.children('option').eq(i).text() + '</li>';
-                            $(lioption).appendTo($list);
+                            if(!$this.children('option').eq(i).attr('disabled')){
+                                var id = Math.floor(Math.random() * 100000);
+                                $this.children('option').eq(i).attr('data-id', id);
+                                lioption = '<li rel="'+ $this.children('option').eq(i).val() + '" data-id="'+ id + '">'+ $this.children('option').eq(i).text() + '</li>';
+                                $(lioption).appendTo($list);
+                            }
                         }
                     
                         var $listItems = $list.children('li');
@@ -574,7 +577,13 @@ jQuery(function ($) {
                                 $(el[i]).parents('.col-phone').find('.lines').addClass('borderredcode');
                             }
                             else {
-                                $('.modal').find('.text').html("Введите, пожалуйста, ответ.");
+                                // if($(el[i]).parents('.question-wrapper').find('.error-message').length>0 && $(el[i]).parents('.question-wrapper').find('.error-message').html()){
+                                //     $('.modal').find('.text').html($(el[i]).parents('.question-wrapper').find('.error-message').html());
+                                // }
+                                // else {
+                                //     $('.modal').find('.text').html("Введите, пожалуйста, ответ.");
+                                // }
+                                $('.modal').find('.text').html("Ответьте, пожалуйста, на все вопросы");
                             }
                             if($(el[i]).parents('.hidden-answer').length==0){
                                 $(el[i]).parents('.question-wrapper').addClass('has-error');
@@ -612,11 +621,53 @@ jQuery(function ($) {
                                 }
                                 var inputname = $(el[i]).attr('name');
                                 $('input[name='+ inputname + ']').change(function (e) {
-                                    console.log($(e.target));
                                     $(e.target).parents('.question-wrapper').removeClass('has-error');
                                     $(e.target).parents('.multiple-wrapper').removeClass('has-error');
                                 });
-                                $('.modal').find('.text').html("Выберете, пожалуйста, ответ.");
+                                // if($(el[i]).parents('.question-wrapper').find('.error-message').length>0 && $(el[i]).parents('.question-wrapper').find('.error-message').html()){
+                                //     $('.modal').find('.text').html($(el[i]).parents('.question-wrapper').find('.error-message').html());
+                                // }
+                                // else {
+                                //     $('.modal').find('.text').html("Выберете, пожалуйста, ответ.");
+                                // }
+                                $('.modal').find('.text').html("Ответьте, пожалуйста, на все вопросы");
+
+                                $('.modal').fadeIn(300);
+                            }
+                        }
+                    }
+
+                    var el = document.querySelectorAll('.form-valid input[type="checkbox"][data-reqired=reqired]');
+                    for (var i = 0; i < el.length; i++) {
+                        if (el[i].tagName === 'INPUT') {
+                            var parents;
+                            if($(el[i]).parents('.multiple-list').length>0){
+                                parents = '.multiple-list';
+                            }
+                            if($(el[i]).parents('.matrix-row').length>0){
+                                parents = '.matrix-row';
+                            }
+                            if ($(parents + ' input[type=checkbox]:checked').length === 0) {
+                                erroreArrayElemnts.push(el[i]);
+                                if($(el[i]).parents('.question-wrapper') && $(el[i]).parents('.hidden-answer').length==0 ){
+                                    $(el[i]).parents('.question-wrapper').addClass('has-error');
+                                }
+                                else if($(el[i]).parents('.hidden-answer').length>0){
+                                    $(el[i]).parents('.multiple-wrapper').addClass('has-error');
+                                }
+                                var inputname = $(el[i]).attr('name');
+                                $('input[name='+ inputname + ']').change(function (e) {
+                                    $(e.target).parents('.question-wrapper').removeClass('has-error');
+                                    $(e.target).parents('.multiple-wrapper').removeClass('has-error');
+                                });
+                                // if($(el[i]).parents('.question-wrapper').find('.error-message').length>0 && $(el[i]).parents('.question-wrapper').find('.error-message').html()){
+                                //     $('.modal').find('.text').html($(el[i]).parents('.question-wrapper').find('.error-message').html());
+                                // }
+                                // else {
+                                //     $('.modal').find('.text').html("Выберете, пожалуйста, ответ.");
+                                // }
+                                $('.modal').find('.text').html("Ответьте, пожалуйста, на все вопросы");
+
                                 $('.modal').fadeIn(300);
                             }
                         }
@@ -633,24 +684,34 @@ jQuery(function ($) {
                                 $('input[name='+ inputname + ']').change(function (e) {
                                     $(e.target).parents('.question-wrapper').removeClass('has-error');
                                 });
-                                $('.modal').find('.text').html("Выберете, пожалуйста, значение.");
+                                // if($(el[i]).parents('.question-wrapper').find('.error-message').length>0 && $(el[i]).parents('.question-wrapper').find('.error-message').html()){
+                                //     $('.modal').find('.text').html($(el[i]).parents('.question-wrapper').find('.error-message').html());
+                                // }
+                                // else {
+                                //     $('.modal').find('.text').html("Выберете, пожалуйста, значение.");
+                                // }
+                                $('.modal').find('.text').html("Ответьте, пожалуйста, на все вопросы");
                                 $('.modal').fadeIn(300);
                             }
                         }
                     }
 
                     var el = document.querySelectorAll('.form-valid select[data-reqired=reqired]');
-                    console.log(el);
                     for (var i = 0; i < el.length; i++) {
                         if (el[i].tagName === 'SELECT') {
-                            if ($(el[i]).find('option:selected').length==0) {
+                            if (!$(el[i]).val()) {
                                 erroreArrayElemnts.push(el[i]);
                                 $(el[i]).parents('.question-wrapper').addClass('has-error');
-                                var inputname = $(el[i]).attr('name');
-                                $('input[name='+ inputname + ']').change(function (e) {
+                                $(el[i]).change(function (e) {
                                     $(e.target).parents('.question-wrapper').removeClass('has-error');
                                 });
-                                $('.modal').find('.text').html("Выберете, пожалуйста, значение.");
+                                // if($(el[i]).parents('.question-wrapper').find('.error-message').length>0 && $(el[i]).parents('.question-wrapper').find('.error-message').html()){
+                                //     $('.modal').find('.text').html($(el[i]).parents('.question-wrapper').find('.error-message').html());
+                                // }
+                                // else {
+                                //     $('.modal').find('.text').html("Выберете, пожалуйста, значение.");
+                                // }
+                                $('.modal').find('.text').html("Ответьте, пожалуйста, на все вопросы");
                                 $('.modal').fadeIn(300);
                             }
                         }
@@ -658,7 +719,7 @@ jQuery(function ($) {
 
                 }
                 if (erroreArrayElemnts.length == 0) {
-                    // formValid.submit();
+                    formValid.submit();
                 }
                 if (erroreArrayElemnts.length > 0) {
                     console.log('Valid error');
