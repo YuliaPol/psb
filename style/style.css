@@ -4947,26 +4947,19 @@ html .ui-button.ui-state-disabled:active {
           background-size: cover;
   background-repeat: no-repeat;
   padding: 10px;
+  overflow: hidden;
 }
 
 .hellopage .btn-cont {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: table;
   max-width: 100%;
   cursor: pointer;
 }
 
 .hellopage .btn-cont .btn {
+  padding: 5px;
+  display: table-cell;
+  vertical-align: middle;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -4981,12 +4974,21 @@ html .ui-button.ui-state-disabled:active {
 .hellopage .elements {
   position: relative;
   max-width: 1400px;
-  min-height: 480px;
+  min-height: calc(100vh - 50px);
   margin: auto;
+}
+
+.hellopage .elements .text1level {
+  text-transform: uppercase;
 }
 
 .hellopage .btn-el {
   position: absolute;
+}
+
+.hellopage .btn-el a {
+  text-decoration: none;
+  outline: none;
 }
 
 .hellopage.addshadowtext .text {
@@ -5488,6 +5490,21 @@ html .ui-button.ui-state-disabled:active {
     position: initial;
     margin: auto;
     margin-bottom: 20px;
+  }
+  .hellopage .btn-el {
+    width: auto !important;
+    height: auto !important;
+    margin: auto;
+  }
+  .hellopage .btn-cont {
+    margin: auto;
+  }
+  .hellopage .btn-cont .btn {
+    width: auto !important;
+    height: auto !important;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 8px 25px;
   }
 }
 

@@ -92,12 +92,11 @@ jQuery(function ($) {
         }
         if(windowWidth > 992){
             if($('.hellopage .elements').children().length>0){
+                SetTextSettings();
+                CheckTextCovering();
+                SetBtnSettings();
                 ResizeScreen();
             }
-            ResizeScreen();
-            SetTextSettings();
-            CheckTextCovering();
-            SetBtnSettings();
         }
         else {
             SetTextSettings();
@@ -106,8 +105,10 @@ jQuery(function ($) {
         $(window).resize(function() {
             windowWidth = $(window).width();
             if(windowWidth > 992){
+                SetTextSettings();
                 ResizeScreen();
                 CheckTextCovering();
+                ResizeScreen();
             }
             else {
                MobileSettings();
@@ -176,7 +177,6 @@ jQuery(function ($) {
                         var backgroundtext = $('.hellopage').attr('data-backgroundtext');
                         $(element).css('background', backgroundtext);
                     }
-                    $(element).textfill({ minFontPixels: 10, maxFontPixels: $(element).attr('data-fontSize')});
                 }
             });
         }
@@ -204,7 +204,6 @@ jQuery(function ($) {
                         $(element).find('.btn').css('border-radius', btnradius + 'px');
                     }
                     if(btncolor){
-                        console.log(btncolor);
                         $(element).find('.btn').css('background', btncolor);
                     }
                     if(btntextcolor){
@@ -222,7 +221,7 @@ jQuery(function ($) {
                     var height;
                     var top;
                     var left;
-                    top = parseInt($(element).attr('data-top'));
+                    top = parseInt($(element).attr('data-top')) + 50;
                     left = parseInt($(element).attr('data-left'));
                     width = parseInt($(element).attr('data-width'));
                     height = parseInt($(element).attr('data-height'));
@@ -230,20 +229,23 @@ jQuery(function ($) {
                     if( width && top) {
                         var smwidth = prevwidth;
                         var prevleft = (100 * left)/smwidth;
-                        var smwidthnew = parseInt($('.hellopage .elements').width());
+                        var smwidthnew = parseInt($('.hellopage .elements').outerWidth());
                         var newleft = Math.round((prevleft*smwidthnew)/100);
                         var pertop = top * (100/prevheight);
-                        var newtop = pertop * (parseInt($('.hellopage .elements').height())/100);
+                        var newtop = pertop * (parseInt($('.hellopage .elements').outerHeight())/100);
                         if(width + newleft > parseInt($('.hellopage .elements').width())){
                             var index = 0;
-                            while(width + newleft > parseInt($('.hellopage .elements').width()) && index < 20){
-                                if(width > parseInt($('.hellopage .elements').width()) - 100){
+                            while(width + newleft + 20 > parseInt($('.hellopage .elements').outerWidth()) && index < 20){
+                                if(width > parseInt($('.hellopage .elements').outerWidth()) - 100){
                                     newleft = newleft - 20;
                                 }
                                 else {
                                     newleft = newleft - 20;
                                 }
                                 index ++;
+                            }
+                            if(width + newleft > parseInt($('.hellopage .elements').outerWidth()) ){
+                                newleft = parseInt($('.hellopage .elements').outerWidth()) - 20 - width;
                             }
                         }
 
@@ -343,7 +345,6 @@ jQuery(function ($) {
                                 $(element).find('.btn').css('border-radius', btnradius + 'px');
                             }
                             if(btncolor){
-                                console.log(btncolor);
                                 $(element).find('.btn').css('background', btncolor);
                             }
                             if(btntextcolor){
