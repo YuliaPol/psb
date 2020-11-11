@@ -1796,10 +1796,16 @@ body.fontUbuntu .mediacontainer button {
 
 .header .header-content .pic-col {
   width: 35%;
+  text-align: center;
 }
 
 .header .header-content .pic-col img {
   max-width: 100%;
+  max-height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .header .header-content .pic-col .vide-wrapper {
@@ -5371,6 +5377,11 @@ html .ui-button.ui-state-disabled:active {
 
 .mediacontainer .pic-col img {
   max-width: 100%;
+  max-height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .mediacontainer .pic-col .vide-wrapper {
