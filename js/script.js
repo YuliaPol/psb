@@ -573,17 +573,8 @@ jQuery(function ($) {
                                 $(el[i]).parents('.col-phone').find('.lines').addClass('borderredphone');
                             }
                             if($(el[i]).hasClass('code')){
-                                $('.modal').find('.text').html("Выберете, пожалуйста, код страны.");
+                                // $('.modal').find('.text').html("Выберете, пожалуйста, код страны.");
                                 $(el[i]).parents('.col-phone').find('.lines').addClass('borderredcode');
-                            }
-                            else {
-                                // if($(el[i]).parents('.question-wrapper').find('.error-message').length>0 && $(el[i]).parents('.question-wrapper').find('.error-message').html()){
-                                //     $('.modal').find('.text').html($(el[i]).parents('.question-wrapper').find('.error-message').html());
-                                // }
-                                // else {
-                                //     $('.modal').find('.text').html("Введите, пожалуйста, ответ.");
-                                // }
-                                $('.modal').find('.text').html("Ответьте, пожалуйста, на все вопросы");
                             }
                             if($(el[i]).parents('.hidden-answer').length==0){
                                 $(el[i]).parents('.question-wrapper').addClass('has-error');
@@ -591,7 +582,6 @@ jQuery(function ($) {
                             else {
                                 $(el[i]).parents('.detail').addClass('has-error');
                             }
-                            $('.modal').fadeIn(300);
                             $(el[i]).focus(function (e) {
                                 if($(e.target).parents('.hidden-answer').length==0){
                                     $(e.target).parents('.question-wrapper').removeClass('has-error');
@@ -624,15 +614,6 @@ jQuery(function ($) {
                                     $(e.target).parents('.question-wrapper').removeClass('has-error');
                                     $(e.target).parents('.multiple-wrapper').removeClass('has-error');
                                 });
-                                // if($(el[i]).parents('.question-wrapper').find('.error-message').length>0 && $(el[i]).parents('.question-wrapper').find('.error-message').html()){
-                                //     $('.modal').find('.text').html($(el[i]).parents('.question-wrapper').find('.error-message').html());
-                                // }
-                                // else {
-                                //     $('.modal').find('.text').html("Выберете, пожалуйста, ответ.");
-                                // }
-                                $('.modal').find('.text').html("Ответьте, пожалуйста, на все вопросы");
-
-                                $('.modal').fadeIn(300);
                             }
                         }
                     }
@@ -660,15 +641,6 @@ jQuery(function ($) {
                                     $(e.target).parents('.question-wrapper').removeClass('has-error');
                                     $(e.target).parents('.multiple-wrapper').removeClass('has-error');
                                 });
-                                // if($(el[i]).parents('.question-wrapper').find('.error-message').length>0 && $(el[i]).parents('.question-wrapper').find('.error-message').html()){
-                                //     $('.modal').find('.text').html($(el[i]).parents('.question-wrapper').find('.error-message').html());
-                                // }
-                                // else {
-                                //     $('.modal').find('.text').html("Выберете, пожалуйста, ответ.");
-                                // }
-                                $('.modal').find('.text').html("Ответьте, пожалуйста, на все вопросы");
-
-                                $('.modal').fadeIn(300);
                             }
                         }
                     }
@@ -684,14 +656,6 @@ jQuery(function ($) {
                                 $('input[name='+ inputname + ']').change(function (e) {
                                     $(e.target).parents('.question-wrapper').removeClass('has-error');
                                 });
-                                // if($(el[i]).parents('.question-wrapper').find('.error-message').length>0 && $(el[i]).parents('.question-wrapper').find('.error-message').html()){
-                                //     $('.modal').find('.text').html($(el[i]).parents('.question-wrapper').find('.error-message').html());
-                                // }
-                                // else {
-                                //     $('.modal').find('.text').html("Выберете, пожалуйста, значение.");
-                                // }
-                                $('.modal').find('.text').html("Ответьте, пожалуйста, на все вопросы");
-                                $('.modal').fadeIn(300);
                             }
                         }
                     }
@@ -705,14 +669,6 @@ jQuery(function ($) {
                                 $(el[i]).change(function (e) {
                                     $(e.target).parents('.question-wrapper').removeClass('has-error');
                                 });
-                                // if($(el[i]).parents('.question-wrapper').find('.error-message').length>0 && $(el[i]).parents('.question-wrapper').find('.error-message').html()){
-                                //     $('.modal').find('.text').html($(el[i]).parents('.question-wrapper').find('.error-message').html());
-                                // }
-                                // else {
-                                //     $('.modal').find('.text').html("Выберете, пожалуйста, значение.");
-                                // }
-                                $('.modal').find('.text').html("Ответьте, пожалуйста, на все вопросы");
-                                $('.modal').fadeIn(300);
                             }
                         }
                     }
@@ -723,8 +679,11 @@ jQuery(function ($) {
                 }
                 if (erroreArrayElemnts.length > 0) {
                     console.log('Valid error');
-                    $("html, body").animate({ scrollTop: $(erroreArrayElemnts[0]).offset().top }, 600);
-                    return false;
+                    erroreArrayElemnts.sort(function(a, b){
+                        return parseInt($(a).parents('.question-wrapper').offset().top)-parseInt($(b).parents('.question-wrapper').offset().top)
+                    });
+                    var scroolTO = parseInt($(erroreArrayElemnts[0]).parents('.question-wrapper').offset().top);
+                    $("html, body").animate({ scrollTop: scroolTO }, 600);
                 }
             });
         });
