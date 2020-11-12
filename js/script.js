@@ -492,12 +492,10 @@ jQuery(function ($) {
         if($('.backgroundquestion').val()){
             $('.container').addClass('bg-image');
             var value = $('.backgroundquestion').val();
-            var opacity = $('.opacityquestion').val();
-            var rgbaCol = 'rgba(' + parseInt(value.slice(-6, -4), 16) + ',' + parseInt(value.slice(-4, -2), 16) + ',' + parseInt(value.slice(-2), 16) + ',' + opacity + ')';
-            $('.container .question-wrapper').css('background', rgbaCol);
+            $('.container .question-wrapper').css('background', value);
         }
-        else if($('.background').val()){
-            $('.container').css('background', $('.background').val());
+        if($('.background').val()){
+            $('.container').css('background-color', $('.background').val());
         }
 
 
