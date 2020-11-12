@@ -634,8 +634,8 @@ jQuery(function ($) {
                                 else if($(el[i]).parents('.hidden-answer').length>0){
                                     $(el[i]).parents('.multiple-wrapper').addClass('has-error');
                                 }
-                                var inputname = $(el[i]).attr('name');
-                                $('input[name='+ inputname + ']').change(function (e) {
+                                var inputparent = $(el[i]).parents('.question-wrapper');
+                                $(inputparent).on('change', 'input[type=checkbox]', function (e) {
                                     $(e.target).parents('.question-wrapper').removeClass('has-error');
                                     $(e.target).parents('.multiple-wrapper').removeClass('has-error');
                                 });
