@@ -4280,6 +4280,7 @@ body.fontUbuntu .mediacontainer button {
   border-radius: 5px;
   outline: none;
   border: 0px solid #ffffff;
+  cursor: pointer;
 }
 
 .container.container-contact {
@@ -5551,6 +5552,11 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @media screen and (max-width: 768px) {
+  .bannercontainer,
+  .bannercontainer .elements,
+  .hellopage .elements {
+    min-height: auto;
+  }
   .mediacontainer .media-text {
     font-size: 14px;
     line-height: 16px;

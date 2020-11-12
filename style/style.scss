@@ -3123,6 +3123,11 @@ html .ui-button.ui-state-disabled:active {
     }
 }
 @media screen and (max-width: 768px) {
+    .bannercontainer,
+    .bannercontainer .elements,
+    .hellopage .elements {
+        min-height: auto;
+    }
     .mediacontainer .media-text {
         font-size: 14px;
         line-height: 16px;

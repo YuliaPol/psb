@@ -99,13 +99,16 @@ jQuery(function ($) {
             CheckTextCovering();
         }
         else {
+            SetTextSettings();
             MobileSettings();
         }
         $(window).resize(function() {
             windowWidth = $(window).width();
             if(windowWidth > 992){
+                SetTextSettings();
                 ResizeScreen();
                 CheckTextCovering();
+                ResizeScreen();
             }
             else {
                MobileSettings();
@@ -173,7 +176,9 @@ jQuery(function ($) {
                         var backgroundtext = $('.bannercontainer').attr('data-backgroundtext');
                         $(element).css('background', backgroundtext);
                     }
-                    $(element).textfill({ minFontPixels: 10, maxFontPixels: $(element).attr('data-fontSize')});
+                    if( /\S/.test($(element).html())){
+                        $(element).textfill({ minFontPixels: 10, maxFontPixels: $(element).attr('data-fontSize')});
+                    }
                 }
             });
         }
@@ -240,8 +245,9 @@ jQuery(function ($) {
                             newtop = $('.bannercontainer .elements').height() - newheight;
                             $(element).css('top', newtop  + 'px' );
                         }
-                        $(element).textfill({ minFontPixels: 10, maxFontPixels: $(element).attr('data-fontSize')});
-
+                        if( /\S/.test($(element).html())){
+                            $(element).textfill({ minFontPixels: 10, maxFontPixels: $(element).attr('data-fontSize')});
+                        }
                     }
                 });
             }
@@ -285,18 +291,18 @@ jQuery(function ($) {
                         images.push(element);
                     }
                 });
-                if(images.length>0){
-                    for (let i = 0; i < images.length; i++) {
-                        width = parseInt($(images[i]).attr('data-width'));
-                        height = parseInt($(images[i]).attr('data-height'));
-                        $(images[i]).css('max-height', height);
-                        $(images[i]).css('max-width', '100%');
-                        $(images[i]).css('width', width);
-                        $(images[i]).find('img').css('max-width', width);
-                        $(images[i]).find('img').css('max-height', height);
-                        $(images[i]).appendTo($('.bannercontainer .elements'));
-                    }
-                }
+                // if(images.length>0){
+                //     for (let i = 0; i < images.length; i++) {
+                //         width = parseInt($(images[i]).attr('data-width'));
+                //         height = parseInt($(images[i]).attr('data-height'));
+                //         $(images[i]).css('max-height', height);
+                //         $(images[i]).css('max-width', '100%');
+                //         $(images[i]).css('width', width);
+                //         $(images[i]).find('img').css('max-width', width);
+                //         $(images[i]).find('img').css('max-height', height);
+                //         $(images[i]).appendTo($('.bannercontainer .elements'));
+                //     }
+                // }
             }
         }
 

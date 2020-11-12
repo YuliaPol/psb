@@ -282,7 +282,7 @@ jQuery(function ($) {
                             $(element).css('height', height + 'px');
                             $(element).css('width', elwidth + 'px');
                         }
-                        if($(element).hasClass('text')){
+                        if($(element).hasClass('text') &&  /\S/.test($(element).html())){
                             $(element).textfill({ minFontPixels: 10, maxFontPixels: $(element).attr('data-fontSize')});
                         }
                     }
