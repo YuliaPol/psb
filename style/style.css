@@ -2530,6 +2530,7 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .range-list .range-row .range-question {
   width: calc(100% - 200px);
+  font-family: "Montserrat";
 }
 
 .container .question-wrapper .range-list .range-row .range {
