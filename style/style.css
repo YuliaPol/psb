@@ -1863,7 +1863,7 @@ body.fontUbuntu .mediacontainer button {
 
 .container.bg-image .question-wrapper {
   padding: 15px;
-  background: rgba(255, 255, 255, 0.5);
+  background: white;
   border: 1px solid #AEAEAE;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
