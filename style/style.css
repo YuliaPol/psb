@@ -1660,6 +1660,7 @@ body.fontUbuntu .mediacontainer button {
 
 .header .logo {
   max-width: 140px;
+  display: none;
 }
 
 .header .logo img {
@@ -2003,15 +2004,18 @@ body.fontUbuntu .mediacontainer button {
   padding-top: 20px;
 }
 
-.container .question-wrapper .answerscale .has-error.multiple-wrapper .question {
+.container .question-wrapper .answerscale .has-error.multiple-wrapper .question,
+.container .question-wrapper .hidden-question-wrapper .has-error.multiple-wrapper .question {
   color: #F63030 !important;
 }
 
-.container .question-wrapper .answerscale .has-error.detail input {
+.container .question-wrapper .answerscale .has-error.detail input,
+.container .question-wrapper .hidden-question-wrapper .has-error.detail input {
   border-bottom-color: #F63030 !important;
 }
 
-.container .question-wrapper .answerscale .has-error.detail label {
+.container .question-wrapper .answerscale .has-error.detail label,
+.container .question-wrapper .hidden-question-wrapper .has-error.detail label {
   color: #F63030 !important;
 }
 
@@ -2040,7 +2044,6 @@ body.fontUbuntu .mediacontainer button {
           flex-direction: column;
   width: 100%;
   max-width: 1000px;
-  margin: auto;
 }
 
 .container .question-wrapper .scalelabels {
@@ -3143,7 +3146,7 @@ body.fontUbuntu .mediacontainer button {
 }
 
 .container .question-wrapper .branching-wrapper > div {
-  width: 50%;
+  width: 33%;
 }
 
 .container .question-wrapper .branching-wrapper label {
@@ -4161,19 +4164,23 @@ body.fontUbuntu .mediacontainer button {
   color: #008811;
 }
 
-.container .question-wrapper .hidden-answer > div {
+.container .question-wrapper .hidden-answer > div,
+.container .question-wrapper .hidden-question-wrapper > div {
   display: none;
 }
 
-.container .question-wrapper .hidden-answer .multiple-wrapper {
+.container .question-wrapper .hidden-answer .multiple-wrapper,
+.container .question-wrapper .hidden-question-wrapper .multiple-wrapper {
   padding-top: 10px;
 }
 
-.container .question-wrapper .hidden-answer .multiple-wrapper .question {
+.container .question-wrapper .hidden-answer .multiple-wrapper .question,
+.container .question-wrapper .hidden-question-wrapper .multiple-wrapper .question {
   font-weight: normal;
 }
 
-.container .question-wrapper .hidden-answer .detail {
+.container .question-wrapper .hidden-answer .detail,
+.container .question-wrapper .hidden-question-wrapper .detail {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4190,7 +4197,8 @@ body.fontUbuntu .mediacontainer button {
   padding-top: 60px;
 }
 
-.container .question-wrapper .hidden-answer .detail label {
+.container .question-wrapper .hidden-answer .detail label,
+.container .question-wrapper .hidden-question-wrapper .detail label {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -4201,7 +4209,8 @@ body.fontUbuntu .mediacontainer button {
   display: block;
 }
 
-.container .question-wrapper .hidden-answer .detail input {
+.container .question-wrapper .hidden-answer .detail input,
+.container .question-wrapper .hidden-question-wrapper .detail input {
   display: block;
   width: 50%;
   border-bottom: 1px solid #000000;
@@ -4219,7 +4228,8 @@ body.fontUbuntu .mediacontainer button {
   background: transparent;
 }
 
-.container .question-wrapper .hidden-answer .detail input::-webkit-input-placeholder {
+.container .question-wrapper .hidden-answer .detail input::-webkit-input-placeholder,
+.container .question-wrapper .hidden-question-wrapper .detail input::-webkit-input-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -4228,7 +4238,8 @@ body.fontUbuntu .mediacontainer button {
   color: #C0BCBC;
 }
 
-.container .question-wrapper .hidden-answer .detail input::-moz-placeholder {
+.container .question-wrapper .hidden-answer .detail input::-moz-placeholder,
+.container .question-wrapper .hidden-question-wrapper .detail input::-moz-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -4237,7 +4248,8 @@ body.fontUbuntu .mediacontainer button {
   color: #C0BCBC;
 }
 
-.container .question-wrapper .hidden-answer .detail input:-ms-input-placeholder {
+.container .question-wrapper .hidden-answer .detail input:-ms-input-placeholder,
+.container .question-wrapper .hidden-question-wrapper .detail input:-ms-input-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -4246,7 +4258,8 @@ body.fontUbuntu .mediacontainer button {
   color: #C0BCBC;
 }
 
-.container .question-wrapper .hidden-answer .detail input::-ms-input-placeholder {
+.container .question-wrapper .hidden-answer .detail input::-ms-input-placeholder,
+.container .question-wrapper .hidden-question-wrapper .detail input::-ms-input-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -4255,13 +4268,18 @@ body.fontUbuntu .mediacontainer button {
   color: #C0BCBC;
 }
 
-.container .question-wrapper .hidden-answer .detail input::placeholder {
+.container .question-wrapper .hidden-answer .detail input::placeholder,
+.container .question-wrapper .hidden-question-wrapper .detail input::placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 33px;
   color: #C0BCBC;
+}
+
+.container .question-wrapper .hidden-question-wrapper > div {
+  display: block;
 }
 
 .container .submit-container {
@@ -5085,6 +5103,7 @@ html .ui-button.ui-state-disabled:active {
   max-width: 100px;
   top: 40px;
   left: 40px;
+  display: none;
 }
 
 .hellopage .logo img {
@@ -5249,6 +5268,7 @@ html .ui-button.ui-state-disabled:active {
   max-width: 100px;
   top: 40px;
   left: 40px;
+  display: none;
 }
 
 .bannercontainer .logo img {
@@ -5475,6 +5495,7 @@ html .ui-button.ui-state-disabled:active {
     top: 10px;
     left: 10px;
     max-width: 80px;
+    display: none;
   }
   .bannercontainer .elements {
     padding-top: 50px;
@@ -5491,6 +5512,7 @@ html .ui-button.ui-state-disabled:active {
     top: 10px;
     left: 10px;
     max-width: 80px;
+    display: none;
   }
   .hellopage .elements {
     padding-top: 50px;
@@ -5600,6 +5622,7 @@ html .ui-button.ui-state-disabled:active {
   }
   .header .logo {
     max-width: 100px;
+    display: none;
   }
   .thankyou .thankyou-text .big-text {
     font-size: 24px;

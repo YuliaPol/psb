@@ -308,6 +308,7 @@ body {
     width: 100%;
     .logo {
         max-width: 140px;
+        display: none;//template-hidden
         img {
             max-width: 100%;
         }
@@ -550,7 +551,8 @@ body {
             display: none;  
             padding-top: 20px;
         }
-        .answerscale {
+        .answerscale,
+        .hidden-question-wrapper {
             .has-error {
                 &.multiple-wrapper .question {
                     color: $radiocolor2 !important;
@@ -581,7 +583,6 @@ body {
             flex-direction: column;
             width: 100%;
             max-width: 1000px;
-            margin: auto;
         }
         .scalelabels {
             display: flex;
@@ -1318,7 +1319,7 @@ body {
             flex-wrap: wrap;
             padding-top: 40px;
             & > div {
-                width: 50%;
+                width: 33%;
             }
             label {
                 font-size: 22px;
@@ -1895,7 +1896,8 @@ body {
 
             }
         }
-        .hidden-answer {
+        .hidden-answer,
+        .hidden-question-wrapper {
             &>div {
                 display: none;
             }
@@ -1946,6 +1948,11 @@ body {
                         color: #C0BCBC;
                     }
                 }
+            }
+        }
+        .hidden-question-wrapper {
+            &>div {
+                display: block;
             }
         }
     }
@@ -2691,6 +2698,8 @@ html .ui-button.ui-state-disabled:active {
         max-width: 100px;
         top: 40px;
         left: 40px;
+        display: none;//template-hidden
+
         img {
             max-width: 100%;
         }
@@ -2861,6 +2870,8 @@ html .ui-button.ui-state-disabled:active {
         max-width: 100px;
         top: 40px;
         left: 40px;
+        display: none;//template-hidden
+
         img {
             max-width: 100%;
         }
@@ -3043,6 +3054,8 @@ html .ui-button.ui-state-disabled:active {
             top: 10px;
             left: 10px;
             max-width: 80px;
+        display: none;//template-hidden
+
         }
         .elements {
             padding-top: 50px;
@@ -3061,6 +3074,8 @@ html .ui-button.ui-state-disabled:active {
             top: 10px;
             left: 10px;
             max-width: 80px;
+        display: none;//template-hidden
+
         }
         .elements {
             padding-top: 50px;
@@ -3164,6 +3179,7 @@ html .ui-button.ui-state-disabled:active {
     }
     .header .logo {
         max-width: 100px;
+        display: none;//template-hidden
     }
     .thankyou .thankyou-text .big-text {
         font-size: 24px;
