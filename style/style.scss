@@ -306,9 +306,14 @@ body {
     padding: 40px 40px 70px;
     background-color: $bggrey;
     width: 100%;
+    &.no-bg {
+        background-color: #ffffff;
+    }
     .logo {
         max-width: 140px;
-        display: none;//template-hidden
+        .logo-item {
+            padding-bottom: 25px;
+        }
         img {
             max-width: 100%;
         }
@@ -319,7 +324,7 @@ body {
         justify-content: space-between;
         .text-col {
             width: 65%;
-            padding-left: 15px;
+            padding-top: 30px;
             h2  {
                 font-family: $fontpage;
                 font-style: normal;
@@ -1319,7 +1324,8 @@ body {
             flex-wrap: wrap;
             padding-top: 40px;
             & > div {
-                width: 33%;
+                width: 50%;
+                padding-bottom: 10px;
             }
             label {
                 font-size: 22px;
@@ -1765,6 +1771,20 @@ body {
         }
         .multiple-list {
             padding-top: 15px;
+            .multiple-list-2 {
+                display: none;
+            }
+            input[type=checkbox],
+            input[type=radio] {
+                &:checked {
+                    & ~ .multiple-list-2 {
+                        display: block;
+                        padding-left: 20px;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
             .multiple-item {
                 padding-bottom: 15px;
                 padding-left: 5px;
@@ -1774,6 +1794,36 @@ body {
                 input[type=radio] {
                     & + label::before {
                         margin-right: 10px;
+                    }
+                }
+                textarea {
+                    display: block;
+                    width: 50%;
+                    border-bottom: 1px solid #000000;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    padding: 5px 15px;
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 33px;
+                    color: #4D4D4D;
+                    outline: none;
+                    background: transparent;
+                    resize: none;
+                    height: 43px;
+                    &::-webkit-scrollbar-track {
+                        border-radius: 0px;
+                        background-color: transparent;
+                    }
+                    &::-webkit-scrollbar {
+                        width: 0px;
+                        background-color: transparent;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: transparent;
                     }
                 }  
             }
@@ -2698,8 +2748,6 @@ html .ui-button.ui-state-disabled:active {
         max-width: 100px;
         top: 40px;
         left: 40px;
-        display: none;//template-hidden
-
         img {
             max-width: 100%;
         }
@@ -2870,8 +2918,6 @@ html .ui-button.ui-state-disabled:active {
         max-width: 100px;
         top: 40px;
         left: 40px;
-        display: none;//template-hidden
-
         img {
             max-width: 100%;
         }
@@ -2926,6 +2972,7 @@ html .ui-button.ui-state-disabled:active {
         }
     }
 }
+
 .mediacontainer {
     padding: 40px 40px 0px;
     width: 100%;
@@ -3019,6 +3066,29 @@ html .ui-button.ui-state-disabled:active {
         }
     }
 }
+.container.full-width-question .question-wrapper .branching-wrapper > div,
+.container.full-width-question .question-wrapper .single-wrapper > div {
+    width: 100%;
+}
+.made-by-wrapper {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #4D4D4D;
+    .made-by-wrapper-logo {
+        display: inline-block;
+        width: 120px;
+        vertical-align: middle;
+        padding-right: 25px;
+        img {
+            max-width: 100%;
+        }
+    }
+}
 @media screen and (min-width: 1500px) {
     .contact-form,
     .header-content,
@@ -3054,8 +3124,6 @@ html .ui-button.ui-state-disabled:active {
             top: 10px;
             left: 10px;
             max-width: 80px;
-        display: none;//template-hidden
-
         }
         .elements {
             padding-top: 50px;
@@ -3074,8 +3142,6 @@ html .ui-button.ui-state-disabled:active {
             top: 10px;
             left: 10px;
             max-width: 80px;
-        display: none;//template-hidden
-
         }
         .elements {
             padding-top: 50px;
@@ -3138,7 +3204,41 @@ html .ui-button.ui-state-disabled:active {
         line-height: 22px;
     }
 }
+
 @media screen and (max-width: 768px) {
+    .header .header-content .pic-col {
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .made-by-wrapper {
+        padding-top: 50px;
+        font-size: 14px;
+        line-height: 16px;
+        .made-by-wrapper-logo {
+            width: 80px;
+            padding-left: 15px;
+        }
+    }
+    .logo-list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 250px;
+        .logo-item {
+            width: 50%;
+            padding-left: 20px;
+        }
+    }
+    .container .question-wrapper .single-wrapper > div,
+    .container .question-wrapper .branching-wrapper > div {
+        padding-bottom: 15px;
+    }
+    .container .question-wrapper .branching-wrapper label,
+    .container .question-wrapper .single-wrapper label {
+        font-size: 14px;
+        line-height: 16px;
+    }
     .bannercontainer,
     .bannercontainer .elements,
     .hellopage .elements {
@@ -3179,7 +3279,6 @@ html .ui-button.ui-state-disabled:active {
     }
     .header .logo {
         max-width: 100px;
-        display: none;//template-hidden
     }
     .thankyou .thankyou-text .big-text {
         font-size: 24px;

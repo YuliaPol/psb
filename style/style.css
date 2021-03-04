@@ -1658,9 +1658,16 @@ body.fontUbuntu .mediacontainer button {
   width: 100%;
 }
 
+.header.no-bg {
+  background-color: #ffffff;
+}
+
 .header .logo {
   max-width: 140px;
-  display: none;
+}
+
+.header .logo .logo-item {
+  padding-bottom: 25px;
 }
 
 .header .logo img {
@@ -1684,7 +1691,7 @@ body.fontUbuntu .mediacontainer button {
 
 .header .header-content .text-col {
   width: 65%;
-  padding-left: 15px;
+  padding-top: 30px;
 }
 
 .header .header-content .text-col h2 {
@@ -3146,7 +3153,8 @@ body.fontUbuntu .mediacontainer button {
 }
 
 .container .question-wrapper .branching-wrapper > div {
-  width: 33%;
+  width: 50%;
+  padding-bottom: 10px;
 }
 
 .container .question-wrapper .branching-wrapper label {
@@ -4006,6 +4014,18 @@ body.fontUbuntu .mediacontainer button {
   padding-top: 15px;
 }
 
+.container .question-wrapper .multiple-list .multiple-list-2 {
+  display: none;
+}
+
+.container .question-wrapper .multiple-list input[type=checkbox]:checked ~ .multiple-list-2,
+.container .question-wrapper .multiple-list input[type=radio]:checked ~ .multiple-list-2 {
+  display: block;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .container .question-wrapper .multiple-list .multiple-item {
   padding-bottom: 15px;
   padding-left: 5px;
@@ -4016,6 +4036,40 @@ body.fontUbuntu .mediacontainer button {
 .container .question-wrapper .multiple-list .multiple-item input[type=checkbox] + label::before,
 .container .question-wrapper .multiple-list .multiple-item input[type=radio] + label::before {
   margin-right: 10px;
+}
+
+.container .question-wrapper .multiple-list .multiple-item textarea {
+  display: block;
+  width: 50%;
+  border-bottom: 1px solid #000000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #4D4D4D;
+  outline: none;
+  background: transparent;
+  resize: none;
+  height: 43px;
+}
+
+.container .question-wrapper .multiple-list .multiple-item textarea::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+.container .question-wrapper .multiple-list .multiple-item textarea::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+.container .question-wrapper .multiple-list .multiple-item textarea::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
 
 .container .question-wrapper .radio-wrapper {
@@ -5103,7 +5157,6 @@ html .ui-button.ui-state-disabled:active {
   max-width: 100px;
   top: 40px;
   left: 40px;
-  display: none;
 }
 
 .hellopage .logo img {
@@ -5268,7 +5321,6 @@ html .ui-button.ui-state-disabled:active {
   max-width: 100px;
   top: 40px;
   left: 40px;
-  display: none;
 }
 
 .bannercontainer .logo img {
@@ -5459,6 +5511,33 @@ html .ui-button.ui-state-disabled:active {
   max-height: 300px;
 }
 
+.container.full-width-question .question-wrapper .branching-wrapper > div,
+.container.full-width-question .question-wrapper .single-wrapper > div {
+  width: 100%;
+}
+
+.made-by-wrapper {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #4D4D4D;
+}
+
+.made-by-wrapper .made-by-wrapper-logo {
+  display: inline-block;
+  width: 120px;
+  vertical-align: middle;
+  padding-right: 25px;
+}
+
+.made-by-wrapper .made-by-wrapper-logo img {
+  max-width: 100%;
+}
+
 @media screen and (min-width: 1500px) {
   .contact-form,
   .header-content,
@@ -5495,7 +5574,6 @@ html .ui-button.ui-state-disabled:active {
     top: 10px;
     left: 10px;
     max-width: 80px;
-    display: none;
   }
   .bannercontainer .elements {
     padding-top: 50px;
@@ -5512,7 +5590,6 @@ html .ui-button.ui-state-disabled:active {
     top: 10px;
     left: 10px;
     max-width: 80px;
-    display: none;
   }
   .hellopage .elements {
     padding-top: 50px;
@@ -5575,6 +5652,48 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @media screen and (max-width: 768px) {
+  .header .header-content .pic-col {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  .made-by-wrapper {
+    padding-top: 50px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .made-by-wrapper .made-by-wrapper-logo {
+    width: 80px;
+    padding-left: 15px;
+  }
+  .logo-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 250px;
+  }
+  .logo-list .logo-item {
+    width: 50%;
+    padding-left: 20px;
+  }
+  .container .question-wrapper .single-wrapper > div,
+  .container .question-wrapper .branching-wrapper > div {
+    padding-bottom: 15px;
+  }
+  .container .question-wrapper .branching-wrapper label,
+  .container .question-wrapper .single-wrapper label {
+    font-size: 14px;
+    line-height: 16px;
+  }
   .bannercontainer,
   .bannercontainer .elements,
   .hellopage .elements {
@@ -5622,7 +5741,6 @@ html .ui-button.ui-state-disabled:active {
   }
   .header .logo {
     max-width: 100px;
-    display: none;
   }
   .thankyou .thankyou-text .big-text {
     font-size: 24px;

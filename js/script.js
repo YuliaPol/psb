@@ -24,6 +24,13 @@ jQuery(function ($) {
             });
         };
              
+        //resize textarea
+        $('.container').on('keyup', '.textarea-input', function(e){
+            textAreaAdjust(this)
+        });
+        function textAreaAdjust(el) {
+            el.style.height = (el.scrollHeight > el.clientHeight) ? (el.scrollHeight)+"px" : "38px";
+        }
 
         $(".col-phone .phone").inputFilter(function(value) {
             return /^\d*$/.test(value) && (value === "" || parseInt(value) <= 9999999999);
@@ -135,7 +142,20 @@ jQuery(function ($) {
                 $('#hiddenquestion_' + idQuestion + '_' + idPoint).fadeIn(300);
             }
         });
-
+        //branching hidden question show
+        $('.container').on('change', '.branching-wrapper input[type=checkbox]', function(e){
+            var idQuestion = $(this).attr('id').split('-')[1];
+            var idPoint = parseInt($(this).attr('id').split('-')[2]);
+            if($(this).is(':checked')){
+                // $(this).parents('.question-wrapper').find('.hidden-question-group').fadeOut(300);
+                $('#hiddenquestion_' + idQuestion + '_' + idPoint).fadeIn(300);
+            }
+            else {
+                if($('#hiddenquestion_' + idQuestion + '_' + idPoint).length>0){
+                    $('#hiddenquestion_' + idQuestion + '_' + idPoint).fadeOut(300);
+                }
+            }
+        });
         
         //branching hidden question show
         $('.container').on('change', '.scalebranching input[type=radio]', function(e){
