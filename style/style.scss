@@ -303,7 +303,7 @@ body {
     }
 }
 .header {
-    padding: 40px 40px 70px;
+    padding: 40px 60px 70px;
     background-color: $bggrey;
     width: 100%;
     &.no-bg {
@@ -3081,15 +3081,21 @@ html .ui-button.ui-state-disabled:active {
     color: #4D4D4D;
     .made-by-wrapper-logo {
         display: inline-block;
-        width: 120px;
+        width: 180px;
         vertical-align: middle;
-        padding-right: 25px;
+        padding-right: 75px;
         img {
             max-width: 100%;
         }
     }
 }
+
 @media screen and (min-width: 1500px) {
+    .container.moveleft,
+    .header.moveleft {
+        padding-left: 120px;
+        padding-right: 60px;
+    }
     .contact-form,
     .header-content,
     .form-wrapper {
@@ -3206,6 +3212,31 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @media screen and (max-width: 768px) {
+    .container .question-wrapper .single-wrapper,
+    .container .question-wrapper .branching-wrapper {
+        padding-top: 20px;
+    }
+    .container .question-wrapper {
+        padding-bottom: 20px;
+        padding-top: 25px;
+    }
+    .container .question-wrapper .hidden-answer .detail,
+    .container .question-wrapper .hidden-question-wrapper .detail {
+        flex-direction: column;
+        padding-top: 15px;
+        label {
+            padding-bottom: 10px;
+        }
+        label,
+        input {
+            width: 100%;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .thankyou .thankyou-text {
+        padding-top: 200px;
+    }
     .header .header-content .pic-col {
         text-align: left;
         padding-top: 10px;
@@ -3217,7 +3248,7 @@ html .ui-button.ui-state-disabled:active {
         line-height: 16px;
         .made-by-wrapper-logo {
             width: 80px;
-            padding-left: 15px;
+            padding-right: 15px;
         }
     }
     .logo-list {
