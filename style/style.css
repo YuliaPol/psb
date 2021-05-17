@@ -81,25 +81,6 @@ body.fontMontserrat .container label,
 body.fontMontserrat .container input,
 body.fontMontserrat .container p,
 body.fontMontserrat .container textarea,
-body.fontMontserrat .container input::-moz-placeholder,
-body.fontMontserrat .container textarea::-moz-placeholder,
-body.fontMontserrat .container button,
-body.fontMontserrat .mediacontainer div,
-body.fontMontserrat .mediacontainer label,
-body.fontMontserrat .mediacontainer input,
-body.fontMontserrat .mediacontainer p,
-body.fontMontserrat .mediacontainer textarea,
-body.fontMontserrat .mediacontainer input::-moz-placeholder,
-body.fontMontserrat .mediacontainer textarea::-moz-placeholder,
-body.fontMontserrat .mediacontainer button {
-  font-family: "Montserrat" !important;
-}
-
-body.fontMontserrat .container div,
-body.fontMontserrat .container label,
-body.fontMontserrat .container input,
-body.fontMontserrat .container p,
-body.fontMontserrat .container textarea,
 body.fontMontserrat .container input:-ms-input-placeholder,
 body.fontMontserrat .container textarea:-ms-input-placeholder,
 body.fontMontserrat .container button,
@@ -172,25 +153,6 @@ body.fontArial .mediacontainer p,
 body.fontArial .mediacontainer textarea,
 body.fontArial .mediacontainer input::-webkit-input-placeholder,
 body.fontArial .mediacontainer textarea::-webkit-input-placeholder,
-body.fontArial .mediacontainer button {
-  font-family: Arial, Helvetica, sans-serif !important;
-}
-
-body.fontArial .container div,
-body.fontArial .container label,
-body.fontArial .container input,
-body.fontArial .container p,
-body.fontArial .container textarea,
-body.fontArial .container input::-moz-placeholder,
-body.fontArial .container textarea::-moz-placeholder,
-body.fontArial .container button,
-body.fontArial .mediacontainer div,
-body.fontArial .mediacontainer label,
-body.fontArial .mediacontainer input,
-body.fontArial .mediacontainer p,
-body.fontArial .mediacontainer textarea,
-body.fontArial .mediacontainer input::-moz-placeholder,
-body.fontArial .mediacontainer textarea::-moz-placeholder,
 body.fontArial .mediacontainer button {
   font-family: Arial, Helvetica, sans-serif !important;
 }
@@ -281,25 +243,6 @@ body.fontLora .container label,
 body.fontLora .container input,
 body.fontLora .container p,
 body.fontLora .container textarea,
-body.fontLora .container input::-moz-placeholder,
-body.fontLora .container textarea::-moz-placeholder,
-body.fontLora .container button,
-body.fontLora .mediacontainer div,
-body.fontLora .mediacontainer label,
-body.fontLora .mediacontainer input,
-body.fontLora .mediacontainer p,
-body.fontLora .mediacontainer textarea,
-body.fontLora .mediacontainer input::-moz-placeholder,
-body.fontLora .mediacontainer textarea::-moz-placeholder,
-body.fontLora .mediacontainer button {
-  font-family: 'Lora', serif !important;
-}
-
-body.fontLora .container div,
-body.fontLora .container label,
-body.fontLora .container input,
-body.fontLora .container p,
-body.fontLora .container textarea,
 body.fontLora .container input:-ms-input-placeholder,
 body.fontLora .container textarea:-ms-input-placeholder,
 body.fontLora .container button,
@@ -372,25 +315,6 @@ body.fontPTSans .mediacontainer p,
 body.fontPTSans .mediacontainer textarea,
 body.fontPTSans .mediacontainer input::-webkit-input-placeholder,
 body.fontPTSans .mediacontainer textarea::-webkit-input-placeholder,
-body.fontPTSans .mediacontainer button {
-  font-family: 'PT Sans', sans-serif !important;
-}
-
-body.fontPTSans .container div,
-body.fontPTSans .container label,
-body.fontPTSans .container input,
-body.fontPTSans .container p,
-body.fontPTSans .container textarea,
-body.fontPTSans .container input::-moz-placeholder,
-body.fontPTSans .container textarea::-moz-placeholder,
-body.fontPTSans .container button,
-body.fontPTSans .mediacontainer div,
-body.fontPTSans .mediacontainer label,
-body.fontPTSans .mediacontainer input,
-body.fontPTSans .mediacontainer p,
-body.fontPTSans .mediacontainer textarea,
-body.fontPTSans .mediacontainer input::-moz-placeholder,
-body.fontPTSans .mediacontainer textarea::-moz-placeholder,
 body.fontPTSans .mediacontainer button {
   font-family: 'PT Sans', sans-serif !important;
 }
@@ -481,25 +405,6 @@ body.fontNotoSans .container label,
 body.fontNotoSans .container input,
 body.fontNotoSans .container p,
 body.fontNotoSans .container textarea,
-body.fontNotoSans .container input::-moz-placeholder,
-body.fontNotoSans .container textarea::-moz-placeholder,
-body.fontNotoSans .container button,
-body.fontNotoSans .mediacontainer div,
-body.fontNotoSans .mediacontainer label,
-body.fontNotoSans .mediacontainer input,
-body.fontNotoSans .mediacontainer p,
-body.fontNotoSans .mediacontainer textarea,
-body.fontNotoSans .mediacontainer input::-moz-placeholder,
-body.fontNotoSans .mediacontainer textarea::-moz-placeholder,
-body.fontNotoSans .mediacontainer button {
-  font-family: 'Noto Sans', sans-serif !important;
-}
-
-body.fontNotoSans .container div,
-body.fontNotoSans .container label,
-body.fontNotoSans .container input,
-body.fontNotoSans .container p,
-body.fontNotoSans .container textarea,
 body.fontNotoSans .container input:-ms-input-placeholder,
 body.fontNotoSans .container textarea:-ms-input-placeholder,
 body.fontNotoSans .container button,
@@ -572,25 +477,6 @@ body.fontTahoma .mediacontainer p,
 body.fontTahoma .mediacontainer textarea,
 body.fontTahoma .mediacontainer input::-webkit-input-placeholder,
 body.fontTahoma .mediacontainer textarea::-webkit-input-placeholder,
-body.fontTahoma .mediacontainer button {
-  font-family: Tahoma, Geneva, sans-serif  !important;
-}
-
-body.fontTahoma .container div,
-body.fontTahoma .container label,
-body.fontTahoma .container input,
-body.fontTahoma .container p,
-body.fontTahoma .container textarea,
-body.fontTahoma .container input::-moz-placeholder,
-body.fontTahoma .container textarea::-moz-placeholder,
-body.fontTahoma .container button,
-body.fontTahoma .mediacontainer div,
-body.fontTahoma .mediacontainer label,
-body.fontTahoma .mediacontainer input,
-body.fontTahoma .mediacontainer p,
-body.fontTahoma .mediacontainer textarea,
-body.fontTahoma .mediacontainer input::-moz-placeholder,
-body.fontTahoma .mediacontainer textarea::-moz-placeholder,
 body.fontTahoma .mediacontainer button {
   font-family: Tahoma, Geneva, sans-serif  !important;
 }
@@ -681,25 +567,6 @@ body.fontImpact .container label,
 body.fontImpact .container input,
 body.fontImpact .container p,
 body.fontImpact .container textarea,
-body.fontImpact .container input::-moz-placeholder,
-body.fontImpact .container textarea::-moz-placeholder,
-body.fontImpact .container button,
-body.fontImpact .mediacontainer div,
-body.fontImpact .mediacontainer label,
-body.fontImpact .mediacontainer input,
-body.fontImpact .mediacontainer p,
-body.fontImpact .mediacontainer textarea,
-body.fontImpact .mediacontainer input::-moz-placeholder,
-body.fontImpact .mediacontainer textarea::-moz-placeholder,
-body.fontImpact .mediacontainer button {
-  font-family: Impact, Charcoal, sans-serif  !important;
-}
-
-body.fontImpact .container div,
-body.fontImpact .container label,
-body.fontImpact .container input,
-body.fontImpact .container p,
-body.fontImpact .container textarea,
 body.fontImpact .container input:-ms-input-placeholder,
 body.fontImpact .container textarea:-ms-input-placeholder,
 body.fontImpact .container button,
@@ -772,25 +639,6 @@ body.fontLucida .mediacontainer p,
 body.fontLucida .mediacontainer textarea,
 body.fontLucida .mediacontainer input::-webkit-input-placeholder,
 body.fontLucida .mediacontainer textarea::-webkit-input-placeholder,
-body.fontLucida .mediacontainer button {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif  !important;
-}
-
-body.fontLucida .container div,
-body.fontLucida .container label,
-body.fontLucida .container input,
-body.fontLucida .container p,
-body.fontLucida .container textarea,
-body.fontLucida .container input::-moz-placeholder,
-body.fontLucida .container textarea::-moz-placeholder,
-body.fontLucida .container button,
-body.fontLucida .mediacontainer div,
-body.fontLucida .mediacontainer label,
-body.fontLucida .mediacontainer input,
-body.fontLucida .mediacontainer p,
-body.fontLucida .mediacontainer textarea,
-body.fontLucida .mediacontainer input::-moz-placeholder,
-body.fontLucida .mediacontainer textarea::-moz-placeholder,
 body.fontLucida .mediacontainer button {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif  !important;
 }
@@ -881,25 +729,6 @@ body.fontCourier .container label,
 body.fontCourier .container input,
 body.fontCourier .container p,
 body.fontCourier .container textarea,
-body.fontCourier .container input::-moz-placeholder,
-body.fontCourier .container textarea::-moz-placeholder,
-body.fontCourier .container button,
-body.fontCourier .mediacontainer div,
-body.fontCourier .mediacontainer label,
-body.fontCourier .mediacontainer input,
-body.fontCourier .mediacontainer p,
-body.fontCourier .mediacontainer textarea,
-body.fontCourier .mediacontainer input::-moz-placeholder,
-body.fontCourier .mediacontainer textarea::-moz-placeholder,
-body.fontCourier .mediacontainer button {
-  font-family: "Courier New", Courier, monospace !important;
-}
-
-body.fontCourier .container div,
-body.fontCourier .container label,
-body.fontCourier .container input,
-body.fontCourier .container p,
-body.fontCourier .container textarea,
 body.fontCourier .container input:-ms-input-placeholder,
 body.fontCourier .container textarea:-ms-input-placeholder,
 body.fontCourier .container button,
@@ -972,25 +801,6 @@ body.fontGeorgia .mediacontainer p,
 body.fontGeorgia .mediacontainer textarea,
 body.fontGeorgia .mediacontainer input::-webkit-input-placeholder,
 body.fontGeorgia .mediacontainer textarea::-webkit-input-placeholder,
-body.fontGeorgia .mediacontainer button {
-  font-family: Georgia, serif !important;
-}
-
-body.fontGeorgia .container div,
-body.fontGeorgia .container label,
-body.fontGeorgia .container input,
-body.fontGeorgia .container p,
-body.fontGeorgia .container textarea,
-body.fontGeorgia .container input::-moz-placeholder,
-body.fontGeorgia .container textarea::-moz-placeholder,
-body.fontGeorgia .container button,
-body.fontGeorgia .mediacontainer div,
-body.fontGeorgia .mediacontainer label,
-body.fontGeorgia .mediacontainer input,
-body.fontGeorgia .mediacontainer p,
-body.fontGeorgia .mediacontainer textarea,
-body.fontGeorgia .mediacontainer input::-moz-placeholder,
-body.fontGeorgia .mediacontainer textarea::-moz-placeholder,
 body.fontGeorgia .mediacontainer button {
   font-family: Georgia, serif !important;
 }
@@ -1081,25 +891,6 @@ body.fontTimesNewRoman .container label,
 body.fontTimesNewRoman .container input,
 body.fontTimesNewRoman .container p,
 body.fontTimesNewRoman .container textarea,
-body.fontTimesNewRoman .container input::-moz-placeholder,
-body.fontTimesNewRoman .container textarea::-moz-placeholder,
-body.fontTimesNewRoman .container button,
-body.fontTimesNewRoman .mediacontainer div,
-body.fontTimesNewRoman .mediacontainer label,
-body.fontTimesNewRoman .mediacontainer input,
-body.fontTimesNewRoman .mediacontainer p,
-body.fontTimesNewRoman .mediacontainer textarea,
-body.fontTimesNewRoman .mediacontainer input::-moz-placeholder,
-body.fontTimesNewRoman .mediacontainer textarea::-moz-placeholder,
-body.fontTimesNewRoman .mediacontainer button {
-  font-family: "Times New Roman", Times, serif  !important;
-}
-
-body.fontTimesNewRoman .container div,
-body.fontTimesNewRoman .container label,
-body.fontTimesNewRoman .container input,
-body.fontTimesNewRoman .container p,
-body.fontTimesNewRoman .container textarea,
 body.fontTimesNewRoman .container input:-ms-input-placeholder,
 body.fontTimesNewRoman .container textarea:-ms-input-placeholder,
 body.fontTimesNewRoman .container button,
@@ -1172,25 +963,6 @@ body.fontRoboto .mediacontainer p,
 body.fontRoboto .mediacontainer textarea,
 body.fontRoboto .mediacontainer input::-webkit-input-placeholder,
 body.fontRoboto .mediacontainer textarea::-webkit-input-placeholder,
-body.fontRoboto .mediacontainer button {
-  font-family: 'Roboto', sans-serif !important;
-}
-
-body.fontRoboto .container div,
-body.fontRoboto .container label,
-body.fontRoboto .container input,
-body.fontRoboto .container p,
-body.fontRoboto .container textarea,
-body.fontRoboto .container input::-moz-placeholder,
-body.fontRoboto .container textarea::-moz-placeholder,
-body.fontRoboto .container button,
-body.fontRoboto .mediacontainer div,
-body.fontRoboto .mediacontainer label,
-body.fontRoboto .mediacontainer input,
-body.fontRoboto .mediacontainer p,
-body.fontRoboto .mediacontainer textarea,
-body.fontRoboto .mediacontainer input::-moz-placeholder,
-body.fontRoboto .mediacontainer textarea::-moz-placeholder,
 body.fontRoboto .mediacontainer button {
   font-family: 'Roboto', sans-serif !important;
 }
@@ -1281,25 +1053,6 @@ body.fontOpenSans .container label,
 body.fontOpenSans .container input,
 body.fontOpenSans .container p,
 body.fontOpenSans .container textarea,
-body.fontOpenSans .container input::-moz-placeholder,
-body.fontOpenSans .container textarea::-moz-placeholder,
-body.fontOpenSans .container button,
-body.fontOpenSans .mediacontainer div,
-body.fontOpenSans .mediacontainer label,
-body.fontOpenSans .mediacontainer input,
-body.fontOpenSans .mediacontainer p,
-body.fontOpenSans .mediacontainer textarea,
-body.fontOpenSans .mediacontainer input::-moz-placeholder,
-body.fontOpenSans .mediacontainer textarea::-moz-placeholder,
-body.fontOpenSans .mediacontainer button {
-  font-family: 'Open Sans', sans-serif  !important;
-}
-
-body.fontOpenSans .container div,
-body.fontOpenSans .container label,
-body.fontOpenSans .container input,
-body.fontOpenSans .container p,
-body.fontOpenSans .container textarea,
 body.fontOpenSans .container input:-ms-input-placeholder,
 body.fontOpenSans .container textarea:-ms-input-placeholder,
 body.fontOpenSans .container button,
@@ -1372,25 +1125,6 @@ body.fontPiazzolla .mediacontainer p,
 body.fontPiazzolla .mediacontainer textarea,
 body.fontPiazzolla .mediacontainer input::-webkit-input-placeholder,
 body.fontPiazzolla .mediacontainer textarea::-webkit-input-placeholder,
-body.fontPiazzolla .mediacontainer button {
-  font-family: 'Piazzolla', serif !important;
-}
-
-body.fontPiazzolla .container div,
-body.fontPiazzolla .container label,
-body.fontPiazzolla .container input,
-body.fontPiazzolla .container p,
-body.fontPiazzolla .container textarea,
-body.fontPiazzolla .container input::-moz-placeholder,
-body.fontPiazzolla .container textarea::-moz-placeholder,
-body.fontPiazzolla .container button,
-body.fontPiazzolla .mediacontainer div,
-body.fontPiazzolla .mediacontainer label,
-body.fontPiazzolla .mediacontainer input,
-body.fontPiazzolla .mediacontainer p,
-body.fontPiazzolla .mediacontainer textarea,
-body.fontPiazzolla .mediacontainer input::-moz-placeholder,
-body.fontPiazzolla .mediacontainer textarea::-moz-placeholder,
 body.fontPiazzolla .mediacontainer button {
   font-family: 'Piazzolla', serif !important;
 }
@@ -1481,25 +1215,6 @@ body.fontOswald .container label,
 body.fontOswald .container input,
 body.fontOswald .container p,
 body.fontOswald .container textarea,
-body.fontOswald .container input::-moz-placeholder,
-body.fontOswald .container textarea::-moz-placeholder,
-body.fontOswald .container button,
-body.fontOswald .mediacontainer div,
-body.fontOswald .mediacontainer label,
-body.fontOswald .mediacontainer input,
-body.fontOswald .mediacontainer p,
-body.fontOswald .mediacontainer textarea,
-body.fontOswald .mediacontainer input::-moz-placeholder,
-body.fontOswald .mediacontainer textarea::-moz-placeholder,
-body.fontOswald .mediacontainer button {
-  font-family: "Oswald", sans-serif !important;
-}
-
-body.fontOswald .container div,
-body.fontOswald .container label,
-body.fontOswald .container input,
-body.fontOswald .container p,
-body.fontOswald .container textarea,
 body.fontOswald .container input:-ms-input-placeholder,
 body.fontOswald .container textarea:-ms-input-placeholder,
 body.fontOswald .container button,
@@ -1581,25 +1296,6 @@ body.fontUbuntu .container label,
 body.fontUbuntu .container input,
 body.fontUbuntu .container p,
 body.fontUbuntu .container textarea,
-body.fontUbuntu .container input::-moz-placeholder,
-body.fontUbuntu .container textarea::-moz-placeholder,
-body.fontUbuntu .container button,
-body.fontUbuntu .mediacontainer div,
-body.fontUbuntu .mediacontainer label,
-body.fontUbuntu .mediacontainer input,
-body.fontUbuntu .mediacontainer p,
-body.fontUbuntu .mediacontainer textarea,
-body.fontUbuntu .mediacontainer input::-moz-placeholder,
-body.fontUbuntu .mediacontainer textarea::-moz-placeholder,
-body.fontUbuntu .mediacontainer button {
-  font-family: 'Ubuntu', sans-serif !important;
-}
-
-body.fontUbuntu .container div,
-body.fontUbuntu .container label,
-body.fontUbuntu .container input,
-body.fontUbuntu .container p,
-body.fontUbuntu .container textarea,
 body.fontUbuntu .container input:-ms-input-placeholder,
 body.fontUbuntu .container textarea:-ms-input-placeholder,
 body.fontUbuntu .container button,
@@ -1653,7 +1349,7 @@ body.fontUbuntu .mediacontainer button {
 }
 
 .header {
-  padding: 40px 60px 70px;
+  padding: 40px 60px 50px;
   background-color: #DEE1E9;
   width: 100%;
 }
@@ -1676,22 +1372,18 @@ body.fontUbuntu .mediacontainer button {
 
 .header .header-content {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .header .header-content .text-col {
-  width: 65%;
-  padding-top: 30px;
+  width: 55%;
 }
 
 .header .header-content .text-col h2 {
@@ -1764,15 +1456,12 @@ body.fontUbuntu .mediacontainer button {
 .header .header-content .audio-wrapper {
   margin-top: 30px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 270px;
@@ -1787,8 +1476,7 @@ body.fontUbuntu .mediacontainer button {
   height: 53px;
   background-image: url(./../img/play.png);
   background-repeat: no-repeat;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  background-size: 100%;
   background-position: center;
   border-radius: 50%;
 }
@@ -1803,13 +1491,13 @@ body.fontUbuntu .mediacontainer button {
 }
 
 .header .header-content .pic-col {
-  width: 35%;
+  width: 45%;
   text-align: center;
 }
 
 .header .header-content .pic-col img {
   max-width: 100%;
-  max-height: 350px;
+  max-height: 300px;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
@@ -1837,20 +1525,16 @@ body.fontUbuntu .mediacontainer button {
   top: 0%;
   bottom: 0%;
   margin: auto;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   background-position: center;
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
-  -o-transition: -o-transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
-  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in, -o-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
 .header .header-content .pic-col .vide-wrapper .play:hover {
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-       -o-transform: scale(1.1);
           transform: scale(1.1);
 }
 
@@ -1861,8 +1545,7 @@ body.fontUbuntu .mediacontainer button {
 .container.bg-image {
   background-position: center;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 30px;
@@ -1886,18 +1569,15 @@ body.fontUbuntu .mediacontainer button {
 
 .container.alignleft .mediablock {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
 .container.alignleft .question-wrapper .mediablock .imageblock {
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
@@ -1908,18 +1588,15 @@ body.fontUbuntu .mediacontainer button {
 
 .container.aligncenter .mediablock {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .container.aligncenter .question-wrapper .mediablock .imageblock {
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1930,18 +1607,15 @@ body.fontUbuntu .mediacontainer button {
 
 .container.alignright .mediablock {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
 .container.alignright .question-wrapper .mediablock .imageblock {
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
@@ -1971,7 +1645,6 @@ body.fontUbuntu .mediacontainer button {
   border-radius: 50%;
   margin-right: 5px;
   -webkit-transition: background 0.3s ease-in;
-  -o-transition: background 0.3s ease-in;
   transition: background 0.3s ease-in;
   cursor: pointer;
 }
@@ -1980,6 +1653,10 @@ body.fontUbuntu .mediacontainer button {
   padding-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid #EBEBEB;
+}
+
+.container .question-wrapper.after-stop {
+  display: none;
 }
 
 .container .question-wrapper.has-error > .question {
@@ -2033,6 +1710,7 @@ body.fontUbuntu .mediacontainer button {
   font-size: 22px;
   line-height: 33px;
   color: #4D4D4D;
+  white-space: pre-wrap;
 }
 
 .container .question-wrapper .scaleanswer {
@@ -2041,12 +1719,10 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .scaleanswer10 {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
@@ -2055,15 +1731,12 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .scalelabels {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: "Montserrat";
@@ -2084,12 +1757,10 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .wrapper-ratings10 {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding-top: 40px;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1000px;
@@ -2127,18 +1798,14 @@ body.fontUbuntu .mediacontainer button {
   border-radius: 50%;
   border: 2px solid #ffffff;
   -webkit-transition: background 0.5s;
-  -o-transition: background 0.5s;
   transition: background 0.5s;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -2253,17 +1920,14 @@ body.fontUbuntu .mediacontainer button {
 .container .question-wrapper .wrapper-star5 .rating,
 .container .question-wrapper .wrapper-star10 .rating {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   overflow: hidden;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-  -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   position: relative;
@@ -2289,10 +1953,8 @@ body.fontUbuntu .mediacontainer button {
   background-image: url("./../img/star.svg");
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: 76% 76%;
-          background-size: 76%;
+  background-size: 76%;
   -webkit-transition: .3s;
-  -o-transition: .3s;
   transition: .3s;
   outline: none;
 }
@@ -2323,17 +1985,14 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .wrapper-colorstar .rating {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   overflow: hidden;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-  -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   position: relative;
@@ -2356,10 +2015,8 @@ body.fontUbuntu .mediacontainer button {
   background-image: url("./../img/star.svg");
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: 76% 76%;
-          background-size: 76%;
+  background-size: 76%;
   -webkit-transition: .3s;
-  -o-transition: .3s;
   transition: .3s;
   outline: none;
   cursor: pointer;
@@ -2524,15 +2181,12 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .range-list .range-row {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 10px;
@@ -2560,7 +2214,6 @@ body.fontUbuntu .mediacontainer button {
   left: 0px;
   z-index: 5;
   -webkit-transition: all 0.1s ease-in;
-  -o-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
   pointer-events: none;
   background-repeat: no-repeat;
@@ -2568,15 +2221,12 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .range-list .range-row .range .label .value {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
@@ -2646,7 +2296,6 @@ body.fontUbuntu .mediacontainer button {
   background: #563BC2;
   z-index: 2;
   -webkit-transition: width 0.1s ease-in;
-  -o-transition: width 0.1s ease-in;
   transition: width 0.1s ease-in;
   background-repeat: no-repeat;
 }
@@ -2658,31 +2307,25 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .mediablock .imageblock {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .question-wrapper .mediablock .imageblock .image {
   max-width: 33%;
   padding: 7px;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   min-width: 33%;
@@ -2718,27 +2361,22 @@ body.fontUbuntu .mediacontainer button {
   height: 15px;
   background: url("./../img/close-grey.svg");
   background-position: center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in;
-  -o-transition: opacity 0.3s ease-in;
   transition: opacity 0.3s ease-in;
 }
 
 .container .question-wrapper .mediablock .imageblock .image .bottom-row {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -2747,27 +2385,22 @@ body.fontUbuntu .mediacontainer button {
   max-width: 100%;
   width: 100%;
   -webkit-transition: border 0.3s ease-in;
-  -o-transition: border 0.3s ease-in;
   transition: border 0.3s ease-in;
   border: 2px solid transparent;
 }
 
 .container .question-wrapper .mediablock .videosblock {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .question-wrapper .mediablock .videoblock {
@@ -2788,13 +2421,11 @@ body.fontUbuntu .mediacontainer button {
   height: 15px;
   background: url("./../img/close-grey.svg");
   background-position: center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in;
-  -o-transition: opacity 0.3s ease-in;
   transition: opacity 0.3s ease-in;
   z-index: 1000;
 }
@@ -2815,34 +2446,27 @@ body.fontUbuntu .mediacontainer button {
   top: 0%;
   bottom: 0%;
   margin: auto;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   background-position: center;
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
-  -o-transition: -o-transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
-  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in, -o-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
 .container .question-wrapper .mediablock .videoblock .play:hover {
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-       -o-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 .container .question-wrapper .mediablock .audioblock {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 270px;
@@ -2864,13 +2488,11 @@ body.fontUbuntu .mediacontainer button {
   height: 15px;
   background: url("./../img/close-grey.svg");
   background-position: center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in;
-  -o-transition: opacity 0.3s ease-in;
   transition: opacity 0.3s ease-in;
   z-index: 1000;
 }
@@ -2880,8 +2502,7 @@ body.fontUbuntu .mediacontainer button {
   height: 53px;
   background-image: url(./../img/play.svg);
   background-repeat: no-repeat;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  background-size: 100%;
   background-position: center;
   border-radius: 50%;
 }
@@ -2911,15 +2532,12 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .mediablock .bottom-row {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -2937,20 +2555,16 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .mediablock .inputsimage {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .question-wrapper .mediablock .inputsimage .inputgroup {
@@ -2964,11 +2578,9 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .mediablock .inputsimage .inputgroup input[type=radio] + label {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
@@ -2981,7 +2593,6 @@ body.fontUbuntu .mediacontainer button {
   border: 1px solid #C4C4C4;
   margin-right: 10px;
   -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   border-radius: 50%;
   display: inline-block;
@@ -3022,8 +2633,6 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block.active .dropdown-arrow {
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-       -o-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
@@ -3032,17 +2641,15 @@ body.fontUbuntu .mediacontainer button {
   background-image: url(./../img/arrow-dropdown.svg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   width: 25px;
   height: 10px;
   right: 14px;
   top: 11px;
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
-  -o-transition: -o-transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
-  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in, -o-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
 .container .question-wrapper .dropdown-wrapper .dropdown-list .dropdown-block .question-name {
@@ -3082,15 +2689,12 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .btn-wrapper .btn {
   display: -webkit-inline-box;
-  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   outline: none;
@@ -3108,20 +2712,16 @@ body.fontUbuntu .mediacontainer button {
 .container .question-wrapper .single-wrapper {
   padding-top: 40px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .question-wrapper .single-wrapper > div {
@@ -3135,20 +2735,16 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .branching-wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 40px;
 }
 
@@ -3208,15 +2804,6 @@ body.fontUbuntu .mediacontainer button {
   color: #A4A2A2;
 }
 
-.container .question-wrapper .hidden-question .hidden-question-answer input::-moz-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 10px;
-  line-height: 12px;
-  color: #A4A2A2;
-}
-
 .container .question-wrapper .hidden-question .hidden-question-answer input:-ms-input-placeholder {
   font-family: "Montserrat";
   font-style: normal;
@@ -3258,15 +2845,12 @@ body.fontUbuntu .mediacontainer button {
   border-radius: 3px;
   width: 100%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 15px;
@@ -3274,20 +2858,16 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .ranging-wrapper .ranging-list .rangint-item .arrows {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 25px;
@@ -3300,11 +2880,8 @@ body.fontUbuntu .mediacontainer button {
   background: url(./../img/arrow-dropdown.svg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-       -o-transform: rotate(180deg);
           transform: rotate(180deg);
   cursor: pointer;
 }
@@ -3316,8 +2893,7 @@ body.fontUbuntu .mediacontainer button {
   background: url(./../img/arrow-dropdown.svg);
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   cursor: pointer;
 }
 
@@ -3337,15 +2913,12 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .matrix-wrapper .matrix-table .first-row {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 10px;
@@ -3354,7 +2927,6 @@ body.fontUbuntu .mediacontainer button {
 .container .question-wrapper .matrix-wrapper .matrix-table .first-row .col {
   width: 100%;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
@@ -3368,15 +2940,12 @@ body.fontUbuntu .mediacontainer button {
   width: calc(100% - 10px);
   margin: auto;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 5px;
@@ -3393,15 +2962,12 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .matrix-wrapper .matrix-table .matrix-row {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 10px;
@@ -3409,7 +2975,6 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .matrix-wrapper .matrix-table .matrix-row .first-col {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   overflow: hidden;
@@ -3420,15 +2985,12 @@ body.fontUbuntu .mediacontainer button {
   width: calc(100% - 10px);
   margin: auto;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 5px;
@@ -3447,7 +3009,6 @@ body.fontUbuntu .mediacontainer button {
 .container .question-wrapper .matrix-wrapper .matrix-table .matrix-row .col {
   width: 100%;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   overflow: hidden;
@@ -3509,15 +3070,6 @@ body.fontUbuntu .mediacontainer button {
   color: #C0BCBC;
 }
 
-.container .question-wrapper .free-wrapper input::-moz-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 33px;
-  color: #C0BCBC;
-}
-
 .container .question-wrapper .free-wrapper input:-ms-input-placeholder {
   font-family: "Montserrat";
   font-style: normal;
@@ -3561,8 +3113,7 @@ body.fontUbuntu .mediacontainer button {
   height: 20px;
   background: url(./../img/calendar.svg);
   background-position: center;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat;
   bottom: 10px;
   right: 0px;
@@ -3589,15 +3140,6 @@ body.fontUbuntu .mediacontainer button {
 }
 
 .container .question-wrapper .date-wrapper .col-date input::-webkit-input-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 33px;
-  color: #C0BCBC;
-}
-
-.container .question-wrapper .date-wrapper .col-date input::-moz-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -3636,15 +3178,12 @@ body.fontUbuntu .mediacontainer button {
 .container .question-wrapper .name-wrapper {
   padding-top: 40px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-  -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -3673,15 +3212,6 @@ body.fontUbuntu .mediacontainer button {
 }
 
 .container .question-wrapper .name-wrapper .col-name input::-webkit-input-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 33px;
-  color: #C0BCBC;
-}
-
-.container .question-wrapper .name-wrapper .col-name input::-moz-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -3749,15 +3279,6 @@ body.fontUbuntu .mediacontainer button {
   color: #C0BCBC;
 }
 
-.container .question-wrapper .email-wrapper input::-moz-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 33px;
-  color: #C0BCBC;
-}
-
 .container .question-wrapper .email-wrapper input:-ms-input-placeholder {
   font-family: "Montserrat";
   font-style: normal;
@@ -3788,15 +3309,12 @@ body.fontUbuntu .mediacontainer button {
 .container .question-wrapper .phone-wrapper {
   padding-top: 40px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-  -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -3809,15 +3327,12 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .phone-wrapper .col-phone .inputs {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -3842,15 +3357,12 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .phone-wrapper .col-phone .lines {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -3887,15 +3399,6 @@ body.fontUbuntu .mediacontainer button {
 }
 
 .container .question-wrapper .phone-wrapper .col-phone input::-webkit-input-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 10px;
-  line-height: 12px;
-  color: #A4A2A2;
-}
-
-.container .question-wrapper .phone-wrapper .col-phone input::-moz-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
@@ -3974,15 +3477,6 @@ body.fontUbuntu .mediacontainer button {
   color: #C0BCBC;
 }
 
-.container .question-wrapper .list-wrapper input::-moz-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 33px;
-  color: #C0BCBC;
-}
-
 .container .question-wrapper .list-wrapper input:-ms-input-placeholder {
   font-family: "Montserrat";
   font-style: normal;
@@ -4033,9 +3527,25 @@ body.fontUbuntu .mediacontainer button {
   line-height: 33px;
 }
 
+.container .question-wrapper .multiple-list .multiple-item.hidden-textarea input[type=checkbox] ~ textarea,
+.container .question-wrapper .multiple-list .multiple-item.hidden-textarea input[type=radio] ~ textarea {
+  display: none;
+  padding-top: 10px;
+}
+
+.container .question-wrapper .multiple-list .multiple-item.hidden-textarea input[type=checkbox]:checked ~ textarea,
+.container .question-wrapper .multiple-list .multiple-item.hidden-textarea input[type=radio]:checked ~ textarea {
+  display: block;
+}
+
 .container .question-wrapper .multiple-list .multiple-item input[type=checkbox] + label::before,
 .container .question-wrapper .multiple-list .multiple-item input[type=radio] + label::before {
   margin-right: 10px;
+}
+
+.container .question-wrapper .multiple-list .multiple-item input[type=checkbox] ~ textarea.hidden-textarea,
+.container .question-wrapper .multiple-list .multiple-item input[type=radio] ~ textarea.hidden-textarea {
+  display: none;
 }
 
 .container .question-wrapper .multiple-list .multiple-item textarea {
@@ -4075,15 +3585,12 @@ body.fontUbuntu .mediacontainer button {
 .container .question-wrapper .radio-wrapper {
   padding-top: 40px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -4100,20 +3607,16 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .radio-wrapper .radio-cont label {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   cursor: pointer;
@@ -4132,21 +3635,17 @@ body.fontUbuntu .mediacontainer button {
   width: 35px;
   height: 35px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   border: 2px solid #ffffff;
   border-radius: 50%;
   padding: 5px;
   -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
@@ -4237,15 +3736,12 @@ body.fontUbuntu .mediacontainer button {
 .container .question-wrapper .hidden-question-wrapper .detail {
   width: 100%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 60px;
@@ -4284,16 +3780,6 @@ body.fontUbuntu .mediacontainer button {
 
 .container .question-wrapper .hidden-answer .detail input::-webkit-input-placeholder,
 .container .question-wrapper .hidden-question-wrapper .detail input::-webkit-input-placeholder {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 33px;
-  color: #C0BCBC;
-}
-
-.container .question-wrapper .hidden-answer .detail input::-moz-placeholder,
-.container .question-wrapper .hidden-question-wrapper .detail input::-moz-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -4365,15 +3851,12 @@ body.fontUbuntu .mediacontainer button {
 .container.container-contact .contact-form .question-block {
   width: 100%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #FFFFFF;
@@ -4400,23 +3883,18 @@ body.fontUbuntu .mediacontainer button {
 .container.container-contact .contact-form .question-block .answer {
   width: 60%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   max-height: 100px;
@@ -4463,6 +3941,7 @@ body.fontUbuntu .mediacontainer button {
   line-height: 30px;
   color: #5722DE;
   padding-bottom: 30px;
+  max-width: 700px;
 }
 
 .thankyou .thankyou-text .big-text {
@@ -4473,6 +3952,8 @@ body.fontUbuntu .mediacontainer button {
   line-height: 73px;
   text-transform: uppercase;
   color: #FFFFFF;
+  max-width: 700px;
+  padding-bottom: 40px;
 }
 
 .thankyou .picture {
@@ -4484,8 +3965,7 @@ body.fontUbuntu .mediacontainer button {
   background-image: url(./../img/thanks.jpg);
   background-position-y: bottom;
   background-position-x: right;
-  -webkit-background-size: 50% 50%;
-          background-size: 50%;
+  background-size: 50%;
   background-repeat: no-repeat;
   z-index: 5;
 }
@@ -4498,7 +3978,6 @@ body.fontUbuntu .mediacontainer button {
   border-radius: 50%;
   margin-right: 5px;
   -webkit-transition: background 0.3s ease-in;
-  -o-transition: background 0.3s ease-in;
   transition: background 0.3s ease-in;
   cursor: pointer;
 }
@@ -4526,7 +4005,6 @@ body.fontUbuntu .mediacontainer button {
 
 .customselect-wrapper .select-styled {
   -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   font-family: "Montserrat";
   font-style: normal;
@@ -4538,7 +4016,6 @@ body.fontUbuntu .mediacontainer button {
   border: 1px solid #EEEFF3;
   width: 100%;
   -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   padding-right: 20px;
 }
@@ -4553,11 +4030,9 @@ body.fontUbuntu .mediacontainer button {
   display: block;
   background: url(./../img/arrow-dropdown.svg);
   background-position: center;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat;
   -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
@@ -4568,8 +4043,7 @@ body.fontUbuntu .mediacontainer button {
 .customselect-wrapper .select-styled:hover:after {
   background: url(./../img/arrow-dropdown-a.svg);
   background-position: center;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -4580,12 +4054,9 @@ body.fontUbuntu .mediacontainer button {
 .customselect-wrapper .select-styled:active:after, .customselect-wrapper .select-styled.active:after {
   background: url(./../img/arrow-dropdown-a.svg);
   background-position: center;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat;
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-       -o-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
@@ -4607,7 +4078,6 @@ body.fontUbuntu .mediacontainer button {
 .customselect-wrapper .select-options li {
   margin: 0;
   -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   font-family: "Montserrat";
   font-style: normal;
@@ -4831,8 +4301,6 @@ html .ui-button.ui-state-disabled:active {
   font-weight: 700;
   text-align: center;
   -webkit-transform: scaleX(1.0029);
-      -ms-transform: scaleX(1.0029);
-       -o-transform: scaleX(1.0029);
           transform: scaleX(1.0029);
 }
 
@@ -4857,8 +4325,6 @@ html .ui-button.ui-state-disabled:active {
   font-weight: 700;
   text-align: center;
   -webkit-transform: scaleX(1.0029);
-      -ms-transform: scaleX(1.0029);
-       -o-transform: scaleX(1.0029);
           transform: scaleX(1.0029);
 }
 
@@ -5011,8 +4477,7 @@ html .ui-button.ui-state-disabled:active {
 .intl-tel-input .flag-dropdown .selected-flag .flag.all-country {
   background: url(./../img/country-all.svg);
   background-position: center;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -5023,8 +4488,7 @@ html .ui-button.ui-state-disabled:active {
   background: #ffffff;
   position: relative;
   background-position: center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 10px;
   overflow: hidden;
@@ -5222,8 +4686,7 @@ html .ui-button.ui-state-disabled:active {
   background: #ffffff;
   position: relative;
   background-position: center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 10px;
 }
@@ -5405,15 +4868,12 @@ html .ui-button.ui-state-disabled:active {
 
 .mediacontainer .audio-wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 270px;
@@ -5429,8 +4889,7 @@ html .ui-button.ui-state-disabled:active {
   height: 53px;
   background-image: url(./../img/play.png);
   background-repeat: no-repeat;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  background-size: 100%;
   background-position: center;
   border-radius: 50%;
 }
@@ -5479,20 +4938,16 @@ html .ui-button.ui-state-disabled:active {
   top: 0%;
   bottom: 0%;
   margin: auto;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   background-position: center;
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
-  -o-transition: -o-transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
-  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in, -o-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
 .mediacontainer .pic-col .vide-wrapper .play:hover {
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-       -o-transform: scale(1.1);
           transform: scale(1.1);
 }
 
@@ -5536,6 +4991,10 @@ html .ui-button.ui-state-disabled:active {
 
 .made-by-wrapper .made-by-wrapper-logo img {
   max-width: 100%;
+}
+
+.container.moveleft .question-wrapper {
+  border: none;
 }
 
 @media screen and (min-width: 1500px) {
@@ -5657,19 +5116,25 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @media screen and (max-width: 768px) {
+  .container .question-wrapper .free-wrapper {
+    padding-top: 20px;
+  }
+  .thankyou .thankyou-text .big-text {
+    padding-bottom: 20px;
+    text-align: center;
+  }
   .container .question-wrapper .single-wrapper,
   .container .question-wrapper .branching-wrapper {
     padding-top: 20px;
   }
   .container .question-wrapper {
-    padding-bottom: 20px;
-    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-top: 15px;
   }
   .container .question-wrapper .hidden-answer .detail,
   .container .question-wrapper .hidden-question-wrapper .detail {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 15px;
@@ -5687,7 +5152,7 @@ html .ui-button.ui-state-disabled:active {
     line-height: 20px;
   }
   .thankyou .thankyou-text {
-    padding-top: 200px;
+    padding-top: 150px;
   }
   .header .header-content .pic-col {
     text-align: left;
@@ -5705,15 +5170,12 @@ html .ui-button.ui-state-disabled:active {
   }
   .logo-list {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     width: 250px;
@@ -5749,11 +5211,9 @@ html .ui-button.ui-state-disabled:active {
   .container .question-wrapper .range-list .range-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-align: start;
-    -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
@@ -5770,6 +5230,7 @@ html .ui-button.ui-state-disabled:active {
   }
   .header {
     padding-top: 20px;
+    padding-bottom: 20px;
   }
   .header .header-content .text-col .bottom-text {
     font-size: 16px;
@@ -5788,8 +5249,7 @@ html .ui-button.ui-state-disabled:active {
     line-height: 18px;
   }
   .thankyou .picture {
-    -webkit-background-size: 90% 90%;
-            background-size: 90%;
+    background-size: 90%;
     opacity: 0.7;
   }
   .header .header-content .text-col h2,
@@ -5824,9 +5284,8 @@ html .ui-button.ui-state-disabled:active {
     line-height: 16px;
   }
   .container .question-wrapper .hidden-answer .detail {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .container .question-wrapper .hidden-answer .detail label,
   .container .question-wrapper .hidden-answer .detail input {
@@ -5866,9 +5325,8 @@ html .ui-button.ui-state-disabled:active {
     line-height: 12px;
   }
   .header .header-content {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .header .header-content .text-col {
     width: 100%;
@@ -5883,12 +5341,20 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @media screen and (max-width: 500px) {
+  .header .header-content .pic-col {
+    text-align: center;
+  }
+  .header .header-content .pic-col img {
+    width: 100%;
+    max-height: 600px;
+  }
+  .container .question-wrapper .free-wrapper input {
+    border-bottom-color: #e2e2e2;
+  }
   .container .question-wrapper .radio-wrapper {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
@@ -5899,7 +5365,6 @@ html .ui-button.ui-state-disabled:active {
   .container.container-contact .contact-form .question-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -5930,3 +5395,107 @@ html .ui-button.ui-state-disabled:active {
     line-height: 14px;
   }
 }
+
+@media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
+  .container .question-wrapper .radio-wrapper .radio-cont label .text {
+    color: #ffffff;
+  }
+  body,
+  .header,
+  .container {
+    background: #333333 !important;
+    background-color: #333333 !important;
+  }
+  body .header.thankyou {
+    background-color: #FCD9AF !important;
+  }
+  .header .header-content .text-col h2, .header .header-content .text-col .big-text,
+  .header .header-content .text-col p,
+  .container .question-wrapper .question, .header .header-content .text-col .small-text,
+  .container .question-wrapper .free-wrapper input,
+  .container .question-wrapper .branching-wrapper label, .container .question-wrapper .single-wrapper label,
+  .container .question-wrapper .hidden-answer .detail input, .container .question-wrapper .hidden-question-wrapper .detail input,
+  .container .question-wrapper .hidden-answer .detail label, .container .question-wrapper .hidden-question-wrapper .detail label,
+  .container .question-wrapper .multiple-list .multiple-item label {
+    color: #e2e2e2 !important;
+  }
+  .header.moveleft .header-content .pic-col {
+    width: 100%;
+    height: 150px;
+    background-image: url(./../img/clubhouse-dark-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .header.moveleft .header-content .pic-col img {
+    display: none;
+  }
+  .made-by-wrapper-logo a {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-image: url(./../img/logo-4service-light.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .made-by-wrapper-logo a img {
+    display: none;
+  }
+  .header.moveleft .logo {
+    width: 100%;
+    height: 100px;
+    background-image: url(./../img/logo-4service-light.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .header.moveleft .logo img {
+    display: none;
+  }
+  .header .question-wrapper,
+  .container .question-wrapper {
+    border: none !important;
+  }
+  .header input[type=checkbox]:checked + label::before,
+  .header input[type=radio]:checked + label::before,
+  .container input[type=checkbox]:checked + label::before,
+  .container input[type=radio]:checked + label::before {
+    background: #a7a7a7 !important;
+  }
+  .header input[type=checkbox] + label::before,
+  .header input[type=radio] + label::before,
+  .container input[type=checkbox] + label::before,
+  .container input[type=radio] + label::before {
+    border-color: #a7a7a7 !important;
+  }
+  body.dark {
+    background: #3333;
+  }
+  body.dark .header.moveleft .logo {
+    width: 100%;
+    height: 100px;
+    background-image: url(./../img/logo-4service-light.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  body.dark .header.moveleft .logo img {
+    display: none;
+  }
+  body.dark.container .question-wrapper {
+    border: none !important;
+  }
+  body.dark input[type=checkbox]:checked + label::before,
+  body.dark input[type=radio]:checked + label::before {
+    background: #a7a7a7 !important;
+  }
+  body.dark input[type=checkbox] + label::before,
+  body.dark input[type=radio] + label::before {
+    border-color: #a7a7a7 !important;
+  }
+  .container .question-wrapper .free-wrapper input {
+    border-bottom-color: #e2e2e2;
+  }
+}
+/*# sourceMappingURL=style.css.map */
